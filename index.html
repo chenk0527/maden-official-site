@@ -2,352 +2,391 @@
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MADEN 马登工装 | 美式复古工装品牌 - Born To Work. Made To Last.</title>
-  <meta name="description" content="MADEN马登工装，创立于2008年，专注美式复古工装16年。工装夹克、复古裤装、鞋履等全品类，全渠道70+店铺，7家实体店。">
-  <meta name="keywords" content="马登工装,MADEN,美式复古,工装夹克,工装裤,底特律夹克,复古男装,workwear,阿美咔叽">
-  <link rel="canonical" href="https://chenk0527.github.io/maden-official-site/">
-  <meta property="og:title" content="MADEN 马登工装 | 美式复古工装品牌">
-  <meta property="og:description" content="创立于2008年，专注美式复古工装16年。Born To Work. Made To Last.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <title>MADEN — Americana Workwear Since 2008</title>
+  <meta name="description" content="MADEN. Americana Workwear. Born To Work. Made To Last. Since 2008.">
+  <meta property="og:title" content="MADEN — Americana Workwear">
+  <meta property="og:description" content="Born To Work. Made To Last. Since 2008.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://chenk0527.github.io/maden-official-site/">
-  <meta property="og:locale" content="zh_CN">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-  <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"ClothingStore","name":"MADEN马登工装","alternateName":"MADEN WORKWEAR","description":"创立于2008年，专注美式复古工装品牌","foundingDate":"2008","url":"https://chenk0527.github.io/maden-official-site/","address":{"@type":"PostalAddress","addressLocality":"重庆","addressCountry":"CN"}}
-  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@200;300;400;500&display=swap" rel="stylesheet">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"ClothingStore","name":"MADEN","description":"Americana Workwear Since 2008","foundingDate":"2008","address":{"@type":"PostalAddress","addressLocality":"Chongqing","addressCountry":"CN"}}</script>
+  <style>
+/* ===== RESET & BASE ===== */
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{font-size:16px;scroll-behavior:auto;overflow-x:hidden}
+body{font-family:'Inter',sans-serif;background:#0a0a0a;color:#e8e4df;overflow-x:hidden;cursor:none;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none;cursor:none}
+img{display:block;max-width:100%}
+::selection{background:#c9a96e;color:#0a0a0a}
+
+/* ===== CUSTOM CURSOR ===== */
+.cursor{position:fixed;width:12px;height:12px;border:1.5px solid rgba(201,169,110,.6);border-radius:50%;pointer-events:none;z-index:10000;transition:transform .15s,width .2s,height .2s,border-color .2s;transform:translate(-50%,-50%);mix-blend-mode:difference}
+.cursor-dot{position:fixed;width:4px;height:4px;background:#c9a96e;border-radius:50%;pointer-events:none;z-index:10001;transform:translate(-50%,-50%);transition:transform .08s}
+.cursor.hover{width:48px;height:48px;border-color:rgba(201,169,110,.3)}
+
+/* ===== LOADER ===== */
+.loader{position:fixed;inset:0;z-index:9999;background:#0a0a0a;display:flex;align-items:center;justify-content:center;transition:opacity 1s cubic-bezier(.4,0,.2,1)}
+.loader.done{opacity:0;pointer-events:none}
+.loader-line{width:120px;height:1px;background:#1a1a1a;position:relative;overflow:hidden}
+.loader-line::after{content:'';position:absolute;left:0;top:0;height:100%;width:0;background:#c9a96e;animation:lineLoad 2s cubic-bezier(.4,0,.2,1) forwards}
+@keyframes lineLoad{to{width:100%}}
+
+/* ===== NAV ===== */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:28px 48px;display:flex;justify-content:space-between;align-items:center;mix-blend-mode:difference}
+.nav-brand{font-size:1.1rem;letter-spacing:.45em;font-weight:300;text-transform:uppercase}
+.nav-right{display:flex;gap:40px;align-items:center}
+.nav-right a{font-size:.7rem;letter-spacing:.3em;text-transform:uppercase;font-weight:300;opacity:.6;transition:opacity .4s}
+.nav-right a:hover{opacity:1}
+.menu-btn{display:none;background:none;border:none;color:inherit;font-size:.7rem;letter-spacing:.3em;text-transform:uppercase;font-weight:300;cursor:none;opacity:.6}
+
+/* ===== HERO ===== */
+.hero{position:relative;height:100vh;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.hero-media{position:absolute;inset:0}
+.hero-media img{width:100%;height:100%;object-fit:cover;filter:brightness(.35) contrast(1.1);transform:scale(1.05);animation:heroZoom 20s ease-in-out infinite alternate}
+@keyframes heroZoom{0%{transform:scale(1.05)}100%{transform:scale(1.15)}}
+.hero-center{position:relative;z-index:2;text-align:center;padding:0 24px}
+.hero-label{font-size:.6rem;letter-spacing:.7em;text-transform:uppercase;opacity:.5;margin-bottom:32px;font-weight:300}
+.hero-title{font-family:'Cormorant Garamond',serif;font-size:clamp(5rem,18vw,16rem);font-weight:300;letter-spacing:.15em;line-height:.85;margin-bottom:16px;opacity:0;animation:fadeUp 1.5s 2.2s cubic-bezier(.4,0,.2,1) forwards}
+.hero-sub{font-size:.65rem;letter-spacing:.8em;text-transform:uppercase;font-weight:200;opacity:0;animation:fadeUp 1.2s 2.6s cubic-bezier(.4,0,.2,1) forwards}
+.hero-scroll{position:absolute;bottom:40px;left:50%;transform:translateX(-50%);z-index:2;display:flex;flex-direction:column;align-items:center;gap:12px}
+.hero-scroll span{font-size:.55rem;letter-spacing:.5em;text-transform:uppercase;opacity:.3;font-weight:300}
+.scroll-bar{width:1px;height:48px;background:rgba(255,255,255,.1);position:relative;overflow:hidden}
+.scroll-bar::after{content:'';position:absolute;top:-48px;left:0;width:1px;height:48px;background:rgba(201,169,110,.6);animation:scrollLine 2.5s infinite}
+@keyframes scrollLine{0%{top:-48px}100%{top:48px}}
+@keyframes fadeUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+
+/* ===== SECTION COMMON ===== */
+section{padding:160px 48px}
+.sec-label{font-size:.6rem;letter-spacing:.7em;text-transform:uppercase;opacity:.35;margin-bottom:20px;font-weight:300}
+.sec-title{font-family:'Cormorant Garamond',serif;font-size:clamp(2.4rem,5vw,4rem);font-weight:300;line-height:1.15;letter-spacing:.04em;margin-bottom:40px}
+
+/* ===== ABOUT ===== */
+.about{max-width:1400px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:120px;align-items:center}
+.about-img{position:relative;overflow:hidden;aspect-ratio:3/4}
+.about-img img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s cubic-bezier(.4,0,.2,1)}
+.about-img:hover img{transform:scale(1.04)}
+.about-text p{font-size:.9rem;line-height:2;font-weight:200;color:rgba(232,228,223,.5);margin-bottom:24px;letter-spacing:.02em}
+.about-text p strong{color:#c9a96e;font-weight:400}
+.about-sig{margin-top:48px;font-size:.6rem;letter-spacing:.5em;text-transform:uppercase;opacity:.3;display:flex;align-items:center;gap:20px}
+.about-sig::before{content:'';width:40px;height:1px;background:rgba(201,169,110,.3)}
+
+/* ===== COLLECTION ===== */
+.collection{max-width:1400px;margin:0 auto}
+.col-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:4px}
+.col-item{position:relative;overflow:hidden;aspect-ratio:2/3;cursor:none}
+.col-item img{width:100%;height:100%;object-fit:cover;transition:transform 1.5s cubic-bezier(.4,0,.2,1),filter .8s;filter:brightness(.8) saturate(.9)}
+.col-item:hover img{transform:scale(1.06);filter:brightness(.95) saturate(1)}
+.col-item-text{position:absolute;bottom:0;left:0;right:0;padding:32px;background:linear-gradient(transparent,rgba(0,0,0,.6));opacity:0;transform:translateY(10px);transition:all .6s cubic-bezier(.4,0,.2,1)}
+.col-item:hover .col-item-text{opacity:1;transform:translateY(0)}
+.col-item-text h3{font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-weight:300;letter-spacing:.1em;margin-bottom:4px}
+.col-item-text span{font-size:.6rem;letter-spacing:.4em;text-transform:uppercase;opacity:.5;font-weight:300}
+
+/* ===== LOOKBOOK (FULL WIDTH IMAGES) ===== */
+.lookbook-strip{display:flex;gap:4px;overflow:hidden;padding:0}
+.lookbook-strip .lk-img{flex:0 0 40vw;height:70vh;position:relative;overflow:hidden}
+.lookbook-strip .lk-img img{width:100%;height:100%;object-fit:cover;filter:brightness(.75);transition:filter .8s}
+.lookbook-strip .lk-img:hover img{filter:brightness(.9)}
+.lk-label{position:absolute;bottom:32px;left:32px;font-size:.6rem;letter-spacing:.5em;text-transform:uppercase;opacity:.4;font-weight:300}
+
+/* ===== STATEMENT ===== */
+.statement{min-height:80vh;display:flex;align-items:center;justify-content:center;text-align:center;position:relative}
+.statement-text{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,5vw,4.5rem);font-weight:300;line-height:1.3;letter-spacing:.03em;max-width:900px;color:rgba(232,228,223,.7)}
+.statement-text em{font-style:italic;color:#c9a96e}
+
+/* ===== NUMBERS ===== */
+.numbers{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:48px;text-align:center;border-top:1px solid rgba(255,255,255,.05);border-bottom:1px solid rgba(255,255,255,.05);padding:80px 0}
+.num-val{font-family:'Cormorant Garamond',serif;font-size:clamp(3rem,6vw,5rem);font-weight:300;color:#c9a96e;line-height:1;letter-spacing:.05em;margin-bottom:12px}
+.num-label{font-size:.6rem;letter-spacing:.5em;text-transform:uppercase;opacity:.3;font-weight:300}
+
+/* ===== STORES ===== */
+.stores-sec{max-width:1000px;margin:0 auto}
+.stores-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px}
+.store-block h3{font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:300;letter-spacing:.1em;margin-bottom:8px;color:#c9a96e}
+.store-block .store-n{font-size:.6rem;letter-spacing:.5em;text-transform:uppercase;opacity:.3;margin-bottom:24px}
+.store-block li{padding:12px 0;border-bottom:1px solid rgba(255,255,255,.04);font-size:.85rem;font-weight:200;opacity:.5;letter-spacing:.02em}
+
+/* ===== CHANNELS ===== */
+.ch-grid{max-width:1000px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(255,255,255,.04)}
+.ch-item{background:#0a0a0a;padding:48px 32px;text-align:center;transition:background .6s}
+.ch-item:hover{background:#111}
+.ch-item h4{font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:300;letter-spacing:.1em;margin-bottom:6px}
+.ch-item span{font-size:.55rem;letter-spacing:.5em;text-transform:uppercase;opacity:.3}
+
+/* ===== CTA ===== */
+.cta-sec{position:relative;min-height:60vh;display:flex;align-items:center;justify-content:center;overflow:hidden;text-align:center}
+.cta-bg{position:absolute;inset:0}
+.cta-bg img{width:100%;height:100%;object-fit:cover;filter:brightness(.25)}
+.cta-inner{position:relative;z-index:2}
+.cta-inner h2{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,5vw,4rem);font-weight:300;letter-spacing:.15em;margin-bottom:40px}
+.cta-btn{display:inline-block;padding:16px 56px;border:1px solid rgba(201,169,110,.4);font-size:.7rem;letter-spacing:.5em;text-transform:uppercase;font-weight:300;transition:all .6s cubic-bezier(.4,0,.2,1)}
+.cta-btn:hover{background:#c9a96e;color:#0a0a0a;border-color:#c9a96e}
+
+/* ===== FOOTER ===== */
+footer{padding:80px 48px 40px;border-top:1px solid rgba(255,255,255,.04)}
+.footer-inner{max-width:1400px;margin:0 auto;display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:48px}
+.footer-brand{font-family:'Cormorant Garamond',serif;font-size:1.8rem;font-weight:300;letter-spacing:.2em}
+.footer-brand small{display:block;font-family:'Inter',sans-serif;font-size:.55rem;letter-spacing:.5em;text-transform:uppercase;opacity:.25;margin-top:8px;font-weight:300}
+.footer-cols{display:flex;gap:64px}
+.footer-col h5{font-size:.6rem;letter-spacing:.4em;text-transform:uppercase;opacity:.25;margin-bottom:16px;font-weight:400}
+.footer-col a{display:block;font-size:.75rem;font-weight:200;opacity:.35;padding:4px 0;transition:opacity .3s;letter-spacing:.02em}
+.footer-col a:hover{opacity:.8}
+.footer-copy{width:100%;text-align:center;margin-top:64px;font-size:.55rem;letter-spacing:.3em;opacity:.15;text-transform:uppercase}
+
+/* ===== REVEAL ===== */
+.r{opacity:0;transform:translateY(50px);transition:opacity 1.2s cubic-bezier(.4,0,.2,1),transform 1.2s cubic-bezier(.4,0,.2,1)}
+.r.v{opacity:1;transform:translateY(0)}
+.r-left{opacity:0;transform:translateX(-60px);transition:opacity 1.2s cubic-bezier(.4,0,.2,1),transform 1.2s cubic-bezier(.4,0,.2,1)}
+.r-left.v{opacity:1;transform:translateX(0)}
+.r-right{opacity:0;transform:translateX(60px);transition:opacity 1.2s cubic-bezier(.4,0,.2,1),transform 1.2s cubic-bezier(.4,0,.2,1)}
+.r-right.v{opacity:1;transform:translateX(0)}
+
+/* ===== MOBILE ===== */
+@media(max-width:900px){
+  nav{padding:20px 24px}
+  .nav-right a{display:none}
+  .menu-btn{display:block}
+  section{padding:100px 24px}
+  .about{grid-template-columns:1fr;gap:48px}
+  .col-grid{grid-template-columns:1fr 1fr}
+  .lookbook-strip .lk-img{flex:0 0 80vw;height:50vh}
+  .numbers{grid-template-columns:repeat(2,1fr);gap:32px;padding:60px 24px}
+  .stores-grid{grid-template-columns:1fr;gap:40px}
+  .ch-grid{grid-template-columns:1fr 1fr}
+  .footer-inner{flex-direction:column}
+  .footer-cols{flex-direction:column;gap:32px}
+}
+@media(max-width:480px){
+  .col-grid{grid-template-columns:1fr}
+  .ch-grid{grid-template-columns:1fr}
+  .hero-title{letter-spacing:.08em}
+  nav{padding:16px 20px}
+}
+  </style>
 </head>
 <body>
-  <!-- Loader -->
-  <div class="loader" id="loader"><div class="loader-text">MADEN</div><div class="loader-bar"><div class="loader-progress"></div></div></div>
 
-  <!-- Nav -->
-  <nav class="nav" id="nav">
-    <div class="nav-inner">
-      <a href="#" class="logo">MADEN<span>EST.2008</span></a>
-      <div class="nav-links" id="navLinks">
-        <a href="#story">品牌</a>
-        <a href="#products">系列</a>
-        <a href="#lookbook">穿搭</a>
-        <a href="#stats">关于</a>
-        <a href="#stores">门店</a>
-        <a href="#channels">购买</a>
-      </div>
-      <button class="hamburger" id="hamburger" aria-label="菜单"><span></span><span></span><span></span></button>
-    </div>
-  </nav>
+<!-- Cursor -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-dot" id="cursorDot"></div>
 
-  <!-- Hero -->
-  <section class="hero" id="hero">
-    <div class="hero-bg">
-      <img src="https://images.unsplash.com/photo-1445205170230-053b83016050?w=1920&q=80" alt="MADEN Workwear" referrerpolicy="no-referrer">
-    </div>
-    <div class="hero-overlay"></div>
-    <div class="hero-content">
-      <p class="hero-pre reveal">AMERICANA WORKWEAR SINCE 2008</p>
-      <h1 class="hero-title reveal">MADEN</h1>
-      <p class="hero-sub reveal">马 登 工 装</p>
-      <p class="hero-slogan reveal">BORN TO WORK. MADE TO LAST.</p>
-      <div class="hero-btns reveal">
-        <a href="#products" class="btn-gold">探索系列</a>
-        <a href="#story" class="btn-ghost">品牌故事</a>
-      </div>
-    </div>
-    <div class="scroll-hint"><div class="scroll-dot"></div></div>
-  </section>
+<!-- Loader -->
+<div class="loader" id="loader"><div class="loader-line"></div></div>
 
-  <!-- Marquee -->
-  <div class="marquee">
-    <div class="marquee-track">
-      <span>AMERICANA WORKWEAR</span><span>•</span><span>美式复古工装</span><span>•</span>
-      <span>BORN TO WORK</span><span>•</span><span>MADE TO LAST</span><span>•</span>
-      <span>EST. 2008</span><span>•</span><span>MADEN WORKWEAR</span><span>•</span>
-      <span>AMERICANA WORKWEAR</span><span>•</span><span>美式复古工装</span><span>•</span>
-      <span>BORN TO WORK</span><span>•</span><span>MADE TO LAST</span><span>•</span>
-      <span>EST. 2008</span><span>•</span><span>MADEN WORKWEAR</span><span>•</span>
+<!-- Nav -->
+<nav>
+  <div class="nav-brand">Maden</div>
+  <div class="nav-right">
+    <a href="#about">Story</a>
+    <a href="#collection">Collection</a>
+    <a href="#lookbook">Lookbook</a>
+    <a href="#stores">Stores</a>
+    <a href="#shop">Shop</a>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero" id="hero">
+  <div class="hero-media">
+    <img src="https://images.unsplash.com/photo-1445205170230-053b83016050?w=1920&q=80" alt="MADEN" referrerpolicy="no-referrer">
+  </div>
+  <div class="hero-center">
+    <p class="hero-label">Americana Workwear Since 2008</p>
+    <h1 class="hero-title">MADEN</h1>
+    <p class="hero-sub">Born To Work · Made To Last</p>
+  </div>
+  <div class="hero-scroll">
+    <span>Scroll</span>
+    <div class="scroll-bar"></div>
+  </div>
+</section>
+
+<!-- About -->
+<section id="about">
+  <div class="about">
+    <div class="about-img r-left">
+      <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=900&q=80" alt="MADEN Workwear" referrerpolicy="no-referrer">
+    </div>
+    <div class="about-text r-right">
+      <p class="sec-label">Our Story</p>
+      <h2 class="sec-title">始于重庆，<br>忠于工装。</h2>
+      <p>2008年，三位热爱美式复古文化的年轻人在重庆创立了马登。从一间小工作室到如今全渠道70+店铺的品牌版图，马登始终只做一件事——<strong>最纯正的美式复古工装</strong>。</p>
+      <p>每一件马登工装，都承载着 Americana 精神：坚韧、务实、不妥协。不追逐潮流，因为经典从不过时。</p>
+      <div class="about-sig">Chongqing, China · Est. 2008</div>
     </div>
   </div>
+</section>
 
-  <!-- Story -->
-  <section class="story" id="story">
-    <div class="container">
-      <div class="story-grid">
-        <div class="story-img reveal-left">
-          <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=800&q=80" alt="MADEN工装" referrerpolicy="no-referrer">
-          <div class="story-img-badge">16 YEARS</div>
-        </div>
-        <div class="story-text reveal-right">
-          <p class="section-tag">OUR STORY</p>
-          <h2 class="section-title">始于重庆<br>忠于工装</h2>
-          <p class="story-desc">2008年，三个热爱美式复古文化的年轻人在重庆创立了马登。2011年，"马登工装"品牌正式诞生。</p>
-          <p class="story-desc">从一间小工作室到如今全渠道70+店铺、7家实体店的品牌矩阵，马登始终坚持一件事——<strong>做最纯正的美式复古工装</strong>。</p>
-          <p class="story-desc">每一件马登工装，都承载着Americana精神：坚韧、务实、自由。不追逐潮流，因为经典从不过时。</p>
-          <div class="story-signature">
-            <span class="sig-line"></span>
-            <span>MADEN WORKWEAR — 重庆 · 中国</span>
-          </div>
-        </div>
+<!-- Collection -->
+<section id="collection">
+  <div class="collection">
+    <p class="sec-label r">Collection</p>
+    <h2 class="sec-title r">产品系列</h2>
+    <div class="col-grid">
+      <div class="col-item">
+        <img src="https://images.unsplash.com/photo-1548126032-079a0fb0099d?w=800&q=80" alt="Jackets" referrerpolicy="no-referrer">
+        <div class="col-item-text"><h3>Jackets</h3><span>工装夹克</span></div>
+      </div>
+      <div class="col-item">
+        <img src="https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?w=800&q=80" alt="Pants" referrerpolicy="no-referrer">
+        <div class="col-item-text"><h3>Pants</h3><span>复古裤装</span></div>
+      </div>
+      <div class="col-item">
+        <img src="https://images.unsplash.com/photo-1460353581641-37baddab0fa2?w=800&q=80" alt="Footwear" referrerpolicy="no-referrer">
+        <div class="col-item-text"><h3>Footwear</h3><span>鞋履系列</span></div>
+      </div>
+      <div class="col-item">
+        <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=800&q=80" alt="Women" referrerpolicy="no-referrer">
+        <div class="col-item-text"><h3>Women</h3><span>女装系列</span></div>
+      </div>
+      <div class="col-item">
+        <img src="https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=800&q=80" alt="Tops" referrerpolicy="no-referrer">
+        <div class="col-item-text"><h3>Tops</h3><span>上装系列</span></div>
+      </div>
+      <div class="col-item">
+        <img src="https://images.unsplash.com/photo-1516257984-b1b4d707412e?w=800&q=80" alt="Accessories" referrerpolicy="no-referrer">
+        <div class="col-item-text"><h3>Accessories</h3><span>配饰系列</span></div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Products -->
-  <section class="products" id="products">
-    <div class="container">
-      <p class="section-tag center reveal">COLLECTIONS</p>
-      <h2 class="section-title center reveal">产品系列</h2>
-      <div class="product-grid">
-        <div class="product-card reveal">
-          <div class="product-img">
-            <img src="https://images.unsplash.com/photo-1548126032-079a0fb0099d?w=600&q=80" alt="工装夹克" referrerpolicy="no-referrer">
-            <div class="product-overlay">
-              <span class="product-count">30+ 款式</span>
-            </div>
-          </div>
-          <div class="product-info">
-            <h3>工装夹克</h3>
-            <p>JACKETS & OUTERWEAR</p>
-          </div>
-        </div>
-        <div class="product-card reveal">
-          <div class="product-img">
-            <img src="https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?w=600&q=80" alt="复古裤装" referrerpolicy="no-referrer">
-            <div class="product-overlay">
-              <span class="product-count">25+ 款式</span>
-            </div>
-          </div>
-          <div class="product-info">
-            <h3>复古裤装</h3>
-            <p>PANTS & TROUSERS</p>
-          </div>
-        </div>
-        <div class="product-card reveal">
-          <div class="product-img">
-            <img src="https://images.unsplash.com/photo-1460353581641-37baddab0fa2?w=600&q=80" alt="鞋履系列" referrerpolicy="no-referrer">
-            <div class="product-overlay">
-              <span class="product-count">15+ 款式</span>
-            </div>
-          </div>
-          <div class="product-info">
-            <h3>鞋履系列</h3>
-            <p>FOOTWEAR</p>
-          </div>
-        </div>
-        <div class="product-card reveal">
-          <div class="product-img">
-            <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=600&q=80" alt="女装系列" referrerpolicy="no-referrer">
-            <div class="product-overlay">
-              <span class="product-count">20+ 款式</span>
-            </div>
-          </div>
-          <div class="product-info">
-            <h3>女装系列</h3>
-            <p>WOMEN'S COLLECTION</p>
-          </div>
-        </div>
+<!-- Lookbook -->
+<section id="lookbook" style="padding-left:0;padding-right:0">
+  <div style="padding:0 48px"><p class="sec-label r">Lookbook</p><h2 class="sec-title r">Spring/Summer 2026</h2></div>
+  <div class="lookbook-strip">
+    <div class="lk-img"><img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1200&q=80" alt="" referrerpolicy="no-referrer"><div class="lk-label">Look 01</div></div>
+    <div class="lk-img"><img src="https://images.unsplash.com/photo-1523381294911-8d3cead13475?w=1200&q=80" alt="" referrerpolicy="no-referrer"><div class="lk-label">Look 02</div></div>
+    <div class="lk-img"><img src="https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=1200&q=80" alt="" referrerpolicy="no-referrer"><div class="lk-label">Look 03</div></div>
+    <div class="lk-img"><img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=1200&q=80" alt="" referrerpolicy="no-referrer"><div class="lk-label">Look 04</div></div>
+  </div>
+</section>
+
+<!-- Statement -->
+<section class="statement">
+  <div class="statement-text r">
+    "不追逐潮流，<br>因为<em>经典</em>从不过时。"
+  </div>
+</section>
+
+<!-- Numbers -->
+<section>
+  <div class="numbers">
+    <div class="r"><div class="num-val">2008</div><div class="num-label">Founded</div></div>
+    <div class="r"><div class="num-val">70+</div><div class="num-label">Stores</div></div>
+    <div class="r"><div class="num-val">7</div><div class="num-label">Retail</div></div>
+    <div class="r"><div class="num-val">1000+</div><div class="num-label">Products</div></div>
+  </div>
+</section>
+
+<!-- Stores -->
+<section id="stores">
+  <div class="stores-sec">
+    <p class="sec-label r">Retail Stores</p>
+    <h2 class="sec-title r">实体门店</h2>
+    <div class="stores-grid">
+      <div class="store-block r-left">
+        <h3>Chongqing</h3>
+        <div class="store-n">5 Locations</div>
+        <ul>
+          <li>解放碑旗舰店</li>
+          <li>观音桥店</li>
+          <li>三峡广场店</li>
+          <li>南坪万达店</li>
+          <li>杨家坪店</li>
+        </ul>
+      </div>
+      <div class="store-block r-right">
+        <h3>Chengdu</h3>
+        <div class="store-n">2 Locations</div>
+        <ul>
+          <li>春熙路店</li>
+          <li>太古里店</li>
+        </ul>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Lookbook -->
-  <section class="lookbook" id="lookbook">
-    <div class="container">
-      <p class="section-tag center reveal">LOOKBOOK</p>
-      <h2 class="section-title center reveal">穿搭灵感</h2>
-      <div class="look-grid">
-        <div class="look-item look-tall reveal">
-          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80" alt="穿搭1" referrerpolicy="no-referrer">
-          <div class="look-tag">#美式复古</div>
-        </div>
-        <div class="look-item reveal">
-          <img src="https://images.unsplash.com/photo-1523381294911-8d3cead13475?w=600&q=80" alt="穿搭2" referrerpolicy="no-referrer">
-          <div class="look-tag">#工装穿搭</div>
-        </div>
-        <div class="look-item reveal">
-          <img src="https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=600&q=80" alt="穿搭3" referrerpolicy="no-referrer">
-          <div class="look-tag">#阿美咔叽</div>
-        </div>
-        <div class="look-item look-tall reveal">
-          <img src="https://images.unsplash.com/photo-1516257984-b1b4d707412e?w=800&q=80" alt="穿搭4" referrerpolicy="no-referrer">
-          <div class="look-tag">#街头硬汉</div>
-        </div>
-        <div class="look-item reveal">
-          <img src="https://images.unsplash.com/photo-1548126032-079a0fb0099d?w=600&q=80" alt="穿搭5" referrerpolicy="no-referrer">
-          <div class="look-tag">#复古日常</div>
-        </div>
-        <div class="look-item reveal">
-          <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=600&q=80" alt="穿搭6" referrerpolicy="no-referrer">
-          <div class="look-tag">#都市工装</div>
-        </div>
+<!-- Channels -->
+<section id="shop">
+  <div style="max-width:1000px;margin:0 auto">
+    <p class="sec-label r">Shop Now</p>
+    <h2 class="sec-title r">购买渠道</h2>
+  </div>
+  <div class="ch-grid">
+    <a class="ch-item" href="https://world.taobao.com/dianpu/34165972.htm" target="_blank" rel="noopener"><h4>Tmall</h4><span>天猫旗舰店</span></a>
+    <a class="ch-item" href="https://www.douyin.com/user/MS4wLjABAAAAJIU0tHMNE7wBLvlwa30WmALTMhsrvdcrHlryVMEB9n0" target="_blank" rel="noopener"><h4>Douyin</h4><span>抖音旗舰店</span></a>
+    <a class="ch-item" href="#"><h4>JD.com</h4><span>京东旗舰店</span></a>
+    <a class="ch-item" href="#"><h4>Pinduoduo</h4><span>拼多多</span></a>
+    <a class="ch-item" href="#"><h4>Dewu</h4><span>得物</span></a>
+    <a class="ch-item" href="#stores"><h4>Retail</h4><span>7家实体门店</span></a>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-sec">
+  <div class="cta-bg"><img src="https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=1920&q=80" alt="" referrerpolicy="no-referrer"></div>
+  <div class="cta-inner r">
+    <h2>Join The Crew</h2>
+    <a href="#shop" class="cta-btn">Shop Now</a>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">MADEN<small>Americana Workwear Since 2008</small></div>
+    <div class="footer-cols">
+      <div class="footer-col">
+        <h5>Navigate</h5>
+        <a href="#about">Story</a>
+        <a href="#collection">Collection</a>
+        <a href="#lookbook">Lookbook</a>
+        <a href="#stores">Stores</a>
+      </div>
+      <div class="footer-col">
+        <h5>Follow</h5>
+        <a href="#">Douyin</a>
+        <a href="#">Xiaohongshu</a>
+        <a href="#">Weibo</a>
+        <a href="#">WeChat</a>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <a href="#">Chongqing, China</a>
+        <a href="#">service@maden.cn</a>
       </div>
     </div>
-  </section>
+    <div class="footer-copy">&copy; 2008–2026 MADEN. All rights reserved.</div>
+  </div>
+</footer>
 
-  <!-- Parallax Quote -->
-  <section class="parallax-quote">
-    <div class="pq-bg" style="background-image:url('https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=1920&q=80')"></div>
-    <div class="pq-overlay"></div>
-    <div class="pq-content reveal">
-      <blockquote>"不追逐潮流，因为经典从不过时。"</blockquote>
-      <p>— MADEN 品牌理念</p>
-    </div>
-  </section>
+<script>
+// Loader
+window.addEventListener('load',()=>{setTimeout(()=>document.getElementById('loader').classList.add('done'),2200)});
 
-  <!-- Stats -->
-  <section class="stats" id="stats">
-    <div class="container">
-      <div class="stats-grid">
-        <div class="stat-item reveal">
-          <div class="stat-num" data-target="16">0</div>
-          <div class="stat-label">年品牌历史</div>
-          <div class="stat-sub">YEARS OF HERITAGE</div>
-        </div>
-        <div class="stat-item reveal">
-          <div class="stat-num" data-target="70">0</div>
-          <div class="stat-label">全渠道店铺</div>
-          <div class="stat-sub">STORES NATIONWIDE</div>
-        </div>
-        <div class="stat-item reveal">
-          <div class="stat-num" data-target="7">0</div>
-          <div class="stat-label">家实体门店</div>
-          <div class="stat-sub">PHYSICAL STORES</div>
-        </div>
-        <div class="stat-item reveal">
-          <div class="stat-num" data-target="1000">0</div>
-          <div class="stat-label">款产品</div>
-          <div class="stat-sub">PRODUCTS</div>
-        </div>
-      </div>
-    </div>
-  </section>
+// Cursor
+const cursor=document.getElementById('cursor'),dot=document.getElementById('cursorDot');
+let mx=0,my=0,cx=0,cy=0;
+document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;dot.style.left=mx+'px';dot.style.top=my+'px'});
+(function loop(){cx+=(mx-cx)*.12;cy+=(my-cy)*.12;cursor.style.left=cx+'px';cursor.style.top=cy+'px';requestAnimationFrame(loop)})();
+document.querySelectorAll('a,.col-item,.lk-img,.cta-btn,.ch-item').forEach(el=>{
+  el.addEventListener('mouseenter',()=>cursor.classList.add('hover'));
+  el.addEventListener('mouseleave',()=>cursor.classList.remove('hover'));
+});
 
-  <!-- Timeline -->
-  <section class="timeline" id="timeline">
-    <div class="container">
-      <p class="section-tag center reveal">MILESTONES</p>
-      <h2 class="section-title center reveal">品牌历程</h2>
-      <div class="tl-track">
-        <div class="tl-line"></div>
-        <div class="tl-item reveal"><div class="tl-dot"></div><div class="tl-year">2008</div><div class="tl-text">三位创始人在重庆创立马登<br><small>梦想开始的地方</small></div></div>
-        <div class="tl-item reveal"><div class="tl-dot"></div><div class="tl-year">2011</div><div class="tl-text">"马登工装"品牌正式诞生<br><small>定位美式复古Americana</small></div></div>
-        <div class="tl-item reveal"><div class="tl-dot"></div><div class="tl-year">2015</div><div class="tl-text">天猫旗舰店上线<br><small>线上渠道全面铺开</small></div></div>
-        <div class="tl-item reveal"><div class="tl-dot"></div><div class="tl-year">2018</div><div class="tl-text">首家实体店落地重庆<br><small>线下体验开启</small></div></div>
-        <div class="tl-item reveal"><div class="tl-dot"></div><div class="tl-year">2020</div><div class="tl-text">抖音直播爆发式增长<br><small>全渠道布局成型</small></div></div>
-        <div class="tl-item reveal"><div class="tl-dot"></div><div class="tl-year">2023</div><div class="tl-text">马登女装、马登男鞋品牌矩阵<br><small>覆盖全品类</small></div></div>
-        <div class="tl-item reveal"><div class="tl-dot"></div><div class="tl-year">2026</div><div class="tl-text">70+店铺 · 7家实体店 · 出海启航<br><small>中国美式工装领军品牌</small></div></div>
-      </div>
-    </div>
-  </section>
+// Reveal
+const obs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('v');obs.unobserve(e.target)}})},{threshold:.12,rootMargin:'0px 0px -60px 0px'});
+document.querySelectorAll('.r,.r-left,.r-right').forEach(el=>obs.observe(el));
 
-  <!-- Stores -->
-  <section class="stores" id="stores">
-    <div class="container">
-      <p class="section-tag center reveal">RETAIL STORES</p>
-      <h2 class="section-title center reveal">实体门店</h2>
-      <div class="stores-grid">
-        <div class="store-card reveal">
-          <div class="store-city">重庆</div>
-          <div class="store-count">5 家门店</div>
-          <ul class="store-list">
-            <li>🏬 解放碑旗舰店</li>
-            <li>🏬 观音桥店</li>
-            <li>🏬 三峡广场店</li>
-            <li>🏬 南坪万达店</li>
-            <li>🏬 杨家坪店</li>
-          </ul>
-        </div>
-        <div class="store-card reveal">
-          <div class="store-city">成都</div>
-          <div class="store-count">2 家门店</div>
-          <ul class="store-list">
-            <li>🏬 春熙路店</li>
-            <li>🏬 太古里店</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
+// Smooth scroll
+document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener('click',e=>{const t=document.querySelector(a.getAttribute('href'));if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth'})}})});
 
-  <!-- Channels -->
-  <section class="channels" id="channels">
-    <div class="container">
-      <p class="section-tag center reveal">SHOP NOW</p>
-      <h2 class="section-title center reveal">购买渠道</h2>
-      <div class="channel-grid">
-        <a class="channel-card reveal" href="https://world.taobao.com/dianpu/34165972.htm" target="_blank" rel="noopener">
-          <div class="channel-icon">🛒</div><div class="channel-name">天猫旗舰店</div><div class="channel-sub">TMALL</div>
-        </a>
-        <a class="channel-card reveal" href="https://www.douyin.com/user/MS4wLjABAAAAJIU0tHMNE7wBLvlwa30WmALTMhsrvdcrHlryVMEB9n0" target="_blank" rel="noopener">
-          <div class="channel-icon">🎵</div><div class="channel-name">抖音旗舰店</div><div class="channel-sub">DOUYIN</div>
-        </a>
-        <a class="channel-card reveal" href="#" target="_blank" rel="noopener">
-          <div class="channel-icon">🔴</div><div class="channel-name">京东旗舰店</div><div class="channel-sub">JD.COM</div>
-        </a>
-        <a class="channel-card reveal" href="#" target="_blank" rel="noopener">
-          <div class="channel-icon">🟠</div><div class="channel-name">拼多多</div><div class="channel-sub">PINDUODUO</div>
-        </a>
-        <a class="channel-card reveal" href="#" target="_blank" rel="noopener">
-          <div class="channel-icon">✅</div><div class="channel-name">得物</div><div class="channel-sub">DEWU / POIZON</div>
-        </a>
-        <a class="channel-card reveal" href="#" target="_blank" rel="noopener">
-          <div class="channel-icon">📍</div><div class="channel-name">实体店</div><div class="channel-sub">7 STORES</div>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA -->
-  <section class="cta">
-    <div class="cta-bg" style="background-image:url('https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=1920&q=80')"></div>
-    <div class="cta-overlay"></div>
-    <div class="cta-content reveal">
-      <h2>JOIN THE CREW</h2>
-      <p>加入马登，探索属于你的美式复古风格</p>
-      <div class="cta-btns">
-        <a href="#channels" class="btn-gold">立即选购</a>
-        <a href="#stores" class="btn-ghost">寻找门店</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <div class="footer-logo">MADEN</div>
-          <p>美式复古工装品牌 · 始于2008</p>
-          <p class="footer-slogan">Born To Work. Made To Last.</p>
-        </div>
-        <div class="footer-links">
-          <h4>快速导航</h4>
-          <a href="#story">品牌故事</a>
-          <a href="#products">产品系列</a>
-          <a href="#stores">实体门店</a>
-          <a href="#channels">购买渠道</a>
-        </div>
-        <div class="footer-links">
-          <h4>关注我们</h4>
-          <a href="#">抖音 @马登工装官方旗舰店</a>
-          <a href="#">小红书 @马登工装</a>
-          <a href="#">微博 @马登工装</a>
-          <a href="#">微信公众号</a>
-        </div>
-        <div class="footer-links">
-          <h4>联系方式</h4>
-          <a href="#">客服微信：MADEN_SERVICE</a>
-          <a href="#">总部：重庆市</a>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>&copy; 2008-2026 MADEN WORKWEAR. All Rights Reserved.</p>
-      </div>
-    </div>
-  </footer>
-
-  <script src="main.js"></script>
+// Lookbook horizontal scroll on wheel
+const strip=document.querySelector('.lookbook-strip');
+if(strip){strip.addEventListener('wheel',e=>{if(Math.abs(e.deltaY)>Math.abs(e.deltaX)){e.preventDefault();strip.scrollLeft+=e.deltaY}},{passive:false})}
+</script>
 </body>
 </html>
