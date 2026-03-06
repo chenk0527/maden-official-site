@@ -8,14 +8,13 @@
   <meta property="og:title" content="MADEN — Americana Workwear Since 2008">
   <meta property="og:description" content="Born To Work. Made To Last. 始于重庆，忠于工装。">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="images/hero.jpg">
+  <meta property="og:image" content="images/ali-harrington.jpg">
   <link rel="icon" href="images/avatar.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@200;300;400;500&display=swap" rel="stylesheet">
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"ClothingStore","name":"MADEN 马登工装","description":"Americana Workwear Since 2008. 始于重庆，忠于工装。","foundingDate":"2008","url":"https://chenk0527.github.io/maden-official-site/","address":{"@type":"PostalAddress","addressLocality":"Chongqing","addressCountry":"CN"},"brand":{"@type":"Brand","name":"MADEN","logo":"images/avatar.jpg"},"numberOfEmployees":{"@type":"QuantitativeValue","minValue":100},"sameAs":["https://www.douyin.com/user/MS4wLjABAAAAJIU0tHMNE7wBLvlwa30WmALTMhsrvdcrHlryVMEB9n0"]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"ClothingStore","name":"MADEN 马登工装","description":"Americana Workwear Since 2008","foundingDate":"2008","url":"https://chenk0527.github.io/maden-official-site/","address":{"@type":"PostalAddress","addressLocality":"Chongqing","addressCountry":"CN"},"brand":{"@type":"Brand","name":"MADEN"},"sameAs":["https://www.douyin.com/user/MS4wLjABAAAAJIU0tHMNE7wBLvlwa30WmALTMhsrvdcrHlryVMEB9n0"]}</script>
   <style>
-/* ===== RESET & BASE ===== */
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
 html{font-size:16px;overflow-x:hidden}
 body{font-family:'Inter',sans-serif;background:#0a0a0a;color:#e8e4df;overflow-x:hidden;cursor:none;-webkit-font-smoothing:antialiased}
@@ -23,21 +22,15 @@ a{color:inherit;text-decoration:none;cursor:none}
 img{display:block;max-width:100%}
 ul{list-style:none}
 ::selection{background:#c9a96e;color:#0a0a0a}
-
-/* ===== CUSTOM CURSOR ===== */
-.cursor{position:fixed;width:12px;height:12px;border:1.5px solid rgba(201,169,110,.6);border-radius:50%;pointer-events:none;z-index:10000;transition:transform .15s,width .2s,height .2s,border-color .2s;transform:translate(-50%,-50%);mix-blend-mode:difference}
-.cursor-dot{position:fixed;width:4px;height:4px;background:#c9a96e;border-radius:50%;pointer-events:none;z-index:10001;transform:translate(-50%,-50%);transition:transform .08s}
+.cursor{position:fixed;width:12px;height:12px;border:1.5px solid rgba(201,169,110,.6);border-radius:50%;pointer-events:none;z-index:10000;transition:transform .15s,width .2s,height .2s;transform:translate(-50%,-50%);mix-blend-mode:difference}
+.cursor-dot{position:fixed;width:4px;height:4px;background:#c9a96e;border-radius:50%;pointer-events:none;z-index:10001;transform:translate(-50%,-50%)}
 .cursor.hover{width:48px;height:48px;border-color:rgba(201,169,110,.3)}
-
-/* ===== LOADER ===== */
 .loader{position:fixed;inset:0;z-index:9999;background:#0a0a0a;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:24px;transition:opacity 1s cubic-bezier(.4,0,.2,1)}
 .loader.done{opacity:0;pointer-events:none}
 .loader-logo{width:64px;height:64px;border-radius:50%;object-fit:cover;opacity:.6}
 .loader-line{width:120px;height:1px;background:#1a1a1a;position:relative;overflow:hidden}
-.loader-line::after{content:'';position:absolute;left:0;top:0;height:100%;width:0;background:#c9a96e;animation:lineLoad 2s cubic-bezier(.4,0,.2,1) forwards}
-@keyframes lineLoad{to{width:100%}}
-
-/* ===== NAV ===== */
+.loader-line::after{content:'';position:absolute;left:0;top:0;height:100%;width:0;background:#c9a96e;animation:ll 2s cubic-bezier(.4,0,.2,1) forwards}
+@keyframes ll{to{width:100%}}
 nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:28px 48px;display:flex;justify-content:space-between;align-items:center;mix-blend-mode:difference}
 .nav-logo{display:flex;align-items:center;gap:12px}
 .nav-avatar{width:32px;height:32px;border-radius:50%;object-fit:cover;opacity:.8}
@@ -47,39 +40,29 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:28px 48px;display:fl
 .nav-right a:hover{opacity:1}
 .hamburger{display:none;background:none;border:none;cursor:none;width:24px;height:16px;position:relative;z-index:1001}
 .hamburger span{position:absolute;left:0;width:100%;height:1px;background:#e8e4df;transition:all .3s}
-.hamburger span:nth-child(1){top:0}
-.hamburger span:nth-child(2){top:7px}
-.hamburger span:nth-child(3){top:14px}
-.hamburger.active span:nth-child(1){top:7px;transform:rotate(45deg)}
-.hamburger.active span:nth-child(2){opacity:0}
-.hamburger.active span:nth-child(3){top:7px;transform:rotate(-45deg)}
+.hamburger span:nth-child(1){top:0}.hamburger span:nth-child(2){top:7px}.hamburger span:nth-child(3){top:14px}
+.hamburger.active span:nth-child(1){top:7px;transform:rotate(45deg)}.hamburger.active span:nth-child(2){opacity:0}.hamburger.active span:nth-child(3){top:7px;transform:rotate(-45deg)}
 .mobile-nav{display:none;position:fixed;inset:0;z-index:999;background:rgba(10,10,10,.97);flex-direction:column;align-items:center;justify-content:center;gap:28px;backdrop-filter:blur(20px)}
 .mobile-nav.open{display:flex}
 .mobile-nav a{font-size:1.1rem;letter-spacing:.4em;text-transform:uppercase;font-weight:300;opacity:.6;transition:opacity .3s}
 .mobile-nav a:hover{opacity:1}
-
-/* ===== HERO ===== */
 .hero{position:relative;height:100vh;min-height:600px;display:flex;align-items:center;justify-content:center;overflow:hidden}
 .hero-media{position:absolute;inset:0}
-.hero-media img{width:100%;height:100%;object-fit:cover;filter:brightness(.3) contrast(1.1);transform:scale(1.05);animation:heroZoom 20s ease-in-out infinite alternate}
-@keyframes heroZoom{0%{transform:scale(1.05)}100%{transform:scale(1.15)}}
+.hero-media img{width:100%;height:100%;object-fit:cover;filter:brightness(.3) contrast(1.1);transform:scale(1.05);animation:hz 20s ease-in-out infinite alternate}
+@keyframes hz{0%{transform:scale(1.05)}100%{transform:scale(1.15)}}
 .hero-center{position:relative;z-index:2;text-align:center;padding:0 24px}
 .hero-label{font-size:.6rem;letter-spacing:.7em;text-transform:uppercase;opacity:.5;margin-bottom:32px;font-weight:300}
-.hero-title{font-family:'Cormorant Garamond',serif;font-size:clamp(5rem,18vw,16rem);font-weight:300;letter-spacing:.15em;line-height:.85;margin-bottom:16px;opacity:0;animation:fadeUp 1.5s 2.2s cubic-bezier(.4,0,.2,1) forwards}
-.hero-sub{font-size:.65rem;letter-spacing:.8em;text-transform:uppercase;font-weight:200;opacity:0;animation:fadeUp 1.2s 2.6s cubic-bezier(.4,0,.2,1) forwards}
+.hero-title{font-family:'Cormorant Garamond',serif;font-size:clamp(5rem,18vw,16rem);font-weight:300;letter-spacing:.15em;line-height:.85;margin-bottom:16px;opacity:0;animation:fu 1.5s 2.2s cubic-bezier(.4,0,.2,1) forwards}
+.hero-sub{font-size:.65rem;letter-spacing:.8em;text-transform:uppercase;font-weight:200;opacity:0;animation:fu 1.2s 2.6s cubic-bezier(.4,0,.2,1) forwards}
 .hero-scroll{position:absolute;bottom:40px;left:50%;transform:translateX(-50%);z-index:2;display:flex;flex-direction:column;align-items:center;gap:12px}
 .hero-scroll span{font-size:.55rem;letter-spacing:.5em;text-transform:uppercase;opacity:.3;font-weight:300}
 .scroll-bar{width:1px;height:48px;background:rgba(255,255,255,.1);position:relative;overflow:hidden}
-.scroll-bar::after{content:'';position:absolute;top:-48px;left:0;width:1px;height:48px;background:rgba(201,169,110,.6);animation:scrollLine 2.5s infinite}
-@keyframes scrollLine{0%{top:-48px}100%{top:48px}}
-@keyframes fadeUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
-
-/* ===== SECTION COMMON ===== */
+.scroll-bar::after{content:'';position:absolute;top:-48px;left:0;width:1px;height:48px;background:rgba(201,169,110,.6);animation:sl 2.5s infinite}
+@keyframes sl{0%{top:-48px}100%{top:48px}}
+@keyframes fu{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
 section{padding:160px 48px}
 .sec-label{font-size:.6rem;letter-spacing:.7em;text-transform:uppercase;opacity:.35;margin-bottom:20px;font-weight:300}
 .sec-title{font-family:'Cormorant Garamond',serif;font-size:clamp(2.4rem,5vw,4rem);font-weight:300;line-height:1.15;letter-spacing:.04em;margin-bottom:48px}
-
-/* ===== ABOUT ===== */
 .about{max-width:1400px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:120px;align-items:center}
 .about-img{position:relative;overflow:hidden;aspect-ratio:3/4}
 .about-img img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s cubic-bezier(.4,0,.2,1)}
@@ -89,51 +72,37 @@ section{padding:160px 48px}
 .about-text p strong{color:#c9a96e;font-weight:400}
 .about-sig{margin-top:48px;font-size:.6rem;letter-spacing:.5em;text-transform:uppercase;opacity:.3;display:flex;align-items:center;gap:20px}
 .about-sig::before{content:'';width:40px;height:1px;background:rgba(201,169,110,.3)}
-
-/* ===== COLLECTION ===== */
 .collection{max-width:1400px;margin:0 auto}
 .col-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:4px}
 .col-item{position:relative;overflow:hidden;aspect-ratio:3/4;cursor:none}
-.col-item img{width:100%;height:100%;object-fit:cover;transition:transform 1.5s cubic-bezier(.4,0,.2,1),filter .8s;filter:brightness(.8) saturate(.9)}
-.col-item:hover img{transform:scale(1.06);filter:brightness(.95) saturate(1)}
+.col-item img{width:100%;height:100%;object-fit:cover;transition:transform 1.5s cubic-bezier(.4,0,.2,1),filter .8s;filter:brightness(.85) saturate(.9)}
+.col-item:hover img{transform:scale(1.06);filter:brightness(1) saturate(1)}
 .col-item-text{position:absolute;bottom:0;left:0;right:0;padding:32px;background:linear-gradient(transparent,rgba(0,0,0,.6));opacity:0;transform:translateY(10px);transition:all .6s cubic-bezier(.4,0,.2,1)}
 .col-item:hover .col-item-text{opacity:1;transform:translateY(0)}
 .col-item-text h3{font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-weight:300;letter-spacing:.1em;margin-bottom:4px}
 .col-item-text span{font-size:.6rem;letter-spacing:.4em;text-transform:uppercase;opacity:.5;font-weight:300}
-
-/* ===== LOOKBOOK (FULL WIDTH) ===== */
 .lookbook-strip{display:flex;gap:4px;overflow-x:auto;overflow-y:hidden;padding:0;scrollbar-width:none;-webkit-overflow-scrolling:touch}
 .lookbook-strip::-webkit-scrollbar{display:none}
 .lookbook-strip .lk-img{flex:0 0 35vw;height:70vh;position:relative;overflow:hidden}
 .lookbook-strip .lk-img img{width:100%;height:100%;object-fit:cover;filter:brightness(.75);transition:filter .8s}
 .lookbook-strip .lk-img:hover img{filter:brightness(.9)}
 .lk-label{position:absolute;bottom:32px;left:32px;font-size:.6rem;letter-spacing:.5em;text-transform:uppercase;opacity:.4;font-weight:300}
-
-/* ===== STATEMENT ===== */
-.statement{min-height:70vh;display:flex;align-items:center;justify-content:center;text-align:center;position:relative}
+.statement{min-height:70vh;display:flex;align-items:center;justify-content:center;text-align:center}
 .statement-text{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,5vw,4.5rem);font-weight:300;line-height:1.3;letter-spacing:.03em;max-width:900px;color:rgba(232,228,223,.7)}
 .statement-text em{font-style:italic;color:#c9a96e}
-
-/* ===== NUMBERS ===== */
 .numbers{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:48px;text-align:center;border-top:1px solid rgba(255,255,255,.05);border-bottom:1px solid rgba(255,255,255,.05);padding:80px 0}
 .num-val{font-family:'Cormorant Garamond',serif;font-size:clamp(3rem,6vw,5rem);font-weight:300;color:#c9a96e;line-height:1;letter-spacing:.05em;margin-bottom:12px}
 .num-label{font-size:.6rem;letter-spacing:.5em;text-transform:uppercase;opacity:.3;font-weight:300}
-
-/* ===== STORES ===== */
 .stores-sec{max-width:1000px;margin:0 auto}
 .stores-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px}
 .store-block h3{font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:300;letter-spacing:.1em;margin-bottom:8px;color:#c9a96e}
 .store-block .store-n{font-size:.6rem;letter-spacing:.5em;text-transform:uppercase;opacity:.3;margin-bottom:24px}
-.store-block li{padding:12px 0;border-bottom:1px solid rgba(255,255,255,.04);font-size:.85rem;font-weight:200;opacity:.5;letter-spacing:.02em}
-
-/* ===== CHANNELS ===== */
+.store-block li{padding:12px 0;border-bottom:1px solid rgba(255,255,255,.04);font-size:.85rem;font-weight:200;opacity:.5}
 .ch-grid{max-width:1000px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(255,255,255,.04)}
 .ch-item{background:#0a0a0a;padding:48px 32px;text-align:center;transition:background .6s}
 .ch-item:hover{background:#111}
 .ch-item h4{font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:300;letter-spacing:.1em;margin-bottom:6px}
 .ch-item span{font-size:.55rem;letter-spacing:.5em;text-transform:uppercase;opacity:.3}
-
-/* ===== CTA ===== */
 .cta-sec{position:relative;min-height:60vh;display:flex;align-items:center;justify-content:center;overflow:hidden;text-align:center}
 .cta-bg{position:absolute;inset:0}
 .cta-bg img{width:100%;height:100%;object-fit:cover;filter:brightness(.2)}
@@ -141,8 +110,6 @@ section{padding:160px 48px}
 .cta-inner h2{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,5vw,4rem);font-weight:300;letter-spacing:.15em;margin-bottom:40px}
 .cta-btn{display:inline-block;padding:16px 56px;border:1px solid rgba(201,169,110,.4);font-size:.7rem;letter-spacing:.5em;text-transform:uppercase;font-weight:300;transition:all .6s cubic-bezier(.4,0,.2,1)}
 .cta-btn:hover{background:#c9a96e;color:#0a0a0a;border-color:#c9a96e}
-
-/* ===== FOOTER ===== */
 footer{padding:80px 48px 40px;border-top:1px solid rgba(255,255,255,.04)}
 .footer-inner{max-width:1400px;margin:0 auto;display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:48px}
 .footer-brand-block{display:flex;align-items:center;gap:16px}
@@ -151,101 +118,43 @@ footer{padding:80px 48px 40px;border-top:1px solid rgba(255,255,255,.04)}
 .footer-brand small{display:block;font-family:'Inter',sans-serif;font-size:.55rem;letter-spacing:.5em;text-transform:uppercase;opacity:.25;margin-top:8px;font-weight:300}
 .footer-cols{display:flex;gap:64px}
 .footer-col h5{font-size:.6rem;letter-spacing:.4em;text-transform:uppercase;opacity:.25;margin-bottom:16px;font-weight:400}
-.footer-col a{display:block;font-size:.75rem;font-weight:200;opacity:.35;padding:4px 0;transition:opacity .3s;letter-spacing:.02em}
+.footer-col a{display:block;font-size:.75rem;font-weight:200;opacity:.35;padding:4px 0;transition:opacity .3s}
 .footer-col a:hover{opacity:.8}
 .footer-copy{width:100%;text-align:center;margin-top:64px;font-size:.55rem;letter-spacing:.3em;opacity:.15;text-transform:uppercase}
-
-/* ===== REVEAL ===== */
-.r{opacity:0;transform:translateY(50px);transition:opacity 1.2s cubic-bezier(.4,0,.2,1),transform 1.2s cubic-bezier(.4,0,.2,1)}
-.r.v{opacity:1;transform:translateY(0)}
-.r-left{opacity:0;transform:translateX(-60px);transition:opacity 1.2s cubic-bezier(.4,0,.2,1),transform 1.2s cubic-bezier(.4,0,.2,1)}
-.r-left.v{opacity:1;transform:translateX(0)}
-.r-right{opacity:0;transform:translateX(60px);transition:opacity 1.2s cubic-bezier(.4,0,.2,1),transform 1.2s cubic-bezier(.4,0,.2,1)}
-.r-right.v{opacity:1;transform:translateX(0)}
-
-/* ===== MOBILE ===== */
-@media(max-width:900px){
-  nav{padding:20px 24px}
-  .nav-right{display:none}
-  .hamburger{display:block}
-  section{padding:100px 24px}
-  .about{grid-template-columns:1fr;gap:48px}
-  .col-grid{grid-template-columns:1fr 1fr;gap:3px}
-  .lookbook-strip .lk-img{flex:0 0 80vw;height:50vh}
-  .numbers{grid-template-columns:repeat(2,1fr);gap:32px;padding:60px 24px}
-  .stores-grid{grid-template-columns:1fr;gap:40px}
-  .ch-grid{grid-template-columns:1fr 1fr}
-  .footer-inner{flex-direction:column}
-  .footer-cols{flex-direction:column;gap:32px}
-}
-@media(max-width:480px){
-  .col-grid{grid-template-columns:1fr}
-  .ch-grid{grid-template-columns:1fr}
-  .hero-title{letter-spacing:.08em}
-  nav{padding:16px 20px}
-}
-/* hide cursor on touch */
-@media(hover:none){.cursor,.cursor-dot{display:none}body{cursor:auto}a{cursor:auto}}
+.r{opacity:0;transform:translateY(50px);transition:opacity 1.2s cubic-bezier(.4,0,.2,1),transform 1.2s cubic-bezier(.4,0,.2,1)}.r.v{opacity:1;transform:translateY(0)}
+.r-left{opacity:0;transform:translateX(-60px);transition:opacity 1.2s cubic-bezier(.4,0,.2,1),transform 1.2s cubic-bezier(.4,0,.2,1)}.r-left.v{opacity:1;transform:translateX(0)}
+.r-right{opacity:0;transform:translateX(60px);transition:opacity 1.2s cubic-bezier(.4,0,.2,1),transform 1.2s cubic-bezier(.4,0,.2,1)}.r-right.v{opacity:1;transform:translateX(0)}
+@media(max-width:900px){nav{padding:20px 24px}.nav-right{display:none}.hamburger{display:block}section{padding:100px 24px}.about{grid-template-columns:1fr;gap:48px}.col-grid{grid-template-columns:1fr 1fr;gap:3px}.lookbook-strip .lk-img{flex:0 0 80vw;height:50vh}.numbers{grid-template-columns:repeat(2,1fr);gap:32px;padding:60px 24px}.stores-grid{grid-template-columns:1fr;gap:40px}.ch-grid{grid-template-columns:1fr 1fr}.footer-inner{flex-direction:column}.footer-cols{flex-direction:column;gap:32px}}
+@media(max-width:480px){.col-grid{grid-template-columns:1fr}.ch-grid{grid-template-columns:1fr}.hero-title{letter-spacing:.08em}nav{padding:16px 20px}}
+@media(hover:none){.cursor,.cursor-dot{display:none}body,a{cursor:auto}}
   </style>
 </head>
 <body>
-
-<!-- Cursor -->
 <div class="cursor" id="cursor"></div>
 <div class="cursor-dot" id="cursorDot"></div>
+<div class="loader" id="loader"><img class="loader-logo" src="images/avatar.jpg" alt="MADEN"><div class="loader-line"></div></div>
 
-<!-- Loader -->
-<div class="loader" id="loader">
-  <img class="loader-logo" src="images/avatar.jpg" alt="MADEN">
-  <div class="loader-line"></div>
-</div>
-
-<!-- Nav -->
 <nav>
-  <div class="nav-logo">
-    <img class="nav-avatar" src="images/avatar.jpg" alt="MADEN">
-    <div class="nav-brand">Maden</div>
-  </div>
-  <div class="nav-right">
-    <a href="#about">Story</a>
-    <a href="#collection">Collection</a>
-    <a href="#lookbook">Lookbook</a>
-    <a href="#stores">Stores</a>
-    <a href="#shop">Shop</a>
-  </div>
+  <div class="nav-logo"><img class="nav-avatar" src="images/avatar.jpg" alt="MADEN"><div class="nav-brand">Maden</div></div>
+  <div class="nav-right"><a href="#about">Story</a><a href="#collection">Collection</a><a href="#lookbook">Lookbook</a><a href="#stores">Stores</a><a href="#shop">Shop</a></div>
   <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
 </nav>
+<div class="mobile-nav" id="mobileNav"><a href="#about">Story</a><a href="#collection">Collection</a><a href="#lookbook">Lookbook</a><a href="#stores">Stores</a><a href="#shop">Shop</a></div>
 
-<!-- Mobile Nav -->
-<div class="mobile-nav" id="mobileNav">
-  <a href="#about">Story</a>
-  <a href="#collection">Collection</a>
-  <a href="#lookbook">Lookbook</a>
-  <a href="#stores">Stores</a>
-  <a href="#shop">Shop</a>
-</div>
-
-<!-- Hero -->
 <section class="hero" id="hero">
-  <div class="hero-media">
-    <img src="images/lookbook-1.jpg" alt="MADEN Americana Workwear">
-  </div>
+  <div class="hero-media"><img src="images/ali-harrington.jpg" alt="MADEN 哈灵顿夹克"></div>
   <div class="hero-center">
     <p class="hero-label">Americana Workwear Since 2008</p>
     <h1 class="hero-title">MADEN</h1>
     <p class="hero-sub">Born To Work · Made To Last</p>
   </div>
-  <div class="hero-scroll">
-    <span>Scroll</span>
-    <div class="scroll-bar"></div>
-  </div>
+  <div class="hero-scroll"><span>Scroll</span><div class="scroll-bar"></div></div>
 </section>
 
-<!-- About -->
 <section id="about">
   <div class="about">
     <div class="about-img r-left">
-      <img src="images/model-4.jpg" alt="MADEN 工装细节">
+      <img src="images/ali-jeans.jpg" alt="MADEN 赤耳牛仔裤">
       <div class="about-badge">Since 2008</div>
     </div>
     <div class="about-text r-right">
@@ -258,63 +167,37 @@ footer{padding:80px 48px 40px;border-top:1px solid rgba(255,255,255,.04)}
   </div>
 </section>
 
-<!-- Collection -->
 <section id="collection">
   <div class="collection">
     <p class="sec-label r">Collection</p>
     <h2 class="sec-title r">产品系列</h2>
     <div class="col-grid">
-      <div class="col-item">
-        <img src="images/jacket-yellow.jpg" alt="MADEN 工装夹克">
-        <div class="col-item-text"><h3>Jackets</h3><span>工装夹克</span></div>
-      </div>
-      <div class="col-item">
-        <img src="images/lookbook-4.jpg" alt="MADEN 工装裤">
-        <div class="col-item-text"><h3>Pants</h3><span>复古裤装</span></div>
-      </div>
-      <div class="col-item">
-        <img src="images/lookbook-2.jpg" alt="MADEN 穿搭">
-        <div class="col-item-text"><h3>Tops</h3><span>上装系列</span></div>
-      </div>
-      <div class="col-item">
-        <img src="images/model-1.jpg" alt="MADEN 产品">
-        <div class="col-item-text"><h3>Vest</h3><span>工装马甲</span></div>
-      </div>
-      <div class="col-item">
-        <img src="images/model-3.jpg" alt="MADEN 细节">
-        <div class="col-item-text"><h3>Shirts</h3><span>衬衫系列</span></div>
-      </div>
-      <div class="col-item">
-        <img src="images/jacket-3.jpg" alt="MADEN 外套">
-        <div class="col-item-text"><h3>Outerwear</h3><span>风衣外套</span></div>
-      </div>
+      <div class="col-item"><img src="images/ali-harrington.jpg" alt="MADEN 哈灵顿夹克"><div class="col-item-text"><h3>Jackets</h3><span>工装夹克</span></div></div>
+      <div class="col-item"><img src="images/ali-og107.jpg" alt="MADEN OG-107工装裤"><div class="col-item-text"><h3>Pants</h3><span>复古裤装</span></div></div>
+      <div class="col-item"><img src="images/ali-sweater.jpg" alt="MADEN 印第安毛衣"><div class="col-item-text"><h3>Knitwear</h3><span>针织系列</span></div></div>
+      <div class="col-item"><img src="images/ali-halfzip.jpg" alt="MADEN 半拉链夹克"><div class="col-item-text"><h3>Outerwear</h3><span>外套系列</span></div></div>
+      <div class="col-item"><img src="images/ali-jeans.jpg" alt="MADEN 赤耳牛仔"><div class="col-item-text"><h3>Denim</h3><span>牛仔系列</span></div></div>
+      <div class="col-item"><img src="images/ali-fleece.jpg" alt="MADEN 摇粒绒"><div class="col-item-text"><h3>Fleece</h3><span>抓绒系列</span></div></div>
     </div>
   </div>
 </section>
 
-<!-- Lookbook -->
 <section id="lookbook" style="padding-left:0;padding-right:0">
   <div style="padding:0 48px"><p class="sec-label r">Lookbook</p><h2 class="sec-title r">Spring / Summer 2026</h2></div>
   <div class="lookbook-strip">
-    <div class="lk-img"><img src="images/lookbook-1.jpg" alt="MADEN 复古穿搭"><div class="lk-label">Look 01</div></div>
-    <div class="lk-img"><img src="images/lookbook-3.jpg" alt="MADEN 细节"><div class="lk-label">Look 02</div></div>
-    <div class="lk-img"><img src="images/lookbook-4.jpg" alt="MADEN 休闲"><div class="lk-label">Look 03</div></div>
-    <div class="lk-img"><img src="images/model-4.jpg" alt="MADEN 工艺"><div class="lk-label">Look 04</div></div>
-    <div class="lk-img"><img src="images/model-3.jpg" alt="MADEN 质感"><div class="lk-label">Look 05</div></div>
-    <div class="lk-img"><img src="images/lookbook-2.jpg" alt="MADEN 穿搭"><div class="lk-label">Look 06</div></div>
-    <div class="lk-img"><img src="images/model-2.jpg" alt="MADEN 夹克"><div class="lk-label">Look 07</div></div>
-    <div class="lk-img"><img src="images/model-1.jpg" alt="MADEN 工装"><div class="lk-label">Look 08</div></div>
+    <div class="lk-img"><img src="images/ali-harrington.jpg" alt=""><div class="lk-label">Look 01 · Harrington</div></div>
+    <div class="lk-img"><img src="images/ali-jeans.jpg" alt=""><div class="lk-label">Look 02 · Selvedge</div></div>
+    <div class="lk-img"><img src="images/ali-sweater.jpg" alt=""><div class="lk-label">Look 03 · Knitwear</div></div>
+    <div class="lk-img"><img src="images/ali-halfzip.jpg" alt=""><div class="lk-label">Look 04 · Half-Zip</div></div>
+    <div class="lk-img"><img src="images/ali-og107.jpg" alt=""><div class="lk-label">Look 05 · OG-107</div></div>
+    <div class="lk-img"><img src="images/ali-fleece.jpg" alt=""><div class="lk-label">Look 06 · Fleece</div></div>
   </div>
 </section>
 
-<!-- Statement -->
 <section class="statement">
-  <div class="statement-text r">
-    "不追逐潮流，<br>因为<em>经典</em>从不过时。"
-  </div>
+  <div class="statement-text r">"不追逐潮流，<br>因为<em>经典</em>从不过时。"</div>
 </section>
 
-<!-- Numbers -->
 <section>
   <div class="numbers">
     <div class="r"><div class="num-val" data-count="2008">0</div><div class="num-label">Founded</div></div>
@@ -324,36 +207,17 @@ footer{padding:80px 48px 40px;border-top:1px solid rgba(255,255,255,.04)}
   </div>
 </section>
 
-<!-- Stores -->
 <section id="stores">
   <div class="stores-sec">
     <p class="sec-label r">Retail Stores</p>
     <h2 class="sec-title r">实体门店</h2>
     <div class="stores-grid">
-      <div class="store-block r-left">
-        <h3>Chongqing</h3>
-        <div class="store-n">5 Locations</div>
-        <ul>
-          <li>解放碑旗舰店</li>
-          <li>观音桥店</li>
-          <li>三峡广场店</li>
-          <li>南坪万达店</li>
-          <li>杨家坪店</li>
-        </ul>
-      </div>
-      <div class="store-block r-right">
-        <h3>Chengdu</h3>
-        <div class="store-n">2 Locations</div>
-        <ul>
-          <li>春熙路店</li>
-          <li>太古里店</li>
-        </ul>
-      </div>
+      <div class="store-block r-left"><h3>Chongqing</h3><div class="store-n">5 Locations</div><ul><li>解放碑旗舰店</li><li>观音桥店</li><li>三峡广场店</li><li>南坪万达店</li><li>杨家坪店</li></ul></div>
+      <div class="store-block r-right"><h3>Chengdu</h3><div class="store-n">2 Locations</div><ul><li>春熙路店</li><li>太古里店</li></ul></div>
     </div>
   </div>
 </section>
 
-<!-- Channels -->
 <section id="shop">
   <div style="max-width:1000px;margin:0 auto"><p class="sec-label r">Shop Now</p><h2 class="sec-title r">购买渠道</h2></div>
   <div class="ch-grid">
@@ -366,83 +230,38 @@ footer{padding:80px 48px 40px;border-top:1px solid rgba(255,255,255,.04)}
   </div>
 </section>
 
-<!-- CTA -->
 <section class="cta-sec">
-  <div class="cta-bg"><img src="images/lookbook-3.jpg" alt="MADEN"></div>
-  <div class="cta-inner r">
-    <h2>Join The Crew</h2>
-    <a href="#shop" class="cta-btn">Shop Now</a>
-  </div>
+  <div class="cta-bg"><img src="images/ali-sweater.jpg" alt="MADEN"></div>
+  <div class="cta-inner r"><h2>Join The Crew</h2><a href="#shop" class="cta-btn">Shop Now</a></div>
 </section>
 
-<!-- Footer -->
 <footer>
   <div class="footer-inner">
-    <div>
-      <div class="footer-brand-block">
-        <img class="footer-avatar" src="images/avatar.jpg" alt="MADEN">
-        <div class="footer-brand">MADEN</div>
-      </div>
-      <small style="display:block;font-size:.55rem;letter-spacing:.5em;text-transform:uppercase;opacity:.25;margin-top:12px;font-weight:300">Americana Workwear Since 2008</small>
-    </div>
+    <div><div class="footer-brand-block"><img class="footer-avatar" src="images/avatar.jpg" alt="MADEN"><div class="footer-brand">MADEN</div></div><small style="display:block;font-size:.55rem;letter-spacing:.5em;text-transform:uppercase;opacity:.25;margin-top:12px;font-weight:300">Americana Workwear Since 2008</small></div>
     <div class="footer-cols">
-      <div class="footer-col">
-        <h5>Navigate</h5>
-        <a href="#about">Story</a>
-        <a href="#collection">Collection</a>
-        <a href="#lookbook">Lookbook</a>
-        <a href="#stores">Stores</a>
-      </div>
-      <div class="footer-col">
-        <h5>Follow</h5>
-        <a href="https://www.douyin.com/user/MS4wLjABAAAAJIU0tHMNE7wBLvlwa30WmALTMhsrvdcrHlryVMEB9n0" target="_blank">Douyin 抖音</a>
-        <a href="#">Xiaohongshu 小红书</a>
-        <a href="#">Weibo 微博</a>
-        <a href="#">WeChat 微信</a>
-      </div>
-      <div class="footer-col">
-        <h5>Contact</h5>
-        <a href="#">Chongqing, China</a>
-        <a href="mailto:service@madenfushi.com">service@madenfushi.com</a>
-      </div>
+      <div class="footer-col"><h5>Navigate</h5><a href="#about">Story</a><a href="#collection">Collection</a><a href="#lookbook">Lookbook</a><a href="#stores">Stores</a></div>
+      <div class="footer-col"><h5>Follow</h5><a href="https://www.douyin.com/user/MS4wLjABAAAAJIU0tHMNE7wBLvlwa30WmALTMhsrvdcrHlryVMEB9n0" target="_blank">Douyin 抖音</a><a href="#">Xiaohongshu 小红书</a><a href="#">Weibo 微博</a><a href="#">WeChat 微信</a></div>
+      <div class="footer-col"><h5>Contact</h5><a href="#">Chongqing, China</a><a href="mailto:service@madenfushi.com">service@madenfushi.com</a></div>
     </div>
     <div class="footer-copy">&copy; 2008–2026 MADEN 马登工装. All rights reserved.</div>
   </div>
 </footer>
 
 <script>
-// Loader
 window.addEventListener('load',()=>{setTimeout(()=>document.getElementById('loader').classList.add('done'),2200)});
-
-// Cursor
-const cursor=document.getElementById('cursor'),dot=document.getElementById('cursorDot');
-let mx=0,my=0,cx=0,cy=0;
+const cursor=document.getElementById('cursor'),dot=document.getElementById('cursorDot');let mx=0,my=0,cx=0,cy=0;
 document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;dot.style.left=mx+'px';dot.style.top=my+'px'});
-(function loop(){cx+=(mx-cx)*.12;cy+=(my-cy)*.12;cursor.style.left=cx+'px';cursor.style.top=cy+'px';requestAnimationFrame(loop)})();
-document.querySelectorAll('a,.col-item,.lk-img,.cta-btn,.ch-item,.hamburger').forEach(el=>{
-  el.addEventListener('mouseenter',()=>cursor.classList.add('hover'));
-  el.addEventListener('mouseleave',()=>cursor.classList.remove('hover'));
-});
-
-// Hamburger
-const hamburger=document.getElementById('hamburger'),mobileNav=document.getElementById('mobileNav');
-hamburger.addEventListener('click',()=>{hamburger.classList.toggle('active');mobileNav.classList.toggle('open');document.body.style.overflow=mobileNav.classList.contains('open')?'hidden':''});
-mobileNav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{hamburger.classList.remove('active');mobileNav.classList.remove('open');document.body.style.overflow=''}));
-
-// Reveal
-const obs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('v');obs.unobserve(e.target)}})},{threshold:.12,rootMargin:'0px 0px -60px 0px'});
+(function l(){cx+=(mx-cx)*.12;cy+=(my-cy)*.12;cursor.style.left=cx+'px';cursor.style.top=cy+'px';requestAnimationFrame(l)})();
+document.querySelectorAll('a,.col-item,.lk-img,.cta-btn,.ch-item,.hamburger').forEach(el=>{el.addEventListener('mouseenter',()=>cursor.classList.add('hover'));el.addEventListener('mouseleave',()=>cursor.classList.remove('hover'))});
+const hb=document.getElementById('hamburger'),mn=document.getElementById('mobileNav');
+hb.addEventListener('click',()=>{hb.classList.toggle('active');mn.classList.toggle('open');document.body.style.overflow=mn.classList.contains('open')?'hidden':''});
+mn.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{hb.classList.remove('active');mn.classList.remove('open');document.body.style.overflow=''}));
+const obs=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('v');obs.unobserve(x.target)}})},{threshold:.12,rootMargin:'0px 0px -60px 0px'});
 document.querySelectorAll('.r,.r-left,.r-right').forEach(el=>obs.observe(el));
-
-// Number counter
-const numObs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){const el=e.target;const target=parseInt(el.dataset.count);const isYear=target>1900;const dur=isYear?1500:2000;const start=performance.now();(function anim(now){const p=Math.min((now-start)/dur,1);const eased=1-Math.pow(1-p,3);const val=Math.floor(eased*target);el.textContent=isYear?val:(val+(target>=70?'+':''));if(p<1)requestAnimationFrame(anim);else el.textContent=isYear?target:target+(target>=10?'+':'');})(start);numObs.unobserve(el)}})},{threshold:.5});
-document.querySelectorAll('.num-val[data-count]').forEach(el=>numObs.observe(el));
-
-// Smooth scroll
+const nobs=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting){const el=x.target,t=parseInt(el.dataset.count),y=t>1900,d=y?1500:2000,s=performance.now();(function a(n){const p=Math.min((n-s)/d,1),v=Math.floor((1-Math.pow(1-p,3))*t);el.textContent=y?v:(v+(t>=10?'+':''));if(p<1)requestAnimationFrame(a);else el.textContent=y?t:t+(t>=10?'+':'')})(s);nobs.unobserve(el)}})},{threshold:.5});
+document.querySelectorAll('.num-val[data-count]').forEach(el=>nobs.observe(el));
 document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener('click',e=>{const t=document.querySelector(a.getAttribute('href'));if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth'})}})});
-
-// Lookbook horizontal scroll on wheel
-const strip=document.querySelector('.lookbook-strip');
-if(strip){strip.addEventListener('wheel',e=>{if(Math.abs(e.deltaY)>Math.abs(e.deltaX)){e.preventDefault();strip.scrollLeft+=e.deltaY}},{passive:false})}
+const strip=document.querySelector('.lookbook-strip');if(strip){strip.addEventListener('wheel',e=>{if(Math.abs(e.deltaY)>Math.abs(e.deltaX)){e.preventDefault();strip.scrollLeft+=e.deltaY}},{passive:false})}
 </script>
 </body>
 </html>
