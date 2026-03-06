@@ -4,21 +4,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
   <title>MADEN — Americana Workwear Since 2008</title>
-  <meta name="description" content="MADEN. Americana Workwear. Born To Work. Made To Last. Since 2008.">
-  <meta property="og:title" content="MADEN — Americana Workwear">
-  <meta property="og:description" content="Born To Work. Made To Last. Since 2008.">
+  <meta name="description" content="MADEN 马登工装. Americana Workwear. Born To Work. Made To Last. 始于重庆，忠于工装。Since 2008.">
+  <meta property="og:title" content="MADEN — Americana Workwear Since 2008">
+  <meta property="og:description" content="Born To Work. Made To Last. 始于重庆，忠于工装。">
   <meta property="og:type" content="website">
+  <meta property="og:image" content="images/hero.jpg">
+  <link rel="icon" href="images/avatar.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@200;300;400;500&display=swap" rel="stylesheet">
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"ClothingStore","name":"MADEN","description":"Americana Workwear Since 2008","foundingDate":"2008","address":{"@type":"PostalAddress","addressLocality":"Chongqing","addressCountry":"CN"}}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"ClothingStore","name":"MADEN 马登工装","description":"Americana Workwear Since 2008. 始于重庆，忠于工装。","foundingDate":"2008","url":"https://chenk0527.github.io/maden-official-site/","address":{"@type":"PostalAddress","addressLocality":"Chongqing","addressCountry":"CN"},"brand":{"@type":"Brand","name":"MADEN","logo":"images/avatar.jpg"},"numberOfEmployees":{"@type":"QuantitativeValue","minValue":100},"sameAs":["https://www.douyin.com/user/MS4wLjABAAAAJIU0tHMNE7wBLvlwa30WmALTMhsrvdcrHlryVMEB9n0"]}</script>
   <style>
 /* ===== RESET & BASE ===== */
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
-html{font-size:16px;scroll-behavior:auto;overflow-x:hidden}
+html{font-size:16px;overflow-x:hidden}
 body{font-family:'Inter',sans-serif;background:#0a0a0a;color:#e8e4df;overflow-x:hidden;cursor:none;-webkit-font-smoothing:antialiased}
 a{color:inherit;text-decoration:none;cursor:none}
 img{display:block;max-width:100%}
+ul{list-style:none}
 ::selection{background:#c9a96e;color:#0a0a0a}
 
 /* ===== CUSTOM CURSOR ===== */
@@ -27,24 +30,38 @@ img{display:block;max-width:100%}
 .cursor.hover{width:48px;height:48px;border-color:rgba(201,169,110,.3)}
 
 /* ===== LOADER ===== */
-.loader{position:fixed;inset:0;z-index:9999;background:#0a0a0a;display:flex;align-items:center;justify-content:center;transition:opacity 1s cubic-bezier(.4,0,.2,1)}
+.loader{position:fixed;inset:0;z-index:9999;background:#0a0a0a;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:24px;transition:opacity 1s cubic-bezier(.4,0,.2,1)}
 .loader.done{opacity:0;pointer-events:none}
+.loader-logo{width:64px;height:64px;border-radius:50%;object-fit:cover;opacity:.6}
 .loader-line{width:120px;height:1px;background:#1a1a1a;position:relative;overflow:hidden}
 .loader-line::after{content:'';position:absolute;left:0;top:0;height:100%;width:0;background:#c9a96e;animation:lineLoad 2s cubic-bezier(.4,0,.2,1) forwards}
 @keyframes lineLoad{to{width:100%}}
 
 /* ===== NAV ===== */
 nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:28px 48px;display:flex;justify-content:space-between;align-items:center;mix-blend-mode:difference}
+.nav-logo{display:flex;align-items:center;gap:12px}
+.nav-avatar{width:32px;height:32px;border-radius:50%;object-fit:cover;opacity:.8}
 .nav-brand{font-size:1.1rem;letter-spacing:.45em;font-weight:300;text-transform:uppercase}
 .nav-right{display:flex;gap:40px;align-items:center}
 .nav-right a{font-size:.7rem;letter-spacing:.3em;text-transform:uppercase;font-weight:300;opacity:.6;transition:opacity .4s}
 .nav-right a:hover{opacity:1}
-.menu-btn{display:none;background:none;border:none;color:inherit;font-size:.7rem;letter-spacing:.3em;text-transform:uppercase;font-weight:300;cursor:none;opacity:.6}
+.hamburger{display:none;background:none;border:none;cursor:none;width:24px;height:16px;position:relative;z-index:1001}
+.hamburger span{position:absolute;left:0;width:100%;height:1px;background:#e8e4df;transition:all .3s}
+.hamburger span:nth-child(1){top:0}
+.hamburger span:nth-child(2){top:7px}
+.hamburger span:nth-child(3){top:14px}
+.hamburger.active span:nth-child(1){top:7px;transform:rotate(45deg)}
+.hamburger.active span:nth-child(2){opacity:0}
+.hamburger.active span:nth-child(3){top:7px;transform:rotate(-45deg)}
+.mobile-nav{display:none;position:fixed;inset:0;z-index:999;background:rgba(10,10,10,.97);flex-direction:column;align-items:center;justify-content:center;gap:28px;backdrop-filter:blur(20px)}
+.mobile-nav.open{display:flex}
+.mobile-nav a{font-size:1.1rem;letter-spacing:.4em;text-transform:uppercase;font-weight:300;opacity:.6;transition:opacity .3s}
+.mobile-nav a:hover{opacity:1}
 
 /* ===== HERO ===== */
-.hero{position:relative;height:100vh;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.hero{position:relative;height:100vh;min-height:600px;display:flex;align-items:center;justify-content:center;overflow:hidden}
 .hero-media{position:absolute;inset:0}
-.hero-media img{width:100%;height:100%;object-fit:cover;filter:brightness(.35) contrast(1.1);transform:scale(1.05);animation:heroZoom 20s ease-in-out infinite alternate}
+.hero-media img{width:100%;height:100%;object-fit:cover;filter:brightness(.3) contrast(1.1);transform:scale(1.05);animation:heroZoom 20s ease-in-out infinite alternate}
 @keyframes heroZoom{0%{transform:scale(1.05)}100%{transform:scale(1.15)}}
 .hero-center{position:relative;z-index:2;text-align:center;padding:0 24px}
 .hero-label{font-size:.6rem;letter-spacing:.7em;text-transform:uppercase;opacity:.5;margin-bottom:32px;font-weight:300}
@@ -60,13 +77,14 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:28px 48px;display:fl
 /* ===== SECTION COMMON ===== */
 section{padding:160px 48px}
 .sec-label{font-size:.6rem;letter-spacing:.7em;text-transform:uppercase;opacity:.35;margin-bottom:20px;font-weight:300}
-.sec-title{font-family:'Cormorant Garamond',serif;font-size:clamp(2.4rem,5vw,4rem);font-weight:300;line-height:1.15;letter-spacing:.04em;margin-bottom:40px}
+.sec-title{font-family:'Cormorant Garamond',serif;font-size:clamp(2.4rem,5vw,4rem);font-weight:300;line-height:1.15;letter-spacing:.04em;margin-bottom:48px}
 
 /* ===== ABOUT ===== */
 .about{max-width:1400px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:120px;align-items:center}
 .about-img{position:relative;overflow:hidden;aspect-ratio:3/4}
 .about-img img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s cubic-bezier(.4,0,.2,1)}
 .about-img:hover img{transform:scale(1.04)}
+.about-badge{position:absolute;bottom:24px;right:24px;background:rgba(201,169,110,.9);color:#0a0a0a;font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:600;letter-spacing:.15em;padding:10px 18px}
 .about-text p{font-size:.9rem;line-height:2;font-weight:200;color:rgba(232,228,223,.5);margin-bottom:24px;letter-spacing:.02em}
 .about-text p strong{color:#c9a96e;font-weight:400}
 .about-sig{margin-top:48px;font-size:.6rem;letter-spacing:.5em;text-transform:uppercase;opacity:.3;display:flex;align-items:center;gap:20px}
@@ -75,7 +93,7 @@ section{padding:160px 48px}
 /* ===== COLLECTION ===== */
 .collection{max-width:1400px;margin:0 auto}
 .col-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:4px}
-.col-item{position:relative;overflow:hidden;aspect-ratio:2/3;cursor:none}
+.col-item{position:relative;overflow:hidden;aspect-ratio:3/4;cursor:none}
 .col-item img{width:100%;height:100%;object-fit:cover;transition:transform 1.5s cubic-bezier(.4,0,.2,1),filter .8s;filter:brightness(.8) saturate(.9)}
 .col-item:hover img{transform:scale(1.06);filter:brightness(.95) saturate(1)}
 .col-item-text{position:absolute;bottom:0;left:0;right:0;padding:32px;background:linear-gradient(transparent,rgba(0,0,0,.6));opacity:0;transform:translateY(10px);transition:all .6s cubic-bezier(.4,0,.2,1)}
@@ -83,15 +101,16 @@ section{padding:160px 48px}
 .col-item-text h3{font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-weight:300;letter-spacing:.1em;margin-bottom:4px}
 .col-item-text span{font-size:.6rem;letter-spacing:.4em;text-transform:uppercase;opacity:.5;font-weight:300}
 
-/* ===== LOOKBOOK (FULL WIDTH IMAGES) ===== */
-.lookbook-strip{display:flex;gap:4px;overflow:hidden;padding:0}
-.lookbook-strip .lk-img{flex:0 0 40vw;height:70vh;position:relative;overflow:hidden}
+/* ===== LOOKBOOK (FULL WIDTH) ===== */
+.lookbook-strip{display:flex;gap:4px;overflow-x:auto;overflow-y:hidden;padding:0;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.lookbook-strip::-webkit-scrollbar{display:none}
+.lookbook-strip .lk-img{flex:0 0 35vw;height:70vh;position:relative;overflow:hidden}
 .lookbook-strip .lk-img img{width:100%;height:100%;object-fit:cover;filter:brightness(.75);transition:filter .8s}
 .lookbook-strip .lk-img:hover img{filter:brightness(.9)}
 .lk-label{position:absolute;bottom:32px;left:32px;font-size:.6rem;letter-spacing:.5em;text-transform:uppercase;opacity:.4;font-weight:300}
 
 /* ===== STATEMENT ===== */
-.statement{min-height:80vh;display:flex;align-items:center;justify-content:center;text-align:center;position:relative}
+.statement{min-height:70vh;display:flex;align-items:center;justify-content:center;text-align:center;position:relative}
 .statement-text{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,5vw,4.5rem);font-weight:300;line-height:1.3;letter-spacing:.03em;max-width:900px;color:rgba(232,228,223,.7)}
 .statement-text em{font-style:italic;color:#c9a96e}
 
@@ -117,7 +136,7 @@ section{padding:160px 48px}
 /* ===== CTA ===== */
 .cta-sec{position:relative;min-height:60vh;display:flex;align-items:center;justify-content:center;overflow:hidden;text-align:center}
 .cta-bg{position:absolute;inset:0}
-.cta-bg img{width:100%;height:100%;object-fit:cover;filter:brightness(.25)}
+.cta-bg img{width:100%;height:100%;object-fit:cover;filter:brightness(.2)}
 .cta-inner{position:relative;z-index:2}
 .cta-inner h2{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,5vw,4rem);font-weight:300;letter-spacing:.15em;margin-bottom:40px}
 .cta-btn{display:inline-block;padding:16px 56px;border:1px solid rgba(201,169,110,.4);font-size:.7rem;letter-spacing:.5em;text-transform:uppercase;font-weight:300;transition:all .6s cubic-bezier(.4,0,.2,1)}
@@ -126,6 +145,8 @@ section{padding:160px 48px}
 /* ===== FOOTER ===== */
 footer{padding:80px 48px 40px;border-top:1px solid rgba(255,255,255,.04)}
 .footer-inner{max-width:1400px;margin:0 auto;display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:48px}
+.footer-brand-block{display:flex;align-items:center;gap:16px}
+.footer-avatar{width:40px;height:40px;border-radius:50%;object-fit:cover;opacity:.6}
 .footer-brand{font-family:'Cormorant Garamond',serif;font-size:1.8rem;font-weight:300;letter-spacing:.2em}
 .footer-brand small{display:block;font-family:'Inter',sans-serif;font-size:.55rem;letter-spacing:.5em;text-transform:uppercase;opacity:.25;margin-top:8px;font-weight:300}
 .footer-cols{display:flex;gap:64px}
@@ -145,11 +166,11 @@ footer{padding:80px 48px 40px;border-top:1px solid rgba(255,255,255,.04)}
 /* ===== MOBILE ===== */
 @media(max-width:900px){
   nav{padding:20px 24px}
-  .nav-right a{display:none}
-  .menu-btn{display:block}
+  .nav-right{display:none}
+  .hamburger{display:block}
   section{padding:100px 24px}
   .about{grid-template-columns:1fr;gap:48px}
-  .col-grid{grid-template-columns:1fr 1fr}
+  .col-grid{grid-template-columns:1fr 1fr;gap:3px}
   .lookbook-strip .lk-img{flex:0 0 80vw;height:50vh}
   .numbers{grid-template-columns:repeat(2,1fr);gap:32px;padding:60px 24px}
   .stores-grid{grid-template-columns:1fr;gap:40px}
@@ -163,6 +184,8 @@ footer{padding:80px 48px 40px;border-top:1px solid rgba(255,255,255,.04)}
   .hero-title{letter-spacing:.08em}
   nav{padding:16px 20px}
 }
+/* hide cursor on touch */
+@media(hover:none){.cursor,.cursor-dot{display:none}body{cursor:auto}a{cursor:auto}}
   </style>
 </head>
 <body>
@@ -172,11 +195,17 @@ footer{padding:80px 48px 40px;border-top:1px solid rgba(255,255,255,.04)}
 <div class="cursor-dot" id="cursorDot"></div>
 
 <!-- Loader -->
-<div class="loader" id="loader"><div class="loader-line"></div></div>
+<div class="loader" id="loader">
+  <img class="loader-logo" src="images/avatar.jpg" alt="MADEN">
+  <div class="loader-line"></div>
+</div>
 
 <!-- Nav -->
 <nav>
-  <div class="nav-brand">Maden</div>
+  <div class="nav-logo">
+    <img class="nav-avatar" src="images/avatar.jpg" alt="MADEN">
+    <div class="nav-brand">Maden</div>
+  </div>
   <div class="nav-right">
     <a href="#about">Story</a>
     <a href="#collection">Collection</a>
@@ -184,12 +213,22 @@ footer{padding:80px 48px 40px;border-top:1px solid rgba(255,255,255,.04)}
     <a href="#stores">Stores</a>
     <a href="#shop">Shop</a>
   </div>
+  <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
 </nav>
+
+<!-- Mobile Nav -->
+<div class="mobile-nav" id="mobileNav">
+  <a href="#about">Story</a>
+  <a href="#collection">Collection</a>
+  <a href="#lookbook">Lookbook</a>
+  <a href="#stores">Stores</a>
+  <a href="#shop">Shop</a>
+</div>
 
 <!-- Hero -->
 <section class="hero" id="hero">
   <div class="hero-media">
-    <img src="https://images.unsplash.com/photo-1445205170230-053b83016050?w=1920&q=80" alt="MADEN" referrerpolicy="no-referrer">
+    <img src="images/hero.jpg" alt="MADEN Americana Workwear">
   </div>
   <div class="hero-center">
     <p class="hero-label">Americana Workwear Since 2008</p>
@@ -206,12 +245,13 @@ footer{padding:80px 48px 40px;border-top:1px solid rgba(255,255,255,.04)}
 <section id="about">
   <div class="about">
     <div class="about-img r-left">
-      <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=900&q=80" alt="MADEN Workwear" referrerpolicy="no-referrer">
+      <img src="images/jacket-detroit.jpg" alt="MADEN 底特律工装夹克">
+      <div class="about-badge">Since 2008</div>
     </div>
     <div class="about-text r-right">
       <p class="sec-label">Our Story</p>
       <h2 class="sec-title">始于重庆，<br>忠于工装。</h2>
-      <p>2008年，三位热爱美式复古文化的年轻人在重庆创立了马登。从一间小工作室到如今全渠道70+店铺的品牌版图，马登始终只做一件事——<strong>最纯正的美式复古工装</strong>。</p>
+      <p>2008年，三位热爱美式复古文化的年轻人在重庆创立了马登。从一间小工作室到如今全渠道70+店铺、7家实体门店的品牌版图，马登始终只做一件事——<strong>最纯正的美式复古工装</strong>。</p>
       <p>每一件马登工装，都承载着 Americana 精神：坚韧、务实、不妥协。不追逐潮流，因为经典从不过时。</p>
       <div class="about-sig">Chongqing, China · Est. 2008</div>
     </div>
@@ -225,28 +265,28 @@ footer{padding:80px 48px 40px;border-top:1px solid rgba(255,255,255,.04)}
     <h2 class="sec-title r">产品系列</h2>
     <div class="col-grid">
       <div class="col-item">
-        <img src="https://images.unsplash.com/photo-1548126032-079a0fb0099d?w=800&q=80" alt="Jackets" referrerpolicy="no-referrer">
+        <img src="images/jacket-ma1.jpg" alt="MADEN 飞行夹克 MA-1">
         <div class="col-item-text"><h3>Jackets</h3><span>工装夹克</span></div>
       </div>
       <div class="col-item">
-        <img src="https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?w=800&q=80" alt="Pants" referrerpolicy="no-referrer">
+        <img src="images/pants.jpg" alt="MADEN 工装裤">
         <div class="col-item-text"><h3>Pants</h3><span>复古裤装</span></div>
       </div>
       <div class="col-item">
-        <img src="https://images.unsplash.com/photo-1460353581641-37baddab0fa2?w=800&q=80" alt="Footwear" referrerpolicy="no-referrer">
-        <div class="col-item-text"><h3>Footwear</h3><span>鞋履系列</span></div>
-      </div>
-      <div class="col-item">
-        <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=800&q=80" alt="Women" referrerpolicy="no-referrer">
-        <div class="col-item-text"><h3>Women</h3><span>女装系列</span></div>
-      </div>
-      <div class="col-item">
-        <img src="https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=800&q=80" alt="Tops" referrerpolicy="no-referrer">
+        <img src="images/tshirt.jpg" alt="MADEN 重磅T恤">
         <div class="col-item-text"><h3>Tops</h3><span>上装系列</span></div>
       </div>
       <div class="col-item">
-        <img src="https://images.unsplash.com/photo-1516257984-b1b4d707412e?w=800&q=80" alt="Accessories" referrerpolicy="no-referrer">
-        <div class="col-item-text"><h3>Accessories</h3><span>配饰系列</span></div>
+        <img src="images/vest.jpg" alt="MADEN 工装马甲">
+        <div class="col-item-text"><h3>Vest</h3><span>工装马甲</span></div>
+      </div>
+      <div class="col-item">
+        <img src="images/shirt-relaxed.jpg" alt="MADEN 衬衫">
+        <div class="col-item-text"><h3>Shirts</h3><span>衬衫系列</span></div>
+      </div>
+      <div class="col-item">
+        <img src="images/trenchcoat.jpg" alt="MADEN 风衣">
+        <div class="col-item-text"><h3>Outerwear</h3><span>风衣外套</span></div>
       </div>
     </div>
   </div>
@@ -254,12 +294,16 @@ footer{padding:80px 48px 40px;border-top:1px solid rgba(255,255,255,.04)}
 
 <!-- Lookbook -->
 <section id="lookbook" style="padding-left:0;padding-right:0">
-  <div style="padding:0 48px"><p class="sec-label r">Lookbook</p><h2 class="sec-title r">Spring/Summer 2026</h2></div>
+  <div style="padding:0 48px"><p class="sec-label r">Lookbook</p><h2 class="sec-title r">Spring / Summer 2026</h2></div>
   <div class="lookbook-strip">
-    <div class="lk-img"><img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1200&q=80" alt="" referrerpolicy="no-referrer"><div class="lk-label">Look 01</div></div>
-    <div class="lk-img"><img src="https://images.unsplash.com/photo-1523381294911-8d3cead13475?w=1200&q=80" alt="" referrerpolicy="no-referrer"><div class="lk-label">Look 02</div></div>
-    <div class="lk-img"><img src="https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=1200&q=80" alt="" referrerpolicy="no-referrer"><div class="lk-label">Look 03</div></div>
-    <div class="lk-img"><img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=1200&q=80" alt="" referrerpolicy="no-referrer"><div class="lk-label">Look 04</div></div>
+    <div class="lk-img"><img src="images/printed-tee.jpg" alt="MADEN 印花T恤穿搭"><div class="lk-label">Look 01 · 印花T恤</div></div>
+    <div class="lk-img"><img src="images/pants-spring.jpg" alt="MADEN 春季工装裤"><div class="lk-label">Look 02 · 春季工装</div></div>
+    <div class="lk-img"><img src="images/shirt-blue.jpg" alt="MADEN 蓝色衬衫"><div class="lk-label">Look 03 · 复古蓝调</div></div>
+    <div class="lk-img"><img src="images/shirt-navajo.jpg" alt="MADEN 纳瓦霍衬衫"><div class="lk-label">Look 04 · 纳瓦霍</div></div>
+    <div class="lk-img"><img src="images/tshirt-movie.jpg" alt="MADEN 电影型男"><div class="lk-label">Look 05 · 电影型男</div></div>
+    <div class="lk-img"><img src="images/pants-casual.jpg" alt="MADEN 休闲裤"><div class="lk-label">Look 06 · 复古硬通货</div></div>
+    <div class="lk-img"><img src="images/sweater.jpg" alt="MADEN 雪尼尔毛衣"><div class="lk-label">Look 07 · 雪尼尔</div></div>
+    <div class="lk-img"><img src="images/hoodie.jpg" alt="MADEN 卫衣"><div class="lk-label">Look 08 · 软黄金</div></div>
   </div>
 </section>
 
@@ -273,10 +317,10 @@ footer{padding:80px 48px 40px;border-top:1px solid rgba(255,255,255,.04)}
 <!-- Numbers -->
 <section>
   <div class="numbers">
-    <div class="r"><div class="num-val">2008</div><div class="num-label">Founded</div></div>
-    <div class="r"><div class="num-val">70+</div><div class="num-label">Stores</div></div>
-    <div class="r"><div class="num-val">7</div><div class="num-label">Retail</div></div>
-    <div class="r"><div class="num-val">1000+</div><div class="num-label">Products</div></div>
+    <div class="r"><div class="num-val" data-count="2008">0</div><div class="num-label">Founded</div></div>
+    <div class="r"><div class="num-val" data-count="70">0</div><div class="num-label">Online Stores</div></div>
+    <div class="r"><div class="num-val" data-count="7">0</div><div class="num-label">Retail Stores</div></div>
+    <div class="r"><div class="num-val" data-count="1000">0</div><div class="num-label">Products</div></div>
   </div>
 </section>
 
@@ -311,10 +355,7 @@ footer{padding:80px 48px 40px;border-top:1px solid rgba(255,255,255,.04)}
 
 <!-- Channels -->
 <section id="shop">
-  <div style="max-width:1000px;margin:0 auto">
-    <p class="sec-label r">Shop Now</p>
-    <h2 class="sec-title r">购买渠道</h2>
-  </div>
+  <div style="max-width:1000px;margin:0 auto"><p class="sec-label r">Shop Now</p><h2 class="sec-title r">购买渠道</h2></div>
   <div class="ch-grid">
     <a class="ch-item" href="https://world.taobao.com/dianpu/34165972.htm" target="_blank" rel="noopener"><h4>Tmall</h4><span>天猫旗舰店</span></a>
     <a class="ch-item" href="https://www.douyin.com/user/MS4wLjABAAAAJIU0tHMNE7wBLvlwa30WmALTMhsrvdcrHlryVMEB9n0" target="_blank" rel="noopener"><h4>Douyin</h4><span>抖音旗舰店</span></a>
@@ -327,7 +368,7 @@ footer{padding:80px 48px 40px;border-top:1px solid rgba(255,255,255,.04)}
 
 <!-- CTA -->
 <section class="cta-sec">
-  <div class="cta-bg"><img src="https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=1920&q=80" alt="" referrerpolicy="no-referrer"></div>
+  <div class="cta-bg"><img src="images/jacket-corduroy.jpg" alt="MADEN"></div>
   <div class="cta-inner r">
     <h2>Join The Crew</h2>
     <a href="#shop" class="cta-btn">Shop Now</a>
@@ -337,7 +378,13 @@ footer{padding:80px 48px 40px;border-top:1px solid rgba(255,255,255,.04)}
 <!-- Footer -->
 <footer>
   <div class="footer-inner">
-    <div class="footer-brand">MADEN<small>Americana Workwear Since 2008</small></div>
+    <div>
+      <div class="footer-brand-block">
+        <img class="footer-avatar" src="images/avatar.jpg" alt="MADEN">
+        <div class="footer-brand">MADEN</div>
+      </div>
+      <small style="display:block;font-size:.55rem;letter-spacing:.5em;text-transform:uppercase;opacity:.25;margin-top:12px;font-weight:300">Americana Workwear Since 2008</small>
+    </div>
     <div class="footer-cols">
       <div class="footer-col">
         <h5>Navigate</h5>
@@ -348,18 +395,18 @@ footer{padding:80px 48px 40px;border-top:1px solid rgba(255,255,255,.04)}
       </div>
       <div class="footer-col">
         <h5>Follow</h5>
-        <a href="#">Douyin</a>
-        <a href="#">Xiaohongshu</a>
-        <a href="#">Weibo</a>
-        <a href="#">WeChat</a>
+        <a href="https://www.douyin.com/user/MS4wLjABAAAAJIU0tHMNE7wBLvlwa30WmALTMhsrvdcrHlryVMEB9n0" target="_blank">Douyin 抖音</a>
+        <a href="#">Xiaohongshu 小红书</a>
+        <a href="#">Weibo 微博</a>
+        <a href="#">WeChat 微信</a>
       </div>
       <div class="footer-col">
         <h5>Contact</h5>
         <a href="#">Chongqing, China</a>
-        <a href="#">service@maden.cn</a>
+        <a href="mailto:service@madenfushi.com">service@madenfushi.com</a>
       </div>
     </div>
-    <div class="footer-copy">&copy; 2008–2026 MADEN. All rights reserved.</div>
+    <div class="footer-copy">&copy; 2008–2026 MADEN 马登工装. All rights reserved.</div>
   </div>
 </footer>
 
@@ -372,14 +419,23 @@ const cursor=document.getElementById('cursor'),dot=document.getElementById('curs
 let mx=0,my=0,cx=0,cy=0;
 document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;dot.style.left=mx+'px';dot.style.top=my+'px'});
 (function loop(){cx+=(mx-cx)*.12;cy+=(my-cy)*.12;cursor.style.left=cx+'px';cursor.style.top=cy+'px';requestAnimationFrame(loop)})();
-document.querySelectorAll('a,.col-item,.lk-img,.cta-btn,.ch-item').forEach(el=>{
+document.querySelectorAll('a,.col-item,.lk-img,.cta-btn,.ch-item,.hamburger').forEach(el=>{
   el.addEventListener('mouseenter',()=>cursor.classList.add('hover'));
   el.addEventListener('mouseleave',()=>cursor.classList.remove('hover'));
 });
 
+// Hamburger
+const hamburger=document.getElementById('hamburger'),mobileNav=document.getElementById('mobileNav');
+hamburger.addEventListener('click',()=>{hamburger.classList.toggle('active');mobileNav.classList.toggle('open');document.body.style.overflow=mobileNav.classList.contains('open')?'hidden':''});
+mobileNav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{hamburger.classList.remove('active');mobileNav.classList.remove('open');document.body.style.overflow=''}));
+
 // Reveal
 const obs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('v');obs.unobserve(e.target)}})},{threshold:.12,rootMargin:'0px 0px -60px 0px'});
 document.querySelectorAll('.r,.r-left,.r-right').forEach(el=>obs.observe(el));
+
+// Number counter
+const numObs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){const el=e.target;const target=parseInt(el.dataset.count);const isYear=target>1900;const dur=isYear?1500:2000;const start=performance.now();(function anim(now){const p=Math.min((now-start)/dur,1);const eased=1-Math.pow(1-p,3);const val=Math.floor(eased*target);el.textContent=isYear?val:(val+(target>=70?'+':''));if(p<1)requestAnimationFrame(anim);else el.textContent=isYear?target:target+(target>=10?'+':'');})(start);numObs.unobserve(el)}})},{threshold:.5});
+document.querySelectorAll('.num-val[data-count]').forEach(el=>numObs.observe(el));
 
 // Smooth scroll
 document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener('click',e=>{const t=document.querySelector(a.getAttribute('href'));if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth'})}})});
