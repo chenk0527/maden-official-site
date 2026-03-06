@@ -27,7 +27,7 @@ ul{list-style:none}
 .cursor.hover{width:48px;height:48px;border-color:rgba(201,169,110,.3)}
 .loader{position:fixed;inset:0;z-index:9999;background:#0a0a0a;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:24px;transition:opacity 1s cubic-bezier(.4,0,.2,1)}
 .loader.done{opacity:0;pointer-events:none}
-.loader-logo{width:64px;height:64px;border-radius:50%;object-fit:cover;opacity:.6}
+.loader-text{font-family:'Cormorant Garamond',serif;font-size:2.4rem;font-weight:300;letter-spacing:.4em;color:rgba(201,169,110,.7)}
 .loader-line{width:120px;height:1px;background:#1a1a1a;position:relative;overflow:hidden}
 .loader-line::after{content:'';position:absolute;left:0;top:0;height:100%;width:0;background:#c9a96e;animation:ll 2s cubic-bezier(.4,0,.2,1) forwards}
 @keyframes ll{to{width:100%}}
@@ -132,23 +132,23 @@ footer{padding:80px 48px 40px;border-top:1px solid rgba(255,255,255,.04)}
 <body>
 <div class="cursor" id="cursor"></div>
 <div class="cursor-dot" id="cursorDot"></div>
-<div class="loader" id="loader"><img class="loader-logo" src="images/avatar.jpg" alt="MADEN"><div class="loader-line"></div></div>
+<div class="loader" id="loader"><div class="loader-text">MADEN</div><div class="loader-line"></div></div>
 
 <nav>
-  <div class="nav-logo"><img class="nav-avatar" src="images/avatar.jpg" alt="MADEN"><div class="nav-brand">Maden</div></div>
-  <div class="nav-right"><a href="#about">Story</a><a href="#collection">Collection</a><a href="#lookbook">Lookbook</a><a href="#stores">Stores</a><a href="#shop">Shop</a></div>
+  <div class="nav-logo"><div class="nav-brand">Maden</div></div>
+  <div class="nav-right"><a href="#about">品牌故事</a><a href="#collection">产品系列</a><a href="#lookbook">穿搭灵感</a><a href="#stores">门店</a><a href="#shop">购买</a></div>
   <button class="hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
 </nav>
-<div class="mobile-nav" id="mobileNav"><a href="#about">Story</a><a href="#collection">Collection</a><a href="#lookbook">Lookbook</a><a href="#stores">Stores</a><a href="#shop">Shop</a></div>
+<div class="mobile-nav" id="mobileNav"><a href="#about">品牌故事</a><a href="#collection">产品系列</a><a href="#lookbook">穿搭灵感</a><a href="#stores">门店</a><a href="#shop">购买</a></div>
 
 <section class="hero" id="hero">
   <div class="hero-media"><img src="images/ali-harrington.jpg" alt="MADEN 哈灵顿夹克"></div>
   <div class="hero-center">
-    <p class="hero-label">Americana Workwear Since 2008</p>
+    <p class="hero-label">美式复古工装 · 始于2008</p>
     <h1 class="hero-title">MADEN</h1>
-    <p class="hero-sub">Born To Work · Made To Last</p>
+    <p class="hero-sub">始于重庆 · 忠于工装</p>
   </div>
-  <div class="hero-scroll"><span>Scroll</span><div class="scroll-bar"></div></div>
+  <div class="hero-scroll"><span>向下探索</span><div class="scroll-bar"></div></div>
 </section>
 
 <section id="about">
@@ -158,39 +158,39 @@ footer{padding:80px 48px 40px;border-top:1px solid rgba(255,255,255,.04)}
       <div class="about-badge">Since 2008</div>
     </div>
     <div class="about-text r-right">
-      <p class="sec-label">Our Story</p>
+      <p class="sec-label">品牌故事</p>
       <h2 class="sec-title">始于重庆，<br>忠于工装。</h2>
       <p>2008年，三位热爱美式复古文化的年轻人在重庆创立了马登。从一间小工作室到如今全渠道70+店铺、7家实体门店的品牌版图，马登始终只做一件事——<strong>最纯正的美式复古工装</strong>。</p>
       <p>每一件马登工装，都承载着 Americana 精神：坚韧、务实、不妥协。不追逐潮流，因为经典从不过时。</p>
-      <div class="about-sig">Chongqing, China · Est. 2008</div>
+      <div class="about-sig">重庆 · 2008年创立</div>
     </div>
   </div>
 </section>
 
 <section id="collection">
   <div class="collection">
-    <p class="sec-label r">Collection</p>
+    <p class="sec-label r">产品系列</p>
     <h2 class="sec-title r">产品系列</h2>
     <div class="col-grid">
-      <div class="col-item"><img src="images/ali-harrington.jpg" alt="MADEN 哈灵顿夹克"><div class="col-item-text"><h3>Jackets</h3><span>工装夹克</span></div></div>
-      <div class="col-item"><img src="images/ali-og107.jpg" alt="MADEN OG-107工装裤"><div class="col-item-text"><h3>Pants</h3><span>复古裤装</span></div></div>
-      <div class="col-item"><img src="images/ali-sweater.jpg" alt="MADEN 印第安毛衣"><div class="col-item-text"><h3>Knitwear</h3><span>针织系列</span></div></div>
-      <div class="col-item"><img src="images/ali-halfzip.jpg" alt="MADEN 半拉链夹克"><div class="col-item-text"><h3>Outerwear</h3><span>外套系列</span></div></div>
-      <div class="col-item"><img src="images/ali-jeans.jpg" alt="MADEN 赤耳牛仔"><div class="col-item-text"><h3>Denim</h3><span>牛仔系列</span></div></div>
-      <div class="col-item"><img src="images/ali-fleece.jpg" alt="MADEN 摇粒绒"><div class="col-item-text"><h3>Fleece</h3><span>抓绒系列</span></div></div>
+      <div class="col-item"><img src="images/ali-harrington.jpg" alt="MADEN 哈灵顿夹克"><div class="col-item-text"><h3>工装夹克</h3><span>Jackets</span></div></div>
+      <div class="col-item"><img src="images/ali-og107.jpg" alt="MADEN OG-107工装裤"><div class="col-item-text"><h3>复古裤装</h3><span>Pants</span></div></div>
+      <div class="col-item"><img src="images/ali-sweater.jpg" alt="MADEN 印第安毛衣"><div class="col-item-text"><h3>针织系列</h3><span>Knitwear</span></div></div>
+      <div class="col-item"><img src="images/ali-halfzip.jpg" alt="MADEN 半拉链夹克"><div class="col-item-text"><h3>外套系列</h3><span>Outerwear</span></div></div>
+      <div class="col-item"><img src="images/ali-jeans.jpg" alt="MADEN 赤耳牛仔"><div class="col-item-text"><h3>牛仔系列</h3><span>Denim</span></div></div>
+      <div class="col-item"><img src="images/ali-fleece.jpg" alt="MADEN 摇粒绒"><div class="col-item-text"><h3>抓绒系列</h3><span>Fleece</span></div></div>
     </div>
   </div>
 </section>
 
 <section id="lookbook" style="padding-left:0;padding-right:0">
-  <div style="padding:0 48px"><p class="sec-label r">Lookbook</p><h2 class="sec-title r">Spring / Summer 2026</h2></div>
+  <div style="padding:0 48px"><p class="sec-label r">穿搭灵感</p><h2 class="sec-title r">2026 春夏系列</h2></div>
   <div class="lookbook-strip">
-    <div class="lk-img"><img src="images/ali-harrington.jpg" alt=""><div class="lk-label">Look 01 · Harrington</div></div>
-    <div class="lk-img"><img src="images/ali-jeans.jpg" alt=""><div class="lk-label">Look 02 · Selvedge</div></div>
-    <div class="lk-img"><img src="images/ali-sweater.jpg" alt=""><div class="lk-label">Look 03 · Knitwear</div></div>
-    <div class="lk-img"><img src="images/ali-halfzip.jpg" alt=""><div class="lk-label">Look 04 · Half-Zip</div></div>
-    <div class="lk-img"><img src="images/ali-og107.jpg" alt=""><div class="lk-label">Look 05 · OG-107</div></div>
-    <div class="lk-img"><img src="images/ali-fleece.jpg" alt=""><div class="lk-label">Look 06 · Fleece</div></div>
+    <div class="lk-img"><img src="images/ali-harrington.jpg" alt=""><div class="lk-label">造型 01 · 哈灵顿夹克</div></div>
+    <div class="lk-img"><img src="images/ali-jeans.jpg" alt=""><div class="lk-label">造型 02 · 赤耳牛仔</div></div>
+    <div class="lk-img"><img src="images/ali-sweater.jpg" alt=""><div class="lk-label">造型 03 · 提花毛衣</div></div>
+    <div class="lk-img"><img src="images/ali-halfzip.jpg" alt=""><div class="lk-label">造型 04 · 灯芯绒夹克</div></div>
+    <div class="lk-img"><img src="images/ali-og107.jpg" alt=""><div class="lk-label">造型 05 · OG-107</div></div>
+    <div class="lk-img"><img src="images/ali-fleece.jpg" alt=""><div class="lk-label">造型 06 · 摇粒绒</div></div>
   </div>
 </section>
 
@@ -200,26 +200,26 @@ footer{padding:80px 48px 40px;border-top:1px solid rgba(255,255,255,.04)}
 
 <section>
   <div class="numbers">
-    <div class="r"><div class="num-val" data-count="2008">0</div><div class="num-label">Founded</div></div>
-    <div class="r"><div class="num-val" data-count="70">0</div><div class="num-label">Online Stores</div></div>
-    <div class="r"><div class="num-val" data-count="7">0</div><div class="num-label">Retail Stores</div></div>
-    <div class="r"><div class="num-val" data-count="1000">0</div><div class="num-label">Products</div></div>
+    <div class="r"><div class="num-val" data-count="2008">0</div><div class="num-label">品牌创立</div></div>
+    <div class="r"><div class="num-val" data-count="70">0</div><div class="num-label">线上店铺</div></div>
+    <div class="r"><div class="num-val" data-count="7">0</div><div class="num-label">实体门店</div></div>
+    <div class="r"><div class="num-val" data-count="1000">0</div><div class="num-label">在售款式</div></div>
   </div>
 </section>
 
 <section id="stores">
   <div class="stores-sec">
-    <p class="sec-label r">Retail Stores</p>
+    <p class="sec-label r">线下门店</p>
     <h2 class="sec-title r">实体门店</h2>
     <div class="stores-grid">
-      <div class="store-block r-left"><h3>Chongqing</h3><div class="store-n">5 Locations</div><ul><li>解放碑旗舰店</li><li>观音桥店</li><li>三峡广场店</li><li>南坪万达店</li><li>杨家坪店</li></ul></div>
-      <div class="store-block r-right"><h3>Chengdu</h3><div class="store-n">2 Locations</div><ul><li>春熙路店</li><li>太古里店</li></ul></div>
+      <div class="store-block r-left"><h3>重庆</h3><div class="store-n">5 家门店</div><ul><li>解放碑旗舰店</li><li>观音桥店</li><li>三峡广场店</li><li>南坪万达店</li><li>杨家坪店</li></ul></div>
+      <div class="store-block r-right"><h3>成都</h3><div class="store-n">2 家门店</div><ul><li>春熙路店</li><li>太古里店</li></ul></div>
     </div>
   </div>
 </section>
 
 <section id="shop">
-  <div style="max-width:1000px;margin:0 auto"><p class="sec-label r">Shop Now</p><h2 class="sec-title r">购买渠道</h2></div>
+  <div style="max-width:1000px;margin:0 auto"><p class="sec-label r">立即购买</p><h2 class="sec-title r">购买渠道</h2></div>
   <div class="ch-grid">
     <a class="ch-item" href="https://world.taobao.com/dianpu/34165972.htm" target="_blank" rel="noopener"><h4>Tmall</h4><span>天猫旗舰店</span></a>
     <a class="ch-item" href="https://www.douyin.com/user/MS4wLjABAAAAJIU0tHMNE7wBLvlwa30WmALTMhsrvdcrHlryVMEB9n0" target="_blank" rel="noopener"><h4>Douyin</h4><span>抖音旗舰店</span></a>
@@ -232,16 +232,16 @@ footer{padding:80px 48px 40px;border-top:1px solid rgba(255,255,255,.04)}
 
 <section class="cta-sec">
   <div class="cta-bg"><img src="images/ali-sweater.jpg" alt="MADEN"></div>
-  <div class="cta-inner r"><h2>Join The Crew</h2><a href="#shop" class="cta-btn">Shop Now</a></div>
+  <div class="cta-inner r"><h2>加入马登</h2><a href="#shop" class="cta-btn">立即选购</a></div>
 </section>
 
 <footer>
   <div class="footer-inner">
-    <div><div class="footer-brand-block"><img class="footer-avatar" src="images/avatar.jpg" alt="MADEN"><div class="footer-brand">MADEN</div></div><small style="display:block;font-size:.55rem;letter-spacing:.5em;text-transform:uppercase;opacity:.25;margin-top:12px;font-weight:300">Americana Workwear Since 2008</small></div>
+    <div><div class="footer-brand-block"><div class="footer-brand">MADEN</div></div><small style="display:block;font-size:.55rem;letter-spacing:.3em;opacity:.25;margin-top:12px;font-weight:300">美式复古工装 · 始于2008</small></div>
     <div class="footer-cols">
-      <div class="footer-col"><h5>Navigate</h5><a href="#about">Story</a><a href="#collection">Collection</a><a href="#lookbook">Lookbook</a><a href="#stores">Stores</a></div>
-      <div class="footer-col"><h5>Follow</h5><a href="https://www.douyin.com/user/MS4wLjABAAAAJIU0tHMNE7wBLvlwa30WmALTMhsrvdcrHlryVMEB9n0" target="_blank">Douyin 抖音</a><a href="#">Xiaohongshu 小红书</a><a href="#">Weibo 微博</a><a href="#">WeChat 微信</a></div>
-      <div class="footer-col"><h5>Contact</h5><a href="#">Chongqing, China</a><a href="mailto:service@madenfushi.com">service@madenfushi.com</a></div>
+      <div class="footer-col"><h5>导航</h5><a href="#about">品牌故事</a><a href="#collection">产品系列</a><a href="#lookbook">穿搭灵感</a><a href="#stores">门店</a></div>
+      <div class="footer-col"><h5>关注我们</h5><a href="https://www.douyin.com/user/MS4wLjABAAAAJIU0tHMNE7wBLvlwa30WmALTMhsrvdcrHlryVMEB9n0" target="_blank">抖音</a><a href="#">小红书</a><a href="#">微博</a><a href="#">微信公众号</a></div>
+      <div class="footer-col"><h5>联系我们</h5><a href="#">重庆 · 中国</a><a href="mailto:service@madenfushi.com">service@madenfushi.com</a></div>
     </div>
     <div class="footer-copy">&copy; 2008–2026 MADEN 马登工装. All rights reserved.</div>
   </div>
