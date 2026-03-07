@@ -180,7 +180,7 @@ export default function HomePage() {
 
       {/* Numbers */}
       <section style={{ padding: '140px 48px' }}>
-        <div style={{ maxWidth: '1200px', margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '48px', textAlign: 'center', borderTop: '1px solid rgba(255,255,255,.05)', borderBottom: '1px solid rgba(255,255,255,.05)', padding: '80px 0' }}>
+        <div id="numbers-grid" style={{ maxWidth: '1200px', margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '48px', textAlign: 'center', borderTop: '1px solid rgba(255,255,255,.05)', borderBottom: '1px solid rgba(255,255,255,.05)', padding: '80px 0' }}>
           {[
             { count: 18, suffix: '', label: '年品牌历史' },
             { count: 70, suffix: '+', label: '线上店铺' },
