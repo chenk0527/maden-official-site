@@ -1,5 +1,4 @@
 import type { Metadata } from 'next'
-import Image from 'next/image'
 import Link from 'next/link'
 import { products } from '@/data/products'
 
@@ -33,7 +32,7 @@ export default function ProductsPage() {
           {products.map(product => (
             <div key={product.id} className="r product-card">
               <div style={{ position: 'relative', aspectRatio: '3/4', overflow: 'hidden' }}>
-                <Image src={product.image} alt={product.alt} fill style={{ objectFit: 'cover', transition: 'transform 1.2s cubic-bezier(.4,0,.2,1)' }} />
+                <img src={product.image} alt={product.alt} style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', transition: 'transform 1.2s cubic-bezier(.4,0,.2,1)' }} />
               </div>
               <div style={{ padding: '24px' }}>
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '12px' }}>

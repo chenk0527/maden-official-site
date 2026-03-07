@@ -1,7 +1,6 @@
 'use client'
 
 import { useEffect, useRef } from 'react'
-import Image from 'next/image'
 import { lookbookItems } from '@/data/products'
 import { assetPath } from '@/utils/path'
 
@@ -39,11 +38,14 @@ export default function LookbookStrip() {
             overflow: 'hidden',
           }}
         >
-          <Image
+          <img
             src={assetPath(item.image)}
             alt={item.alt}
-            fill
             style={{
+              position: 'absolute',
+              inset: 0,
+              width: '100%',
+              height: '100%',
               objectFit: 'cover',
               filter: 'brightness(.75)',
               transition: 'filter .8s',

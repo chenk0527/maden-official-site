@@ -1,6 +1,5 @@
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
-import Image from 'next/image'
 import Link from 'next/link'
 import { blogPosts } from '@/data/blog'
 import { assetPath } from '@/utils/path'
@@ -166,7 +165,7 @@ export default async function BlogPostPage({ params }: Props) {
       {/* Hero */}
       <section style={{ position: 'relative', height: '60vh', minHeight: '400px', display: 'flex', alignItems: 'flex-end', overflow: 'hidden' }}>
         <div style={{ position: 'absolute', inset: 0 }}>
-          <Image src={assetPath(post.image)} alt={post.title} fill style={{ objectFit: 'cover', filter: 'brightness(.3)' }} />
+          <img src={assetPath(post.image)} alt={post.title} style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', filter: 'brightness(.3)' }} />
         </div>
         <div style={{ position: 'relative', zIndex: 2, padding: '48px', maxWidth: '900px' }}>
           <div style={{ display: 'flex', gap: '16px', marginBottom: '16px' }}>

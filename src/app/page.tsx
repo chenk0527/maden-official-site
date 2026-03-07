@@ -1,5 +1,4 @@
 import type { Metadata } from 'next'
-import Image from 'next/image'
 import Link from 'next/link'
 import { assetPath } from '@/utils/path'
 import Hero from '@/components/Hero'
@@ -78,11 +77,10 @@ export default function HomePage() {
       <section id="about" style={{ padding: '140px 48px' }}>
         <div style={{ maxWidth: '1400px', margin: '0 auto', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '100px', alignItems: 'center' }}>
           <div className="r-left" style={{ position: 'relative', overflow: 'hidden', aspectRatio: '3/4' }}>
-            <Image
+            <img
               src={assetPath("/images/ali-jeans.jpg")}
               alt="马登工装 赤耳牛仔裤 手工缝制"
-              fill
-              style={{ objectFit: 'cover', transition: 'transform 1.2s cubic-bezier(.4,0,.2,1)' }}
+              style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', transition: 'transform 1.2s cubic-bezier(.4,0,.2,1)' }}
             />
             <div style={{ position: 'absolute', bottom: '24px', right: '24px', background: 'rgba(201,169,110,.9)', color: '#0a0a0a', fontFamily: "'Cormorant Garamond', serif", fontSize: '1rem', fontWeight: 600, letterSpacing: '.15em', padding: '10px 18px' }}>
               Since 2008
@@ -232,7 +230,7 @@ export default function HomePage() {
       {/* CTA */}
       <section style={{ position: 'relative', minHeight: '50vh', display: 'flex', alignItems: 'center', justifyContent: 'center', overflow: 'hidden', textAlign: 'center' }}>
         <div style={{ position: 'absolute', inset: 0 }}>
-          <Image src={assetPath("/images/ali-sweater.jpg")} alt="马登工装" fill style={{ objectFit: 'cover', filter: 'brightness(.2)' }} />
+          <img src={assetPath("/images/ali-sweater.jpg")} alt="马登工装" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', filter: 'brightness(.2)' }} />
         </div>
         <div className="r" style={{ position: 'relative', zIndex: 2 }}>
           <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 'clamp(1.8rem, 4vw, 3.2rem)', fontWeight: 300, letterSpacing: '.12em', marginBottom: '12px' }}>

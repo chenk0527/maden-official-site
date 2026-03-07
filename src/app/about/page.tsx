@@ -1,5 +1,4 @@
 import type { Metadata } from 'next'
-import Image from 'next/image'
 import TimelineItem from '@/components/TimelineItem'
 import { assetPath } from '@/utils/path'
 import { timeline } from '@/data/timeline'
@@ -31,7 +30,7 @@ export default function AboutPage() {
       <section style={{ padding: '80px 48px 140px' }}>
         <div className="about-split">
           <div className="r-left about-img" style={{ position: 'relative', overflow: 'hidden', aspectRatio: '3/4' }}>
-            <Image src={assetPath("/images/ali-harrington.jpg")} alt="马登工装品牌故事" fill style={{ objectFit: 'cover', transition: 'transform 1.2s cubic-bezier(.4,0,.2,1)' }} />
+            <img src={assetPath("/images/ali-harrington.jpg")} alt="马登工装品牌故事" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', transition: 'transform 1.2s cubic-bezier(.4,0,.2,1)' }} />
           </div>
           <div className="r-right">
             <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 'clamp(2rem, 4vw, 3rem)', fontWeight: 300, letterSpacing: '.04em', marginBottom: '32px' }}>

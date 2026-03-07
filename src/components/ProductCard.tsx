@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import type { Product } from '@/data/products'
 import { assetPath } from '@/utils/path'
 
@@ -9,11 +8,10 @@ interface Props {
 export default function ProductCard({ product }: Props) {
   return (
     <div className="col-item">
-      <Image
+      <img
         src={assetPath(product.image)}
         alt={product.alt}
-        fill
-        sizes="(max-width: 900px) 50vw, 33vw"
+        style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover' }}
       />
       <div className="col-item-text">
         <h3>{product.name}</h3>

@@ -1,5 +1,4 @@
 import type { Metadata } from 'next'
-import Image from 'next/image'
 import Link from 'next/link'
 import { blogPosts } from '@/data/blog'
 import { assetPath } from '@/utils/path'
@@ -33,7 +32,7 @@ export default function BlogPage() {
           {blogPosts.map(post => (
             <Link key={post.slug} href={`/blog/${post.slug}`} className="r blog-card">
               <div style={{ position: 'relative', aspectRatio: '16/9', overflow: 'hidden' }}>
-                <Image src={assetPath(post.image)} alt={post.title} fill style={{ objectFit: 'cover', filter: 'brightness(.7)' }} />
+                <img src={assetPath(post.image)} alt={post.title} style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', filter: 'brightness(.7)' }} />
               </div>
               <div style={{ padding: '24px' }}>
                 <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '12px' }}>
