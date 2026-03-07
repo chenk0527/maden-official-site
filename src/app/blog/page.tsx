@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 import { blogPosts } from '@/data/blog'
+import { assetPath } from '@/utils/path'
 
 export const metadata: Metadata = {
   title: '博客 | 马登工装 — 工装知识与穿搭灵感',
@@ -32,7 +33,7 @@ export default function BlogPage() {
           {blogPosts.map(post => (
             <Link key={post.slug} href={`/blog/${post.slug}`} className="r blog-card">
               <div style={{ position: 'relative', aspectRatio: '16/9', overflow: 'hidden' }}>
-                <Image src={post.image} alt={post.title} fill style={{ objectFit: 'cover', filter: 'brightness(.7)' }} />
+                <Image src={assetPath(post.image)} alt={post.title} fill style={{ objectFit: 'cover', filter: 'brightness(.7)' }} />
               </div>
               <div style={{ padding: '24px' }}>
                 <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '12px' }}>

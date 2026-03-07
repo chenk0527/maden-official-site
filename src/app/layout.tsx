@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { assetPath } from '@/utils/path'
 import './globals.css'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
@@ -18,10 +19,10 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'zh_CN',
     siteName: '马登工装 MADEN',
-    images: ['/images/ali-harrington.jpg'],
+    images: [assetPath('/images/ali-harrington.jpg')],
   },
   robots: { index: true, follow: true },
-  icons: { icon: '/images/avatar.jpg' },
+  icons: { icon: assetPath('/images/avatar.jpg') },
   // Google Search Console / 百度站长验证（填入真实验证码）
   // verification: {
   //   google: 'YOUR_GOOGLE_VERIFICATION_CODE',

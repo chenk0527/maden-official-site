@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import type { Product } from '@/data/products'
+import { assetPath } from '@/utils/path'
 
 interface Props {
   product: Product
@@ -9,7 +10,7 @@ export default function ProductCard({ product }: Props) {
   return (
     <div className="col-item">
       <Image
-        src={product.image}
+        src={assetPath(product.image)}
         alt={product.alt}
         fill
         sizes="(max-width: 900px) 50vw, 33vw"

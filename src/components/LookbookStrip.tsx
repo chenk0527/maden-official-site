@@ -3,6 +3,7 @@
 import { useEffect, useRef } from 'react'
 import Image from 'next/image'
 import { lookbookItems } from '@/data/products'
+import { assetPath } from '@/utils/path'
 
 export default function LookbookStrip() {
   const stripRef = useRef<HTMLDivElement>(null)
@@ -39,7 +40,7 @@ export default function LookbookStrip() {
           }}
         >
           <Image
-            src={item.image}
+            src={assetPath(item.image)}
             alt={item.alt}
             fill
             style={{

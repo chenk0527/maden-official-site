@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
+import { assetPath } from '@/utils/path'
 import Hero from '@/components/Hero'
 import TimelineItem from '@/components/TimelineItem'
 import StoreCard from '@/components/StoreCard'
@@ -78,7 +79,7 @@ export default function HomePage() {
         <div style={{ maxWidth: '1400px', margin: '0 auto', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '100px', alignItems: 'center' }}>
           <div className="r-left" style={{ position: 'relative', overflow: 'hidden', aspectRatio: '3/4' }}>
             <Image
-              src="/images/ali-jeans.jpg"
+              src={assetPath("/images/ali-jeans.jpg")}
               alt="马登工装 赤耳牛仔裤 手工缝制"
               fill
               style={{ objectFit: 'cover', transition: 'transform 1.2s cubic-bezier(.4,0,.2,1)' }}
@@ -231,7 +232,7 @@ export default function HomePage() {
       {/* CTA */}
       <section style={{ position: 'relative', minHeight: '50vh', display: 'flex', alignItems: 'center', justifyContent: 'center', overflow: 'hidden', textAlign: 'center' }}>
         <div style={{ position: 'absolute', inset: 0 }}>
-          <Image src="/images/ali-sweater.jpg" alt="马登工装" fill style={{ objectFit: 'cover', filter: 'brightness(.2)' }} />
+          <Image src={assetPath("/images/ali-sweater.jpg")} alt="马登工装" fill style={{ objectFit: 'cover', filter: 'brightness(.2)' }} />
         </div>
         <div className="r" style={{ position: 'relative', zIndex: 2 }}>
           <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 'clamp(1.8rem, 4vw, 3.2rem)', fontWeight: 300, letterSpacing: '.12em', marginBottom: '12px' }}>

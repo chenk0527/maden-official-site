@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import { assetPath } from '@/utils/path'
 
 export default function Hero() {
   return (
@@ -18,7 +19,7 @@ export default function Hero() {
       {/* Background image */}
       <div style={{ position: 'absolute', inset: 0 }}>
         <Image
-          src="/images/ali-harrington.jpg"
+          src={assetPath("/images/ali-harrington.jpg")}
           alt="马登工装 MADEN 美式复古工装品牌"
           fill
           priority
