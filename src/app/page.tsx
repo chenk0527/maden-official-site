@@ -184,7 +184,7 @@ export default function HomePage() {
           {[
             { count: 18, suffix: '', label: '年品牌历史' },
             { count: 70, suffix: '+', label: '线上店铺' },
-            { count: 7, suffix: '', label: '实体门店' },
+            { count: 8, suffix: '', label: '实体门店' },
             { count: 135, suffix: '万+', label: '抖音粉丝' },
           ].map(item => (
             <div key={item.label} className="r">

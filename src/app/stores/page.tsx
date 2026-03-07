@@ -4,12 +4,12 @@ import { cityStores } from '@/data/stores'
 
 export const metadata: Metadata = {
   title: '实体门店 | 马登工装全国门店地址',
-  description: '马登工装全国7家实体门店：重庆5家（解放碑旗舰店、观音桥、三峡广场、南坪万达、杨家坪）+ 成都2家（春熙路、太古里）。欢迎到店体验。',
-  keywords: ['马登工装门店', '马登工装重庆', '马登工装成都', '解放碑旗舰店', '春熙路店'],
+  description: '马登工装全国8家实体门店：重庆6家直营店（十八梯、鹅岭二厂、时代天街、观音桥阳光世纪、大石坝悦荟、南坪万达）+ 成都2家联营店（春熙路、东郊记忆）。欢迎到店体验。',
+  keywords: ['马登工装门店', '马登工装重庆', '马登工装成都', '十八梯店', '鹅岭二厂店', '春熙路店'],
   alternates: { canonical: 'https://madenfushi.com/stores' },
   openGraph: {
-    title: '马登工装实体门店 — 重庆5家 · 成都2家',
-    description: '全国7家实体门店，欢迎到店体验美式复古工装。',
+    title: '马登工装实体门店 — 重庆6家直营 · 成都2家联营',
+    description: '全国8家实体门店，欢迎到店体验美式复古工装。',
     url: 'https://madenfushi.com/stores',
   },
 }
@@ -34,7 +34,7 @@ export default function StoresPage() {
           实体门店
         </h1>
         <p className="r" style={{ fontSize: '.85rem', fontWeight: 200, color: 'rgba(232,228,223,.4)', maxWidth: '500px', margin: '0 auto', lineHeight: 1.8 }}>
-          重庆5家 · 成都2家 · 全国7家实体门店<br />欢迎到店体验，感受真实的美式工装质感
+          重庆6家直营 · 成都2家联营 · 全国8家实体门店<br />欢迎到店体验，感受真实的美式工装质感
         </p>
       </section>
 
