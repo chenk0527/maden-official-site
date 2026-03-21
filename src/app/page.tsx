@@ -189,7 +189,7 @@ export default function HomePage() {
             { count: 18, suffix: '', label: '年品牌历史' },
             { count: 443, suffix: '+', label: '团队成员' },
             { count: 9, suffix: '', label: '实体门店' },
-            { count: 300, suffix: '万+', label: '店铺粉丝' },
+            { count: 1000, suffix: '万+', label: '全网粉丝' },
           ].map(item => (
             <div key={item.label} className="r">
               <div style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 'clamp(3rem, 6vw, 5rem)', fontWeight: 300, color: '#c9a96e', lineHeight: 1, letterSpacing: '.05em', marginBottom: '12px' }}>
