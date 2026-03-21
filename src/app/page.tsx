@@ -111,7 +111,7 @@ export default function HomePage() {
       <Hero />
 
       {/* Numbers — 紧跟Hero，第一屏后立即可见 */}
-      <section style={{ padding: '0 48px', background: '#0a0a0a', borderBottom: '1px solid rgba(255,255,255,.05)' }}>
+      <section style={{ padding: '0 48px', background: '#120808', borderBottom: '1px solid rgba(204,34,0,.15)' }}>
         <div id="numbers-grid" style={{ maxWidth: '1200px', margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', textAlign: 'center', padding: '56px 0' }}>
           {[
             { count: 18, suffix: '', label: '年品牌历史' },
@@ -119,8 +119,8 @@ export default function HomePage() {
             { count: 8, suffix: "家", label: "实体门店" },
             { count: 1000, suffix: '万+', label: '全网粉丝' },
           ].map((item, i) => (
-            <div key={item.label} className="r" style={{ borderRight: i < 3 ? '1px solid rgba(255,255,255,.06)' : 'none', padding: '0 24px' }}>
-              <div style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 'clamp(2.4rem, 5vw, 4rem)', fontWeight: 300, color: '#b22222', lineHeight: 1, letterSpacing: '.05em' }}>
+            <div key={item.label} className="r" style={{ borderRight: i < 3 ? '1px solid rgba(204,34,0,.18)' : 'none', padding: '0 24px' }}>
+              <div style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 'clamp(2.4rem, 5vw, 4rem)', fontWeight: 300, color: '#ff4422', lineHeight: 1, letterSpacing: '.05em' }}>
                 <CountUp target={item.count} suffix={item.suffix} />
               </div>
               <div style={{ fontSize: '.82rem', letterSpacing: '.25em', opacity: 0.6, fontWeight: 400, marginTop: '10px' }}>{item.label}</div>
@@ -138,7 +138,7 @@ export default function HomePage() {
               alt="马登工装 赤耳牛仔裤 手工缝制"
               style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', transition: 'transform 1.2s cubic-bezier(.4,0,.2,1)' }}
             />
-            <div style={{ position: 'absolute', bottom: '24px', right: '24px', background: 'rgba(178,34,34,.9)', color: '#0a0a0a', fontFamily: "'Cormorant Garamond', serif", fontSize: '1rem', fontWeight: 600, letterSpacing: '.15em', padding: '10px 18px' }}>
+            <div style={{ position: 'absolute', bottom: '24px', right: '24px', background: 'rgba(204,34,0,.9)', color: '#0d0505', fontFamily: "'Cormorant Garamond', serif", fontSize: '1rem', fontWeight: 600, letterSpacing: '.15em', padding: '10px 18px' }}>
               Since 2008
             </div>
           </div>
@@ -148,17 +148,17 @@ export default function HomePage() {
             <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 'clamp(2.2rem, 5vw, 3.6rem)', fontWeight: 300, lineHeight: 1.15, letterSpacing: '.04em', marginBottom: '48px' }}>
               始于重庆，<br />忠于工装。
             </h2>
-            <p style={{ fontSize: '1rem', lineHeight: 2, fontWeight: 400, color: 'rgba(232,228,223,.72)', marginBottom: '20px' }}>
-              2008年，三位热爱美式复古文化的年轻人在重庆创立了马登。从一间小工作室到如今全渠道<strong style={{ color: '#b22222', fontWeight: 400 }}>70+店铺</strong>、<strong style={{ color: '#b22222', fontWeight: 400 }}>7家实体门店</strong>的品牌版图，马登始终只做一件事——<strong style={{ color: '#b22222', fontWeight: 400 }}>最纯正的美式复古工装</strong>。
+            <p style={{ fontSize: '1rem', lineHeight: 2, fontWeight: 400, color: 'rgba(240,235,232,.72)', marginBottom: '20px' }}>
+              2008年，三位热爱美式复古文化的年轻人在重庆创立了马登。从一间小工作室到如今全渠道<strong style={{ color: '#ff4422', fontWeight: 400 }}>70+店铺</strong>、<strong style={{ color: '#ff4422', fontWeight: 400 }}>7家实体门店</strong>的品牌版图，马登始终只做一件事——<strong style={{ color: '#ff4422', fontWeight: 400 }}>最纯正的美式复古工装</strong>。
             </p>
-            <p style={{ fontSize: '1rem', lineHeight: 2, fontWeight: 400, color: 'rgba(232,228,223,.72)', marginBottom: '20px' }}>
+            <p style={{ fontSize: '1rem', lineHeight: 2, fontWeight: 400, color: 'rgba(240,235,232,.72)', marginBottom: '20px' }}>
               每一件马登工装都承载着 Americana 精神：坚韧、务实、不妥协。我们从底特律工厂、德州牛仔、越战军服中汲取灵感，用当代工艺还原经典的美式穿着哲学。
             </p>
-            <p style={{ fontSize: '1rem', lineHeight: 2, fontWeight: 400, color: 'rgba(232,228,223,.72)', marginBottom: '20px' }}>
-              不追逐潮流，因为<strong style={{ color: '#b22222', fontWeight: 400 }}>经典从不过时</strong>。
+            <p style={{ fontSize: '1rem', lineHeight: 2, fontWeight: 400, color: 'rgba(240,235,232,.72)', marginBottom: '20px' }}>
+              不追逐潮流，因为<strong style={{ color: '#ff4422', fontWeight: 400 }}>经典从不过时</strong>。
             </p>
             <div style={{ marginTop: '40px', fontSize: '.6rem', letterSpacing: '.4em', opacity: 0.3, display: 'flex', alignItems: 'center', gap: '20px' }}>
-              <span style={{ width: '40px', height: '1px', background: 'rgba(178,34,34,.3)', display: 'inline-block' }} />
+              <span style={{ width: '40px', height: '1px', background: 'rgba(204,34,0,.3)', display: 'inline-block' }} />
               重庆 · 2008年创立
             </div>
           </div>
@@ -166,7 +166,7 @@ export default function HomePage() {
       </section>
 
       {/* Philosophy */}
-      <section id="philosophy" style={{ padding: '140px 48px', background: '#0e0e0e' }}>
+      <section id="philosophy" style={{ padding: '140px 48px', background: '#120808' }}>
         <div style={{ maxWidth: '1000px', margin: '0 auto', textAlign: 'center' }}>
           <p className="r" style={{ fontSize: '.6rem', letterSpacing: '.5em', opacity: 0.35, marginBottom: '20px', fontWeight: 300 }}>品牌理念</p>
           <h2 className="r" style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 'clamp(2.2rem, 5vw, 3.6rem)', fontWeight: 300, lineHeight: 1.15, letterSpacing: '.04em', marginBottom: '48px' }}>
@@ -180,11 +180,11 @@ export default function HomePage() {
               { title: '自在', text: '工装的本质是为劳动而生——宽松的版型、实用的口袋、不挑身材的包容性。穿上马登，不需要刻意凹造型，自在就是最好的状态。', Icon: IconBird },
             ].map(item => (
               <div key={item.title} className="r">
-                <div style={{ marginBottom: '20px', color: '#b22222', opacity: 0.7 }}>
+                <div style={{ marginBottom: '20px', color: '#ff4422', opacity: 0.7 }}>
                   <item.Icon size={44} color="currentColor" strokeWidth={1.1} />
                 </div>
-                <h4 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: '1.8rem', fontWeight: 400, letterSpacing: '.08em', marginBottom: '16px', color: '#b22222' }}>{item.title}</h4>
-                <p style={{ fontSize: '1rem', lineHeight: 1.9, fontWeight: 400, color: 'rgba(232,228,223,.7)' }}>{item.text}</p>
+                <h4 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: '1.8rem', fontWeight: 400, letterSpacing: '.08em', marginBottom: '16px', color: '#ff4422' }}>{item.title}</h4>
+                <p style={{ fontSize: '1rem', lineHeight: 1.9, fontWeight: 400, color: 'rgba(240,235,232,.7)' }}>{item.text}</p>
               </div>
             ))}
           </div>
@@ -219,13 +219,13 @@ export default function HomePage() {
 
       {/* Statement */}
       <section style={{ minHeight: '60vh', display: 'flex', alignItems: 'center', justifyContent: 'center', textAlign: 'center', padding: '80px 48px' }}>
-        <div className="r" style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 'clamp(1.8rem, 4.5vw, 4rem)', fontWeight: 300, lineHeight: 1.4, letterSpacing: '.03em', maxWidth: '800px', color: 'rgba(232,228,223,.6)' }}>
-          &ldquo;不追逐潮流，<br />因为<em style={{ fontStyle: 'italic', color: '#b22222' }}>经典</em>从不过时。&rdquo;
+        <div className="r" style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 'clamp(1.8rem, 4.5vw, 4rem)', fontWeight: 300, lineHeight: 1.4, letterSpacing: '.03em', maxWidth: '800px', color: 'rgba(240,235,232,.6)' }}>
+          &ldquo;不追逐潮流，<br />因为<em style={{ fontStyle: 'italic', color: '#ff4422' }}>经典</em>从不过时。&rdquo;
         </div>
       </section>
 
       {/* Timeline */}
-      <section id="history" style={{ padding: '140px 48px', background: '#0e0e0e' }}>
+      <section id="history" style={{ padding: '140px 48px', background: '#120808' }}>
         <div style={{ maxWidth: '700px', margin: '0 auto' }}>
           <p className="r" style={{ fontSize: '.6rem', letterSpacing: '.5em', opacity: 0.35, marginBottom: '20px', fontWeight: 300 }}>品牌历程</p>
           <h2 className="r" style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 'clamp(2.2rem, 5vw, 3.6rem)', fontWeight: 300, lineHeight: 1.15, letterSpacing: '.04em', marginBottom: '48px' }}>
@@ -238,41 +238,41 @@ export default function HomePage() {
       </section>
 
       {/* 旗下品牌 */}
-      <section style={{ padding: '140px 48px', background: '#0e0e0e' }}>
+      <section style={{ padding: '140px 48px', background: '#120808' }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
           <p className="r" style={{ fontSize: '.6rem', letterSpacing: '.5em', opacity: 0.35, marginBottom: '20px', fontWeight: 300 }}>旗下品牌</p>
           <h2 className="r" style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 'clamp(2.2rem, 5vw, 3.6rem)', fontWeight: 300, lineHeight: 1.15, letterSpacing: '.04em', marginBottom: '16px' }}>
             三大品牌，全品类覆盖
           </h2>
-          <p className="r" style={{ fontSize: '1rem', color: 'rgba(232,228,223,.45)', marginBottom: '64px', fontWeight: 400 }}>
+          <p className="r" style={{ fontSize: '1rem', color: 'rgba(240,235,232,.45)', marginBottom: '64px', fontWeight: 400 }}>
             男鞋 · 男装 · 女装，一个集团下的三种表达。
           </p>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '2px' }}>
             {brands.map((b, i) => (
               <div key={b.name} className="r" style={{
-                background: '#111', padding: '48px 36px', position: 'relative',
-                borderTop: '1px solid rgba(178,34,34,.15)',
+                background: '#1a0808', padding: '48px 36px', position: 'relative',
+                borderTop: '1px solid rgba(204,34,0,.15)',
                 transition: 'background .3s',
               }}>
                 <span style={{
                   position: 'absolute', top: '20px', right: '24px',
                   fontFamily: "'Cormorant Garamond', serif",
-                  fontSize: '3.5rem', fontWeight: 300, color: '#b22222', opacity: 0.08, lineHeight: 1,
+                  fontSize: '3.5rem', fontWeight: 300, color: '#ff4422', opacity: 0.08, lineHeight: 1,
                 }}>
                   {String(i + 1).padStart(2, '0')}
                 </span>
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '24px' }}>
-                  <p style={{ fontSize: '.6rem', letterSpacing: '.3em', color: '#b22222', opacity: 0.6 }}>{b.tag}</p>
-                  <span style={{ fontSize: '.55rem', letterSpacing: '.1em', color: '#b22222', border: '1px solid rgba(178,34,34,.25)', padding: '3px 8px' }}>{b.badge}</span>
+                  <p style={{ fontSize: '.6rem', letterSpacing: '.3em', color: '#ff4422', opacity: 0.6 }}>{b.tag}</p>
+                  <span style={{ fontSize: '.55rem', letterSpacing: '.1em', color: '#ff4422', border: '1px solid rgba(204,34,0,.25)', padding: '3px 8px' }}>{b.badge}</span>
                 </div>
                 <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: '1.7rem', fontWeight: 300, letterSpacing: '.06em', marginBottom: '4px' }}>{b.name}</h3>
-                <p style={{ fontSize: '.6rem', letterSpacing: '.25em', color: 'rgba(232,228,223,.2)', marginBottom: '20px' }}>{b.en}</p>
-                <p style={{ fontSize: '.95rem', lineHeight: 1.9, color: 'rgba(232,228,223,.58)', fontWeight: 400 }}>{b.desc}</p>
+                <p style={{ fontSize: '.6rem', letterSpacing: '.25em', color: 'rgba(240,235,232,.2)', marginBottom: '20px' }}>{b.en}</p>
+                <p style={{ fontSize: '.95rem', lineHeight: 1.9, color: 'rgba(240,235,232,.58)', fontWeight: 400 }}>{b.desc}</p>
               </div>
             ))}
           </div>
           <div className="r" style={{ textAlign: 'center', marginTop: '48px' }}>
-            <Link href="/about" style={{ fontSize: '.6rem', letterSpacing: '.4em', opacity: 0.4, borderBottom: '1px solid rgba(178,34,34,.3)', paddingBottom: '4px' }}>
+            <Link href="/about" style={{ fontSize: '.6rem', letterSpacing: '.4em', opacity: 0.4, borderBottom: '1px solid rgba(204,34,0,.3)', paddingBottom: '4px' }}>
               了解更多品牌故事 →
             </Link>
           </div>
@@ -286,7 +286,7 @@ export default function HomePage() {
           <h2 className="r" style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 'clamp(2.2rem, 5vw, 3.6rem)', fontWeight: 300, lineHeight: 1.15, letterSpacing: '.04em', marginBottom: '16px', textAlign: 'center' }}>
             马登公益足迹
           </h2>
-          <p className="r" style={{ fontSize: '1rem', color: 'rgba(232,228,223,.4)', maxWidth: '540px', margin: '0 auto 80px', lineHeight: 1.8, textAlign: 'center', fontWeight: 400 }}>
+          <p className="r" style={{ fontSize: '1rem', color: 'rgba(240,235,232,.4)', maxWidth: '540px', margin: '0 auto 80px', lineHeight: 1.8, textAlign: 'center', fontWeight: 400 }}>
             从2017年起，马登持续深入贫困山区，用行动陪伴孩子成长。
           </p>
 
@@ -294,18 +294,18 @@ export default function HomePage() {
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '40px 32px' }}>
             {charities.map((c, i) => (
               <div key={c.year} className="r" style={{
-                borderLeft: '2px solid rgba(178,34,34,.18)',
+                borderLeft: '2px solid rgba(204,34,0,.4)',
                 paddingLeft: '20px',
                 position: 'relative',
               }}>
                 <div style={{
                   position: 'absolute', left: '-6px', top: '4px',
                   width: '10px', height: '10px', borderRadius: '50%',
-                  background: '#b22222', opacity: 0.6,
+                  background: '#cc2200', opacity: 0.6,
                 }} />
-                <p style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: '1.1rem', color: '#b22222', opacity: 0.7, marginBottom: '8px', fontWeight: 300 }}>{c.year}</p>
-                <h4 style={{ fontSize: '.95rem', fontWeight: 400, letterSpacing: '.03em', marginBottom: '8px', color: 'rgba(232,228,223,.85)' }}>{c.title}</h4>
-                <p style={{ fontSize: '.85rem', lineHeight: 1.7, color: 'rgba(232,228,223,.42)', fontWeight: 400 }}>{c.desc}</p>
+                <p style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: '1.1rem', color: '#ff4422', opacity: 0.7, marginBottom: '8px', fontWeight: 300 }}>{c.year}</p>
+                <h4 style={{ fontSize: '.95rem', fontWeight: 400, letterSpacing: '.03em', marginBottom: '8px', color: 'rgba(240,235,232,.85)' }}>{c.title}</h4>
+                <p style={{ fontSize: '.85rem', lineHeight: 1.7, color: 'rgba(240,235,232,.42)', fontWeight: 400 }}>{c.desc}</p>
               </div>
             ))}
           </div>
@@ -356,7 +356,7 @@ export default function HomePage() {
             全渠道官方旗舰店
           </h2>
         </div>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '1px', background: 'rgba(255,255,255,.04)' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '1px', background: 'rgba(204,34,0,.12)' }}>
           {shopChannels.map(ch => (
             <ShopChannel key={ch.name} name={ch.name} sub={ch.sub} href={ch.href} />
           ))}
@@ -388,7 +388,7 @@ export default function HomePage() {
         .cta-btn-link {
           display: inline-block;
           padding: 14px 48px;
-          border: 1px solid rgba(178,34,34,.4);
+          border: 1px solid rgba(204,34,0,.4);
           font-size: .65rem;
           letter-spacing: .4em;
           font-weight: 300;

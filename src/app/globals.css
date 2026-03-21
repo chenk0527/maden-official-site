@@ -14,12 +14,11 @@ html {
 }
 
 body {
-  font-family: 'Inter', sans-serif;
-  background: #0a0a0a;
-  color: #e8e4df;
-  overflow-x: hidden;
-  cursor: none;
+  background: #0d0505;
+  color: #f0ebe8;
+  font-family: 'Inter', system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
 }
 
 a {
@@ -78,7 +77,7 @@ ul {
   position: fixed;
   inset: 0;
   z-index: 9999;
-  background: #0a0a0a;
+  background: #0d0505;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -242,18 +241,21 @@ nav {
 .btn-gold {
   display: inline-block;
   padding: 16px 52px;
-  border: 1px solid rgba(178,34,34,.6);
-  font-size: .85rem;
-  letter-spacing: .3em;
-  font-weight: 400;
-  transition: all .6s;
-  color: #e8e4df;
+  background: #cc2200;
+  color: #fff;
+  border: 2px solid #cc2200;
+  font-size: .7rem;
+  letter-spacing: .35em;
+  font-weight: 500;
+  transition: all .4s cubic-bezier(.4,0,.2,1);
+  text-transform: uppercase;
   cursor: pointer;
 }
 .btn-gold:hover {
-  background: #b22222;
-  color: #0a0a0a;
-  border-color: #b22222;
+  background: #a01a00;
+  border-color: #a01a00;
+  color: #fff;
+  transform: translateY(-1px);
 }
 
 .btn-gold-sm {

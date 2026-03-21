@@ -22,7 +22,7 @@ export default function BlogPage() {
         <h1 className="r" style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 'clamp(3rem, 8vw, 7rem)', fontWeight: 300, letterSpacing: '.1em', lineHeight: 0.9, marginBottom: '32px' }}>
           JOURNAL
         </h1>
-        <p className="r" style={{ fontSize: '.85rem', fontWeight: 200, color: 'rgba(232,228,223,.4)', maxWidth: '500px', margin: '0 auto', lineHeight: 1.8 }}>
+        <p className="r" style={{ fontSize: '.85rem', fontWeight: 200, color: 'rgba(240,235,232,.4)', maxWidth: '500px', margin: '0 auto', lineHeight: 1.8 }}>
           工装知识、穿搭灵感、品牌故事
         </p>
       </section>
@@ -36,13 +36,13 @@ export default function BlogPage() {
               </div>
               <div style={{ padding: '24px' }}>
                 <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '12px' }}>
-                  <span style={{ fontSize: '.55rem', letterSpacing: '.3em', color: '#b22222', fontWeight: 300 }}>{post.category}</span>
+                  <span style={{ fontSize: '.55rem', letterSpacing: '.3em', color: '#cc2200', fontWeight: 300 }}>{post.category}</span>
                   <span style={{ fontSize: '.55rem', letterSpacing: '.15em', opacity: 0.3, fontWeight: 300 }}>{post.readTime} 阅读</span>
                 </div>
                 <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: '1.2rem', fontWeight: 300, letterSpacing: '.03em', marginBottom: '12px', lineHeight: 1.4 }}>
                   {post.title}
                 </h2>
-                <p style={{ fontSize: '.8rem', lineHeight: 1.7, fontWeight: 200, color: 'rgba(232,228,223,.4)', marginBottom: '16px' }}>
+                <p style={{ fontSize: '.8rem', lineHeight: 1.7, fontWeight: 200, color: 'rgba(240,235,232,.4)', marginBottom: '16px' }}>
                   {post.description}
                 </p>
                 <div style={{ fontSize: '.55rem', letterSpacing: '.2em', opacity: 0.25, fontWeight: 300 }}>{post.date}</div>
