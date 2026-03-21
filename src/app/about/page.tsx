@@ -27,12 +27,6 @@ const brands = [
     desc: '延伸副线，覆盖更宽泛的美式休闲风格。融入阿美咔叽元素，年轻化表达，天猫/抖音双渠道发力。',
     tag: '男装 · 副线',
   },
-  {
-    name: '蝉社',
-    en: 'CHANSHE',
-    desc: '马登旗下女装品牌，延续复古工装基因，融入女性视角的设计语言，主打精致复古日常穿搭。',
-    tag: '女装 · 独立品牌',
-  },
 ]
 
 const charities = [
@@ -194,7 +188,7 @@ export default function AboutPage() {
 
       <style>{`
         .about-split { max-width: 1400px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 100px; align-items: center; }
-        .brands-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+        .brands-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; max-width: 900px; }
         .brand-card:hover { border-color: rgba(201,169,110,.4) !important; }
         .phil-3col { display: grid; grid-template-columns: repeat(3, 1fr); gap: 48px; }
         @media (max-width: 900px) {
