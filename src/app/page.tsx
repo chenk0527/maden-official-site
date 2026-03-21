@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { assetPath } from '@/utils/path'
 import Hero from '@/components/Hero'
 import TimelineItem from '@/components/TimelineItem'
+import { IconHammer, IconCompass, IconBird } from '@/components/Icons'
 import StoreCard from '@/components/StoreCard'
 import ShopChannel from '@/components/ShopChannel'
 import LookbookStrip from '@/components/LookbookStrip'
@@ -119,13 +120,16 @@ export default function HomePage() {
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '48px', marginTop: '56px' }}>
             {[
-              { title: '坚韧', text: 'Americana精神的核心。每一件工装都经得起时间考验——重磅面料、加固缝线、耐用五金。不是穿一季的快时尚，而是陪你走过十年的老伙计。' },
-              { title: '复古', text: '从1940年代的M-43野战服到1970年代的OG-107工装裤，马登从美国工业黄金年代汲取灵感。每一个版型、每一处细节，都有历史原型。' },
-              { title: '自在', text: '工装的本质是为劳动而生——宽松的版型、实用的口袋、不挑身材的包容性。穿上马登，不需要刻意凹造型，自在就是最好的状态。' },
+              { title: '坚韧', text: 'Americana精神的核心。每一件工装都经得起时间考验——重磅面料、加固缝线、耐用五金。不是穿一季的快时尚，而是陪你走过十年的老伙计。', Icon: IconHammer },
+              { title: '复古', text: '从1940年代的M-43野战服到1970年代的OG-107工装裤，马登从美国工业黄金年代汲取灵感。每一个版型、每一处细节，都有历史原型。', Icon: IconCompass },
+              { title: '自在', text: '工装的本质是为劳动而生——宽松的版型、实用的口袋、不挑身材的包容性。穿上马登，不需要刻意凹造型，自在就是最好的状态。', Icon: IconBird },
             ].map(item => (
               <div key={item.title} className="r">
+                <div style={{ marginBottom: '20px', color: '#c9a96e', opacity: 0.7 }}>
+                  <item.Icon size={44} color="currentColor" strokeWidth={1.1} />
+                </div>
                 <h4 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: '1.6rem', fontWeight: 300, letterSpacing: '.08em', marginBottom: '12px', color: '#c9a96e' }}>{item.title}</h4>
-                <p style={{ fontSize: '.8rem', lineHeight: 1.8, fontWeight: 200, color: 'rgba(232,228,223,.4)' }}>{item.text}</p>
+                <p style={{ fontSize: '.8rem', lineHeight: 1.8, fontWeight: 300, color: 'rgba(232,228,223,.45)' }}>{item.text}</p>
               </div>
             ))}
           </div>

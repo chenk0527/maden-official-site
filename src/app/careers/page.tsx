@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { IconChart, IconPen, IconGlobe, IconBriefcase, IconCode, IconStar } from '@/components/Icons'
 
 export const metadata: Metadata = {
   title: '加入我们 | 马登工装招聘',
@@ -16,15 +17,15 @@ const CAMPUS_FORM_URL = "#campus-form"  // 后续替换为飞书表单链接
 const SOCIAL_FORM_URL = "#social-form"  // 后续替换为飞书表单链接
 
 const campusPositions = [
-  { title: '电商运营培训生', dept: '市场部', location: '重庆' },
-  { title: '内容创意培训生', dept: '市场部', location: '重庆' },
-  { title: '供应链管理培训生', dept: '运营部', location: '重庆' },
+  { title: '电商运营培训生', dept: '市场部', location: '重庆', Icon: IconChart },
+  { title: '内容创意培训生', dept: '市场部', location: '重庆', Icon: IconPen },
+  { title: '供应链管理培训生', dept: '运营部', location: '重庆', Icon: IconGlobe },
 ]
 
 const socialPositions = [
-  { title: '天猫/抖音电商运营', dept: '市场部', location: '重庆', exp: '3-5年经验' },
-  { title: '视觉设计师', dept: '市场部', location: '重庆', exp: '2-3年经验' },
-  { title: '买手 / 商品企划', dept: '运营部', location: '重庆', exp: '3年以上经验' },
+  { title: '天猫/抖音电商运营', dept: '市场部', location: '重庆', exp: '3-5年经验', Icon: IconChart },
+  { title: '视觉设计师', dept: '市场部', location: '重庆', exp: '2-3年经验', Icon: IconStar },
+  { title: '买手 / 商品企划', dept: '运营部', location: '重庆', exp: '3年以上经验', Icon: IconBriefcase },
 ]
 
 export default function CareersPage() {
@@ -54,12 +55,17 @@ export default function CareersPage() {
           <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
             {campusPositions.map(pos => (
               <div key={pos.title} className="job-card" style={{ border: '1px solid rgba(201,169,110,.15)', background: '#0e0e0e', padding: '24px 28px', transition: 'border-color .3s' }}>
-                <div className="job-card-inner">
-                  <div>
-                    <h3 style={{ fontSize: '.95rem', fontWeight: 400, marginBottom: '8px', color: 'rgba(232,228,223,.85)' }}>{pos.title}</h3>
-                    <p style={{ fontSize: '.75rem', fontWeight: 200, color: 'rgba(232,228,223,.35)' }}>
-                      {pos.dept} · {pos.location}
-                    </p>
+                <div className="job-card-inner" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '20px' }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '20px' }}>
+                    <div style={{ color: '#c9a96e', opacity: 0.6, flexShrink: 0 }}>
+                      <pos.Icon size={28} color="currentColor" strokeWidth={1.2} />
+                    </div>
+                    <div>
+                      <h3 style={{ fontSize: '.95rem', fontWeight: 400, marginBottom: '6px', color: 'rgba(232,228,223,.85)' }}>{pos.title}</h3>
+                      <p style={{ fontSize: '.72rem', fontWeight: 300, color: 'rgba(232,228,223,.35)' }}>
+                        {pos.dept} · {pos.location}
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -87,12 +93,17 @@ export default function CareersPage() {
           <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
             {socialPositions.map(pos => (
               <div key={pos.title} className="job-card" style={{ border: '1px solid rgba(201,169,110,.15)', background: '#0e0e0e', padding: '24px 28px', transition: 'border-color .3s' }}>
-                <div className="job-card-inner">
-                  <div>
-                    <h3 style={{ fontSize: '.95rem', fontWeight: 400, marginBottom: '8px', color: 'rgba(232,228,223,.85)' }}>{pos.title}</h3>
-                    <p style={{ fontSize: '.75rem', fontWeight: 200, color: 'rgba(232,228,223,.35)' }}>
-                      {pos.dept} · {pos.location} · {pos.exp}
-                    </p>
+                <div className="job-card-inner" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '20px' }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '20px' }}>
+                    <div style={{ color: '#c9a96e', opacity: 0.6, flexShrink: 0 }}>
+                      <pos.Icon size={28} color="currentColor" strokeWidth={1.2} />
+                    </div>
+                    <div>
+                      <h3 style={{ fontSize: '.95rem', fontWeight: 400, marginBottom: '6px', color: 'rgba(232,228,223,.85)' }}>{pos.title}</h3>
+                      <p style={{ fontSize: '.72rem', fontWeight: 300, color: 'rgba(232,228,223,.35)' }}>
+                        {pos.dept} · {pos.location} · {pos.exp}
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
