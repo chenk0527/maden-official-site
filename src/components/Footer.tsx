@@ -52,7 +52,7 @@ export default function Footer() {
           {/* Links */}
           <div style={{ display: 'flex', gap: '56px', flexWrap: 'wrap' }}>
             <div>
-              <h5 style={{ fontSize: '.6rem', letterSpacing: '.3em', opacity: 0.25, marginBottom: '20px', fontWeight: 400 }}>导航</h5>
+              <h5 style={{ fontSize: '.72rem', letterSpacing: '.2em', opacity: 0.5, marginBottom: '20px', fontWeight: 500 }}>导航</h5>
               {[
                 { href: '/#about', label: '品牌故事' },
                 { href: '/about', label: '关于我们' },
@@ -65,9 +65,9 @@ export default function Footer() {
                 <Link
                   key={l.href}
                   href={l.href}
-                  style={{ display: 'block', fontSize: '.78rem', fontWeight: 300, opacity: 0.4, padding: '5px 0', transition: 'opacity .3s' }}
-                  onMouseEnter={e => (e.currentTarget.style.opacity = '.9')}
-                  onMouseLeave={e => (e.currentTarget.style.opacity = '.4')}
+                  style={{ display: 'block', fontSize: '.9rem', fontWeight: 400, opacity: 0.65, padding: '6px 0', transition: 'opacity .3s' }}
+                  onMouseEnter={e => (e.currentTarget.style.opacity = '1')}
+                  onMouseLeave={e => (e.currentTarget.style.opacity = '.65')}
                 >
                   {l.label}
                 </Link>
@@ -75,7 +75,7 @@ export default function Footer() {
             </div>
 
             <div>
-              <h5 style={{ fontSize: '.6rem', letterSpacing: '.3em', opacity: 0.25, marginBottom: '20px', fontWeight: 400 }}>购买渠道</h5>
+              <h5 style={{ fontSize: '.72rem', letterSpacing: '.2em', opacity: 0.5, marginBottom: '20px', fontWeight: 500 }}>购买渠道</h5>
               {[
                 { href: 'https://kana52030.taobao.com', label: '淘宝旗舰店' },
                 { href: 'https://kana52030.tmall.com', label: '天猫旗舰店' },
@@ -87,9 +87,9 @@ export default function Footer() {
                   href={l.href}
                   target="_blank"
                   rel="noopener"
-                  style={{ display: 'block', fontSize: '.78rem', fontWeight: 300, opacity: 0.4, padding: '5px 0', transition: 'opacity .3s' }}
-                  onMouseEnter={e => (e.currentTarget.style.opacity = '.9')}
-                  onMouseLeave={e => (e.currentTarget.style.opacity = '.4')}
+                  style={{ display: 'block', fontSize: '.9rem', fontWeight: 400, opacity: 0.65, padding: '6px 0', transition: 'opacity .3s' }}
+                  onMouseEnter={e => (e.currentTarget.style.opacity = '1')}
+                  onMouseLeave={e => (e.currentTarget.style.opacity = '.65')}
                 >
                   {l.label}
                 </a>
@@ -97,20 +97,20 @@ export default function Footer() {
             </div>
 
             <div>
-              <h5 style={{ fontSize: '.6rem', letterSpacing: '.3em', opacity: 0.25, marginBottom: '20px', fontWeight: 400 }}>联系我们</h5>
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '10px', opacity: 0.4 }}>
-                  <IconPin size={16} color="rgba(232,228,223,.8)" />
-                  <span style={{ fontSize: '.78rem', fontWeight: 300 }}>重庆 · 中国</span>
+              <h5 style={{ fontSize: '.72rem', letterSpacing: '.2em', opacity: 0.5, marginBottom: '20px', fontWeight: 500 }}>联系我们</h5>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '10px', opacity: 0.7 }}>
+                  <IconPin size={16} color="rgba(232,228,223,.9)" />
+                  <span style={{ fontSize: '.9rem', fontWeight: 400 }}>重庆 · 中国</span>
                 </div>
                 <a
                   href="mailto:service@madenfushi.com"
-                  style={{ display: 'flex', alignItems: 'center', gap: '10px', opacity: 0.4, transition: 'opacity .3s', textDecoration: 'none', color: 'inherit' }}
-                  onMouseEnter={e => (e.currentTarget.style.opacity = '.9')}
-                  onMouseLeave={e => (e.currentTarget.style.opacity = '.4')}
+                  style={{ display: 'flex', alignItems: 'center', gap: '10px', opacity: 0.7, transition: 'opacity .3s', textDecoration: 'none', color: 'inherit' }}
+                  onMouseEnter={e => (e.currentTarget.style.opacity = '1')}
+                  onMouseLeave={e => (e.currentTarget.style.opacity = '.7')}
                 >
-                  <IconMail size={16} color="rgba(232,228,223,.8)" />
-                  <span style={{ fontSize: '.78rem', fontWeight: 300 }}>service@madenfushi.com</span>
+                  <IconMail size={16} color="rgba(232,228,223,.9)" />
+                  <span style={{ fontSize: '.9rem', fontWeight: 400 }}>service@madenfushi.com</span>
                 </a>
               </div>
             </div>
@@ -119,10 +119,10 @@ export default function Footer() {
 
         {/* Divider */}
         <div style={{ borderTop: '1px solid rgba(255,255,255,.04)', paddingTop: '28px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '12px' }}>
-          <p style={{ fontSize: '.58rem', letterSpacing: '.2em', opacity: 0.15, fontWeight: 300 }}>
+          <p style={{ fontSize: '.75rem', letterSpacing: '.15em', opacity: 0.35, fontWeight: 300 }}>
             &copy; 2008–2026 马登工装 MADEN · All rights reserved
           </p>
-          <p style={{ fontSize: '.58rem', letterSpacing: '.15em', opacity: 0.12, fontWeight: 300 }}>
+          <p style={{ fontSize: '.75rem', letterSpacing: '.12em', opacity: 0.28, fontWeight: 300 }}>
             美式复古工装品牌 · Americana Workwear
           </p>
         </div>
