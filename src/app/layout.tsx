@@ -22,7 +22,12 @@ export const metadata: Metadata = {
     images: [assetPath('/images/ali-harrington.jpg')],
   },
   robots: { index: true, follow: true },
-  icons: { icon: assetPath('/images/avatar.jpg') },
+  icons: {
+    icon: [
+      { url: '/favicon.ico', sizes: '32x32', type: 'image/x-icon' },
+      { url: '/favicon.svg', type: 'image/svg+xml' },
+    ],
+  },
   // Google Search Console / 百度站长验证（填入真实验证码）
   // verification: {
   //   google: 'YOUR_GOOGLE_VERIFICATION_CODE',
