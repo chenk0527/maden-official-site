@@ -68,14 +68,14 @@ export default function Navbar() {
               key={link.href}
               href={link.href}
               style={{
-                fontSize: '.65rem',
-                letterSpacing: '.2em',
-                fontWeight: 300,
-                opacity: 0.6,
+                fontSize: '.8rem',
+                letterSpacing: '.18em',
+                fontWeight: 400,
+                opacity: 0.8,
                 transition: 'opacity .4s',
               }}
               onMouseEnter={e => (e.currentTarget.style.opacity = '1')}
-              onMouseLeave={e => (e.currentTarget.style.opacity = '0.6')}
+              onMouseLeave={e => (e.currentTarget.style.opacity = '0.8')}
             >
               {link.label}
             </Link>

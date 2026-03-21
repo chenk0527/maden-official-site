@@ -35,7 +35,7 @@ export default function Hero() {
 
       {/* Center content */}
       <div style={{ position: 'relative', zIndex: 2, textAlign: 'center', padding: '0 24px' }}>
-        <p style={{ fontSize: '.6rem', letterSpacing: '.5em', opacity: 0.5, marginBottom: '32px', fontWeight: 300 }}>
+        <p style={{ fontSize: '.75rem', letterSpacing: '.5em', opacity: 0.75, marginBottom: '32px', fontWeight: 400 }}>
           美式复古工装 · 始于2008
         </p>
         <h1
@@ -54,9 +54,9 @@ export default function Hero() {
         </h1>
         <p
           style={{
-            fontSize: '.65rem',
+            fontSize: '.8rem',
             letterSpacing: '.6em',
-            fontWeight: 200,
+            fontWeight: 400,
             opacity: 0,
             animation: 'fu 1.2s 2.6s cubic-bezier(.4,0,.2,1) forwards',
           }}
@@ -84,7 +84,7 @@ export default function Hero() {
           gap: '12px',
         }}
       >
-        <span style={{ fontSize: '.55rem', letterSpacing: '.4em', opacity: 0.3, fontWeight: 300 }}>向下探索</span>
+        <span style={{ fontSize: '.65rem', letterSpacing: '.4em', opacity: 0.5, fontWeight: 400 }}>向下探索</span>
         <div className="scroll-bar" />
       </div>
     </section>
