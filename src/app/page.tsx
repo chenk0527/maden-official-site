@@ -195,7 +195,7 @@ export default function HomePage() {
               <div style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 'clamp(3rem, 6vw, 5rem)', fontWeight: 300, color: '#c9a96e', lineHeight: 1, letterSpacing: '.05em', marginBottom: '12px' }}>
                 <CountUp target={item.count} suffix={item.suffix} />
               </div>
-              <div style={{ fontSize: '.6rem', letterSpacing: '.4em', opacity: 0.3, fontWeight: 300 }}>{item.label}</div>
+              <div style={{ fontSize: '.8rem', letterSpacing: '.3em', opacity: 0.65, fontWeight: 400, marginTop: '8px' }}>{item.label}</div>
             </div>
           ))}
         </div>
