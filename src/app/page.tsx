@@ -74,25 +74,6 @@ export default function HomePage() {
       {/* Hero */}
       <Hero />
 
-      {/* Numbers — 紧跟Hero，第一屏后立即可见 */}
-      <section style={{ padding: '0 48px', background: '#0a0a0a', borderBottom: '1px solid rgba(255,255,255,.05)' }}>
-        <div id="numbers-grid" style={{ maxWidth: '1200px', margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', textAlign: 'center', padding: '56px 0' }}>
-          {[
-            { count: 18, suffix: '', label: '年品牌历史' },
-            { count: 443, suffix: '+', label: '团队成员' },
-            { count: 9, suffix: '', label: '实体门店' },
-            { count: 1000, suffix: '万+', label: '全网粉丝' },
-          ].map((item, i) => (
-            <div key={item.label} className="r" style={{ borderRight: i < 3 ? '1px solid rgba(255,255,255,.06)' : 'none', padding: '0 24px' }}>
-              <div style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 'clamp(2.4rem, 5vw, 4rem)', fontWeight: 300, color: '#c9a96e', lineHeight: 1, letterSpacing: '.05em' }}>
-                <CountUp target={item.count} suffix={item.suffix} />
-              </div>
-              <div style={{ fontSize: '.82rem', letterSpacing: '.25em', opacity: 0.6, fontWeight: 400, marginTop: '10px' }}>{item.label}</div>
-            </div>
-          ))}
-        </div>
-      </section>
-
       {/* About */}
       <section id="about" style={{ padding: '140px 48px' }}>
         <div style={{ maxWidth: '1400px', margin: '0 auto', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '100px', alignItems: 'center' }}>
