@@ -10,6 +10,7 @@ import LookbookStrip from '@/components/LookbookStrip'
 import CountUp from '@/components/CountUp'
 import ProductCard from '@/components/ProductCard'
 import { products, shopChannels } from '@/data/products'
+import CelebritySection from '@/components/CelebritySection'
 import { cityStores } from '@/data/stores'
 import { timeline } from '@/data/timeline'
 
@@ -50,12 +51,12 @@ const charities = [
 ]
 
 export const metadata: Metadata = {
-  title: '马登工装 MADEN — 美式复古工装品牌 | 始于重庆 忠于工装 Since 2008',
-  description: '马登工装 MADEN，中国领先的美式复古工装品牌。创立于2008年重庆，坚持Americana精神，提供工装夹克、复古裤装、牛仔、针织、鞋靴等全品类产品。全国7家实体门店，70+线上店铺。',
+  title: '马登工装 MADEN — 美式复古工装品牌 | 始于重庆 忠于工装 Since 2011',
+  description: '马登工装 MADEN，中国领先的美式复古工装品牌。创立于2011年重庆，坚持Americana精神，提供工装夹克、复古裤装、牛仔、针织、鞋靴等全品类产品。全国7家实体门店，70+线上店铺。',
   alternates: { canonical: 'https://madenfushi.com' },
   openGraph: {
     title: '马登工装 MADEN — 美式复古工装品牌',
-    description: '始于重庆，忠于工装。中国领先的美式复古工装品牌，Since 2008。',
+    description: '始于重庆，忠于工装。中国领先的美式复古工装品牌，Since 2011。',
     url: 'https://madenfushi.com',
   },
 }
@@ -69,7 +70,7 @@ const faqSchema = {
       name: '马登工装是什么品牌？',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: '马登工装（MADEN）是中国领先的美式复古工装品牌，创立于2008年重庆。品牌坚持Americana精神，专注于工装夹克、复古裤装、牛仔、针织等产品。目前拥有全国7家实体门店和70+线上店铺。',
+        text: '马登工装（MADEN）是中国领先的美式复古工装品牌，创立于2011年重庆。品牌坚持Americana精神，专注于工装夹克、复古裤装、牛仔、针织等产品。目前拥有全国7家实体门店和70+线上店铺。',
       },
     },
     {
@@ -114,7 +115,7 @@ export default function HomePage() {
       <section style={{ padding: '0 48px', background: '#0a0a0a', borderBottom: '1px solid rgba(255,255,255,.05)' }}>
         <div id="numbers-grid" style={{ maxWidth: '1200px', margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', textAlign: 'center', padding: '56px 0' }}>
           {[
-            { count: 18, suffix: '', label: '年品牌历史' },
+            { count: 15, suffix: '年', label: '品牌历史' },
             { count: 443, suffix: '+', label: '团队成员' },
             { count: 8, suffix: "家", label: "实体门店" },
             { count: 1000, suffix: '万+', label: '全网粉丝' },
@@ -139,7 +140,7 @@ export default function HomePage() {
               style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', transition: 'transform 1.2s cubic-bezier(.4,0,.2,1)' }}
             />
             <div style={{ position: 'absolute', bottom: '24px', right: '24px', background: 'rgba(201,169,110,.9)', color: '#0a0a0a', fontFamily: "'Cormorant Garamond', serif", fontSize: '1rem', fontWeight: 600, letterSpacing: '.15em', padding: '10px 18px' }}>
-              Since 2008
+              Since 2011
             </div>
           </div>
 
@@ -159,7 +160,7 @@ export default function HomePage() {
             </p>
             <div style={{ marginTop: '40px', fontSize: '.6rem', letterSpacing: '.4em', opacity: 0.3, display: 'flex', alignItems: 'center', gap: '20px' }}>
               <span style={{ width: '40px', height: '1px', background: 'rgba(201,169,110,.3)', display: 'inline-block' }} />
-              重庆 · 2008年创立
+              重庆 · 2011年创立
             </div>
           </div>
         </div>
@@ -217,6 +218,11 @@ export default function HomePage() {
         <LookbookStrip />
       </section>
 
+
+
+      {/* 明星同款 */}
+      <CelebritySection />
+
       {/* Statement */}
       <section style={{ minHeight: '60vh', display: 'flex', alignItems: 'center', justifyContent: 'center', textAlign: 'center', padding: '80px 48px' }}>
         <div className="r" style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 'clamp(1.8rem, 4.5vw, 4rem)', fontWeight: 300, lineHeight: 1.4, letterSpacing: '.03em', maxWidth: '800px', color: 'rgba(232,228,223,.6)' }}>
@@ -229,7 +235,7 @@ export default function HomePage() {
         <div style={{ maxWidth: '700px', margin: '0 auto' }}>
           <p className="r" style={{ fontSize: '.6rem', letterSpacing: '.5em', opacity: 0.35, marginBottom: '20px', fontWeight: 300 }}>品牌历程</p>
           <h2 className="r" style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 'clamp(2.2rem, 5vw, 3.6rem)', fontWeight: 300, lineHeight: 1.15, letterSpacing: '.04em', marginBottom: '48px' }}>
-            18年，一件事
+            15年，一件事
           </h2>
           {timeline.map((item, i) => (
             <TimelineItem key={item.year} year={item.year} text={item.text} isLast={i === timeline.length - 1} />

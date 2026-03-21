@@ -29,7 +29,7 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: 'brand-story',
-    title: '从重庆到全国的工装之路：马登18年品牌故事',
+    title: '从重庆到全国的工装之路：马登15年品牌故事',
     description: '2008年，三个重庆年轻人的Americana梦想。从一间工作室到全国7家实体门店，马登工装的18年是中国本土工装品牌的缩影。',
     date: '2026-01-20',
     readTime: '10 分钟',

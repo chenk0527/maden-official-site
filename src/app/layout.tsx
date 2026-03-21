@@ -10,10 +10,10 @@ import ScrollReveal from '@/components/ScrollReveal'
 export const metadata: Metadata = {
   metadataBase: new URL('https://madenfushi.com'),
   title: {
-    default: '马登工装 MADEN — 美式复古工装品牌 | 始于重庆 忠于工装 Since 2008',
+    default: '马登工装 MADEN — 美式复古工装品牌 | 始于重庆 忠于工装 Since 2011',
     template: '%s | 马登工装 MADEN',
   },
-  description: '马登工装 MADEN，中国领先的美式复古工装品牌。创立于2008年重庆，坚持Americana精神，提供工装夹克、复古裤装、牛仔、针织、鞋靴等全品类产品。全国7家实体门店，70+线上店铺。',
+  description: '马登工装 MADEN，中国领先的美式复古工装品牌。创立于2011年重庆，坚持Americana精神，提供工装夹克、复古裤装、牛仔、针织、鞋靴等全品类产品。全国7家实体门店，70+线上店铺。',
   keywords: ['马登工装', 'MADEN', '美式复古', '工装品牌', '工装夹克', '复古裤装', '阿美咔叽', 'Americana', '重庆品牌', '底特律夹克', '工装靴', '赤耳牛仔'],
   openGraph: {
     type: 'website',
@@ -41,7 +41,7 @@ const organizationSchema = {
   name: '马登工装 MADEN',
   url: 'https://madenfushi.com',
   logo: 'https://madenfushi.com/images/avatar.jpg',
-  foundingDate: '2008',
+  foundingDate: '2011',
   foundingLocation: { '@type': 'Place', name: '重庆' },
   description: '中国领先的美式复古工装品牌，坚持Americana精神，提供工装夹克、复古裤装、牛仔、针织、鞋靴等全品类产品。',
   sameAs: ['https://www.douyin.com/user/MS4wLjABAAAAJIU0tHMNE7wBLvlwa30WmALTMhsrvdcrHlryVMEB9n0'],

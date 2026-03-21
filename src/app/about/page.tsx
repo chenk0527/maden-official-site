@@ -5,11 +5,11 @@ import { timeline } from '@/data/timeline'
 
 export const metadata: Metadata = {
   title: '关于我们 | 马登工装品牌故事',
-  description: '马登工装MADEN品牌故事——三位重庆年轻人的Americana梦想。从2008年到今天，18年专注美式复古工装，始于重庆，忠于工装。',
+  description: '马登工装MADEN品牌故事——三位重庆年轻人的Americana梦想。从2008年到今天，15年专注美式复古工装，始于重庆，忠于工装。',
   alternates: { canonical: 'https://madenfushi.com/about' },
   openGraph: {
     title: '关于马登工装 MADEN — 始于重庆，忠于工装',
-    description: '三位重庆年轻人的Americana梦想。2008年创立，18年专注美式复古工装。',
+    description: '三位重庆年轻人的Americana梦想。2011年创立，15年专注美式复古工装。',
     url: 'https://madenfushi.com/about',
   },
 }
@@ -60,7 +60,7 @@ export default function AboutPage() {
           始于重庆<br />忠于工装
         </h1>
         <p className="r" style={{ fontSize: '1rem', fontWeight: 400, color: 'rgba(232,228,223,.55)', maxWidth: '500px', margin: '0 auto', lineHeight: 1.8 }}>
-          Since 2008 · Americana Spirit · Made in China
+          Since 2011 · Americana Spirit · Made in China
         </p>
       </section>
 
@@ -79,13 +79,13 @@ export default function AboutPage() {
               三个人，一间工作室，<br />一个关于工装的梦
             </h2>
             <p style={{ fontSize: '1rem', lineHeight: 2, fontWeight: 400, color: 'rgba(232,228,223,.7)', marginBottom: '20px' }}>
-              2008年，重庆，三位二十出头的年轻人，因为共同热爱美式复古文化走到了一起。那个年代，中国市场几乎找不到一件像样的美式工装。于是他们决定自己做。
+              2011年，重庆，三位二十出头的年轻人，因为共同热爱美式复古文化走到了一起。那个年代，中国市场几乎找不到一件像样的美式工装。于是他们决定自己做。
             </p>
             <p style={{ fontSize: '1rem', lineHeight: 2, fontWeight: 400, color: 'rgba(232,228,223,.7)', marginBottom: '20px' }}>
               从一件哈灵顿夹克开始，马登逐渐建立起自己的产品体系。不追快时尚，不做爆款逻辑，只做经典的、有历史原型的、能穿十年的好衣服。
             </p>
             <p style={{ fontSize: '1rem', lineHeight: 2, fontWeight: 400, color: 'rgba(232,228,223,.7)' }}>
-              如今，马登已成为中国美式复古工装领域的代表品牌之一。全国8家实体门店，70+线上店铺，全网粉丝突破1000万，443人团队。但无论规模怎么变，那股对Americana精神的执念从未改变。
+              如今，马登已成为中国美式复古工装领域的代表品牌之一。年销售1100万件，全国8家实体门店，70+线上店铺，全网粉丝突破1000万，443人团队，80家战略工厂保障品质与交付。但无论规模怎么变，那股对Americana精神的执念从未改变。
             </p>
           </div>
         </div>
@@ -208,7 +208,7 @@ export default function AboutPage() {
         <div style={{ maxWidth: '700px', margin: '0 auto' }}>
           <p className="r" style={{ fontSize: '.7rem', letterSpacing: '.5em', opacity: 0.4, marginBottom: '20px', fontWeight: 400 }}>品牌历程</p>
           <h2 className="r" style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 'clamp(2.2rem, 5vw, 3.6rem)', fontWeight: 300, lineHeight: 1.15, letterSpacing: '.04em', marginBottom: '48px' }}>
-            18年，一件事
+            15年，一件事
           </h2>
           {timeline.map((item, i) => (
             <TimelineItem key={item.year} year={item.year} text={item.text} isLast={i === timeline.length - 1} />

@@ -36,7 +36,7 @@ export default function Hero() {
       {/* Center content */}
       <div style={{ position: 'relative', zIndex: 2, textAlign: 'center', padding: '0 24px' }}>
         <p style={{ fontSize: '.75rem', letterSpacing: '.5em', opacity: 0.75, marginBottom: '32px', fontWeight: 400 }}>
-          美式复古工装 · 始于2008
+          美式复古工装 · 始于2011
         </p>
         <h1
           style={{
