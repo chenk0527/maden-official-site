@@ -1,5 +1,6 @@
 import type { NextConfig } from 'next'
 
+// GitHub Pages 部署时有 basePath，Cloudflare Pages 不需要
 const isGhPages = process.env.GITHUB_ACTIONS === 'true'
 const basePath = isGhPages ? '/maden-official-site' : ''
 
