@@ -74,12 +74,31 @@ export default function HomePage() {
       {/* Hero */}
       <Hero />
 
+      {/* Numbers — 紧跟Hero，第一屏后立即可见 */}
+      <section style={{ padding: '0 48px', background: '#0a0a0a', borderBottom: '1px solid rgba(255,255,255,.05)' }}>
+        <div id="numbers-grid" style={{ maxWidth: '1200px', margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', textAlign: 'center', padding: '56px 0' }}>
+          {[
+            { count: 18, suffix: '', label: '年品牌历史' },
+            { count: 443, suffix: '+', label: '团队成员' },
+            { count: 9, suffix: '', label: '实体门店' },
+            { count: 1000, suffix: '万+', label: '全网粉丝' },
+          ].map((item, i) => (
+            <div key={item.label} className="r" style={{ borderRight: i < 3 ? '1px solid rgba(255,255,255,.06)' : 'none', padding: '0 24px' }}>
+              <div style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 'clamp(2.4rem, 5vw, 4rem)', fontWeight: 300, color: '#c9a96e', lineHeight: 1, letterSpacing: '.05em' }}>
+                <CountUp target={item.count} suffix={item.suffix} />
+              </div>
+              <div style={{ fontSize: '.82rem', letterSpacing: '.25em', opacity: 0.6, fontWeight: 400, marginTop: '10px' }}>{item.label}</div>
+            </div>
+          ))}
+        </div>
+      </section>
+
       {/* About */}
       <section id="about" style={{ padding: '140px 48px' }}>
         <div style={{ maxWidth: '1400px', margin: '0 auto', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '100px', alignItems: 'center' }}>
           <div className="r-left" style={{ position: 'relative', overflow: 'hidden', aspectRatio: '3/4' }}>
             <img
-              src={assetPath("/images/ali-jeans.jpg")}
+              src={assetPath("/images/ali-jeans.webp")}
               alt="马登工装 赤耳牛仔裤 手工缝制"
               style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', transition: 'transform 1.2s cubic-bezier(.4,0,.2,1)' }}
             />
@@ -182,24 +201,20 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Numbers */}
-      <section style={{ padding: '140px 48px' }}>
-        <div id="numbers-grid" style={{ maxWidth: '1200px', margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '48px', textAlign: 'center', borderTop: '1px solid rgba(255,255,255,.05)', borderBottom: '1px solid rgba(255,255,255,.05)', padding: '80px 0' }}>
-          {[
-            { count: 18, suffix: '', label: '年品牌历史' },
-            { count: 443, suffix: '+', label: '团队成员' },
-            { count: 9, suffix: '', label: '实体门店' },
-            { count: 1000, suffix: '万+', label: '全网粉丝' },
-          ].map(item => (
-            <div key={item.label} className="r">
-              <div style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 'clamp(3rem, 6vw, 5rem)', fontWeight: 300, color: '#c9a96e', lineHeight: 1, letterSpacing: '.05em', marginBottom: '12px' }}>
-                <CountUp target={item.count} suffix={item.suffix} />
-              </div>
-              <div style={{ fontSize: '.8rem', letterSpacing: '.3em', opacity: 0.65, fontWeight: 400, marginTop: '8px' }}>{item.label}</div>
-            </div>
-          ))}
+      {/* Full-width brand divider image */}
+      <div style={{ width: '100%', height: '60vh', position: 'relative', overflow: 'hidden' }}>
+        <img
+          src={assetPath("/images/ali-og107.webp")}
+          alt="马登工装 OG-107 军旅裤"
+          style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 30%', filter: 'brightness(.55)' }}
+        />
+        <div style={{ position: 'absolute', inset: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column', gap: '16px' }}>
+          <p style={{ fontSize: '.7rem', letterSpacing: '.6em', opacity: 0.5, fontWeight: 400 }}>有品质的生活</p>
+          <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 'clamp(2rem, 6vw, 5rem)', fontWeight: 300, letterSpacing: '.15em', textAlign: 'center' }}>
+            不需要那么贵
+          </h2>
         </div>
-      </section>
+      </div>
 
       {/* Stores */}
       <section id="stores" style={{ padding: '140px 48px' }}>
@@ -234,7 +249,7 @@ export default function HomePage() {
       {/* CTA */}
       <section style={{ position: 'relative', minHeight: '50vh', display: 'flex', alignItems: 'center', justifyContent: 'center', overflow: 'hidden', textAlign: 'center' }}>
         <div style={{ position: 'absolute', inset: 0 }}>
-          <img src={assetPath("/images/ali-sweater.jpg")} alt="马登工装" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', filter: 'brightness(.2)' }} />
+          <img src={assetPath("/images/ali-sweater.webp")} alt="马登工装" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', filter: 'brightness(.2)' }} />
         </div>
         <div className="r" style={{ position: 'relative', zIndex: 2 }}>
           <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 'clamp(1.8rem, 4vw, 3.2rem)', fontWeight: 300, letterSpacing: '.12em', marginBottom: '12px' }}>

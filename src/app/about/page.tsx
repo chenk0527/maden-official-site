@@ -69,7 +69,7 @@ export default function AboutPage() {
         <div className="about-split">
           <div className="r-left about-img" style={{ position: 'relative', overflow: 'hidden', aspectRatio: '3/4' }}>
             <img
-              src={assetPath("/images/ali-harrington.jpg")}
+              src={assetPath("/images/ali-harrington.webp")}
               alt="马登工装品牌故事"
               style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', transition: 'transform 1.2s cubic-bezier(.4,0,.2,1)' }}
             />

@@ -18,7 +18,7 @@ export default function Hero() {
       {/* Background image */}
       <div style={{ position: 'absolute', inset: 0 }}>
         <img
-          src={assetPath("/images/ali-harrington.jpg")}
+          src={assetPath("/images/ali-harrington.webp")}
           alt="马登工装 MADEN 美式复古工装品牌"
           style={{
             position: 'absolute',
