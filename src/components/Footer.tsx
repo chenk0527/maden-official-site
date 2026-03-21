@@ -40,7 +40,7 @@ export default function Footer() {
                   aria-label={label}
                   title={label}
                   style={{ color: 'rgba(232,228,223,.35)', transition: 'color .3s' }}
-                  onMouseEnter={e => (e.currentTarget.style.color = '#c9a96e')}
+                  onMouseEnter={e => (e.currentTarget.style.color = '#b22222')}
                   onMouseLeave={e => (e.currentTarget.style.color = 'rgba(232,228,223,.35)')}
                 >
                   <Icon size={22} color="currentColor" />

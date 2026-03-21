@@ -48,8 +48,8 @@ export default function StoresPage() {
 
       <section style={{ padding: '0 48px 80px' }}>
         <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
-          <div className="r" style={{ background: '#0e0e0e', padding: '60px', textAlign: 'center', borderTop: '1px solid rgba(201,169,110,.15)', borderBottom: '1px solid rgba(201,169,110,.15)' }}>
-            <p style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: '1.4rem', fontWeight: 300, color: '#c9a96e', marginBottom: '12px', letterSpacing: '.05em' }}>
+          <div className="r" style={{ background: '#0e0e0e', padding: '60px', textAlign: 'center', borderTop: '1px solid rgba(178,34,34,.15)', borderBottom: '1px solid rgba(178,34,34,.15)' }}>
+            <p style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: '1.4rem', fontWeight: 300, color: '#b22222', marginBottom: '12px', letterSpacing: '.05em' }}>
               地图导航
             </p>
             <p style={{ fontSize: '.85rem', fontWeight: 200, color: 'rgba(232,228,223,.3)', lineHeight: 1.8 }}>
@@ -68,7 +68,7 @@ export default function StoresPage() {
             { title: '联系方式', text: '全国客服：service@madenfushi.com\n微信公众号：马登工装' },
           ].map(item => (
             <div key={item.title} className="r" style={{ padding: '32px', background: '#0e0e0e' }}>
-              <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: '1.2rem', fontWeight: 300, color: '#c9a96e', marginBottom: '16px' }}>{item.title}</h3>
+              <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: '1.2rem', fontWeight: 300, color: '#b22222', marginBottom: '16px' }}>{item.title}</h3>
               <p style={{ fontSize: '.85rem', lineHeight: 1.9, fontWeight: 200, color: 'rgba(232,228,223,.4)', whiteSpace: 'pre-line' }}>{item.text}</p>
             </div>
           ))}

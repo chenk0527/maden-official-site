@@ -101,7 +101,7 @@ export default function AboutPage() {
           <div className="brands-grid">
             {brands.map((b, i) => (
               <div key={b.name} className="r brand-card" style={{
-                border: '1px solid rgba(201,169,110,.15)',
+                border: '1px solid rgba(178,34,34,.15)',
                 padding: '48px 40px',
                 position: 'relative',
                 transition: 'border-color .4s',
@@ -111,14 +111,14 @@ export default function AboutPage() {
                   position: 'absolute', top: '24px', right: '28px',
                   fontFamily: "'Cormorant Garamond', serif",
                   fontSize: '3rem', fontWeight: 300,
-                  color: '#c9a96e', opacity: 0.12, lineHeight: 1,
+                  color: '#b22222', opacity: 0.12, lineHeight: 1,
                   userSelect: 'none',
                 }}>
                   {String(i + 1).padStart(2, '0')}
                 </span>
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '20px' }}>
-                  <p style={{ fontSize: '.65rem', letterSpacing: '.3em', color: '#c9a96e', opacity: 0.7, fontWeight: 400 }}>{b.tag}</p>
-                  <span style={{ fontSize: '.6rem', letterSpacing: '.1em', color: '#c9a96e', border: '1px solid rgba(201,169,110,.3)', padding: '3px 10px', fontWeight: 400 }}>{b.badge}</span>
+                  <p style={{ fontSize: '.65rem', letterSpacing: '.3em', color: '#b22222', opacity: 0.7, fontWeight: 400 }}>{b.tag}</p>
+                  <span style={{ fontSize: '.6rem', letterSpacing: '.1em', color: '#b22222', border: '1px solid rgba(178,34,34,.3)', padding: '3px 10px', fontWeight: 400 }}>{b.badge}</span>
                 </div>
                 <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: '1.8rem', fontWeight: 300, letterSpacing: '.08em', marginBottom: '6px', color: 'rgba(232,228,223,.95)' }}>{b.name}</h3>
                 <p style={{ fontSize: '.65rem', letterSpacing: '.25em', color: 'rgba(232,228,223,.25)', marginBottom: '20px', fontWeight: 400 }}>{b.en}</p>
@@ -143,7 +143,7 @@ export default function AboutPage() {
               { title: '中国品牌的Americana', text: '我们在重庆，做的是美国工装文化。这不矛盾——文化没有国界，对品质的追求是全人类共通的语言。' },
             ].map(item => (
               <div key={item.title} className="r">
-                <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: '1.5rem', fontWeight: 400, letterSpacing: '.05em', marginBottom: '16px', color: '#c9a96e' }}>{item.title}</h3>
+                <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: '1.5rem', fontWeight: 400, letterSpacing: '.05em', marginBottom: '16px', color: '#b22222' }}>{item.title}</h3>
                 <p style={{ fontSize: '1rem', lineHeight: 1.9, fontWeight: 400, color: 'rgba(232,228,223,.65)' }}>{item.text}</p>
               </div>
             ))}
@@ -158,7 +158,7 @@ export default function AboutPage() {
           <h2 className="r" style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 'clamp(2.2rem, 5vw, 3.6rem)', fontWeight: 300, lineHeight: 1.15, letterSpacing: '.04em', marginBottom: '8px', textAlign: 'center' }}>
             马登公益足迹
           </h2>
-          <p className="r" style={{ fontSize: '.7rem', letterSpacing: '.3em', color: '#c9a96e', opacity: 0.5, marginBottom: '16px', textAlign: 'center', fontWeight: 400 }}>MADEN CHARITY FUND</p>
+          <p className="r" style={{ fontSize: '.7rem', letterSpacing: '.3em', color: '#b22222', opacity: 0.5, marginBottom: '16px', textAlign: 'center', fontWeight: 400 }}>MADEN CHARITY FUND</p>
           <p className="r" style={{ fontSize: '1rem', fontWeight: 400, color: 'rgba(232,228,223,.45)', marginBottom: '80px', lineHeight: 1.8, textAlign: 'center', maxWidth: '600px', margin: '0 auto 80px' }}>
             我们相信，一个好品牌不只卖衣服。从2017年起，马登持续深入贫困山区，用行动陪伴孩子成长。
           </p>
@@ -166,7 +166,7 @@ export default function AboutPage() {
           {/* 双排错列时间轴 */}
           <div style={{ position: 'relative' }}>
             {/* 中间横线 */}
-            <div style={{ position: 'absolute', top: '50%', left: 0, right: 0, height: '1px', background: 'rgba(201,169,110,.12)', transform: 'translateY(-50%)' }} />
+            <div style={{ position: 'absolute', top: '50%', left: 0, right: 0, height: '1px', background: 'rgba(178,34,34,.12)', transform: 'translateY(-50%)' }} />
 
             <div className="charity-grid">
               {charities.map((c) => (
@@ -179,16 +179,16 @@ export default function AboutPage() {
                         <p style={{ fontSize: '.82rem', lineHeight: 1.7, fontWeight: 400, color: 'rgba(232,228,223,.45)' }}>{c.desc}</p>
                       </div>
                       <div className="charity-node-top">
-                        <span style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: '1rem', fontWeight: 300, color: '#c9a96e', display: 'block', marginBottom: '8px' }}>{c.year}</span>
-                        <div style={{ width: '10px', height: '10px', borderRadius: '50%', background: '#c9a96e', opacity: 0.7, border: '2px solid #0e0e0e', outline: '1px solid rgba(201,169,110,.4)', margin: '0 auto' }} />
+                        <span style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: '1rem', fontWeight: 300, color: '#b22222', display: 'block', marginBottom: '8px' }}>{c.year}</span>
+                        <div style={{ width: '10px', height: '10px', borderRadius: '50%', background: '#b22222', opacity: 0.7, border: '2px solid #0e0e0e', outline: '1px solid rgba(178,34,34,.4)', margin: '0 auto' }} />
                       </div>
                     </>
                   ) : (
                     /* 下排：圆点+年份在上，内容在下 */
                     <>
                       <div className="charity-node-bottom">
-                        <div style={{ width: '10px', height: '10px', borderRadius: '50%', background: '#c9a96e', opacity: 0.7, border: '2px solid #0e0e0e', outline: '1px solid rgba(201,169,110,.4)', margin: '0 auto 8px' }} />
-                        <span style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: '1rem', fontWeight: 300, color: '#c9a96e', display: 'block' }}>{c.year}</span>
+                        <div style={{ width: '10px', height: '10px', borderRadius: '50%', background: '#b22222', opacity: 0.7, border: '2px solid #0e0e0e', outline: '1px solid rgba(178,34,34,.4)', margin: '0 auto 8px' }} />
+                        <span style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: '1rem', fontWeight: 300, color: '#b22222', display: 'block' }}>{c.year}</span>
                       </div>
                       <div className="charity-content-bottom">
                         <h4 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: '1.1rem', fontWeight: 400, color: 'rgba(232,228,223,.9)', marginBottom: '8px', letterSpacing: '.03em' }}>{c.title}</h4>
@@ -219,7 +219,7 @@ export default function AboutPage() {
       <style>{`
         .about-split { max-width: 1400px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 100px; align-items: center; }
         .brands-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
-        .brand-card:hover { border-color: rgba(201,169,110,.4) !important; }
+        .brand-card:hover { border-color: rgba(178,34,34,.4) !important; }
         .phil-3col { display: grid; grid-template-columns: repeat(3, 1fr); gap: 48px; }
 
         /* 公益时间轴 */

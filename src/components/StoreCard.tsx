@@ -15,7 +15,7 @@ export default function StoreCard({ cityData, direction = 'left' }: Props) {
           fontWeight: 300,
           letterSpacing: '.1em',
           marginBottom: '8px',
-          color: '#c9a96e',
+          color: '#b22222',
         }}
       >
         {cityData.city}

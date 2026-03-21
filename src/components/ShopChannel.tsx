@@ -26,15 +26,15 @@ export default function ShopChannel({ name, sub, href }: Props) {
         e.currentTarget.style.background = '#111'
         const btn = e.currentTarget.querySelector('.ch-btn') as HTMLElement
         if (btn) {
-          btn.style.borderColor = '#c9a96e'
-          btn.style.color = '#c9a96e'
+          btn.style.borderColor = '#b22222'
+          btn.style.color = '#b22222'
         }
       }}
       onMouseLeave={e => {
         e.currentTarget.style.background = '#0a0a0a'
         const btn = e.currentTarget.querySelector('.ch-btn') as HTMLElement
         if (btn) {
-          btn.style.borderColor = 'rgba(201,169,110,.25)'
+          btn.style.borderColor = 'rgba(178,34,34,.25)'
           btn.style.color = '#e8e4df'
         }
       }}
@@ -46,7 +46,7 @@ export default function ShopChannel({ name, sub, href }: Props) {
         style={{
           display: 'inline-block',
           padding: '8px 24px',
-          border: '1px solid rgba(201,169,110,.25)',
+          border: '1px solid rgba(178,34,34,.25)',
           fontSize: '.6rem',
           letterSpacing: '.2em',
           fontWeight: 300,

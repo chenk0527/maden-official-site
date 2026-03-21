@@ -36,7 +36,7 @@ export default function BlogPage() {
               </div>
               <div style={{ padding: '24px' }}>
                 <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '12px' }}>
-                  <span style={{ fontSize: '.55rem', letterSpacing: '.3em', color: '#c9a96e', fontWeight: 300 }}>{post.category}</span>
+                  <span style={{ fontSize: '.55rem', letterSpacing: '.3em', color: '#b22222', fontWeight: 300 }}>{post.category}</span>
                   <span style={{ fontSize: '.55rem', letterSpacing: '.15em', opacity: 0.3, fontWeight: 300 }}>{post.readTime} 阅读</span>
                 </div>
                 <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: '1.2rem', fontWeight: 300, letterSpacing: '.03em', marginBottom: '12px', lineHeight: 1.4 }}>

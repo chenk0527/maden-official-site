@@ -38,7 +38,7 @@ ul {
 }
 
 ::selection {
-  background: #c9a96e;
+  background: #b22222;
   color: #0a0a0a;
 }
 
@@ -47,7 +47,7 @@ ul {
   position: fixed;
   width: 12px;
   height: 12px;
-  border: 1.5px solid rgba(201,169,110,.6);
+  border: 1.5px solid rgba(178,34,34,.6);
   border-radius: 50%;
   pointer-events: none;
   z-index: 10000;
@@ -60,7 +60,7 @@ ul {
   position: fixed;
   width: 4px;
   height: 4px;
-  background: #c9a96e;
+  background: #b22222;
   border-radius: 50%;
   pointer-events: none;
   z-index: 10001;
@@ -70,7 +70,7 @@ ul {
 .cursor.hover {
   width: 48px;
   height: 48px;
-  border-color: rgba(201,169,110,.3);
+  border-color: rgba(178,34,34,.3);
 }
 
 /* Loader */
@@ -97,7 +97,7 @@ ul {
   font-size: 2.4rem;
   font-weight: 300;
   letter-spacing: .4em;
-  color: rgba(201,169,110,.7);
+  color: rgba(178,34,34,.7);
 }
 
 .loader-line {
@@ -115,7 +115,7 @@ ul {
   top: 0;
   height: 100%;
   width: 0;
-  background: #c9a96e;
+  background: #b22222;
   animation: ll 2s cubic-bezier(.4,0,.2,1) forwards;
 }
 
@@ -186,7 +186,7 @@ ul {
   left: 0;
   width: 1px;
   height: 48px;
-  background: rgba(201,169,110,.6);
+  background: rgba(178,34,34,.6);
   animation: sl 2.5s infinite;
 }
 
@@ -242,7 +242,7 @@ nav {
 .btn-gold {
   display: inline-block;
   padding: 16px 52px;
-  border: 1px solid rgba(201,169,110,.6);
+  border: 1px solid rgba(178,34,34,.6);
   font-size: .85rem;
   letter-spacing: .3em;
   font-weight: 400;
@@ -251,15 +251,15 @@ nav {
   cursor: pointer;
 }
 .btn-gold:hover {
-  background: #c9a96e;
+  background: #b22222;
   color: #0a0a0a;
-  border-color: #c9a96e;
+  border-color: #b22222;
 }
 
 .btn-gold-sm {
   display: inline-block;
   padding: 10px 32px;
-  border: 1px solid rgba(201,169,110,.5);
+  border: 1px solid rgba(178,34,34,.5);
   font-size: .78rem;
   letter-spacing: .25em;
   font-weight: 400;
@@ -268,9 +268,9 @@ nav {
   cursor: pointer;
 }
 .btn-gold-sm:hover {
-  background: #c9a96e;
+  background: #b22222;
   color: #0a0a0a;
-  border-color: #c9a96e;
+  border-color: #b22222;
 }
 
 .card-hover { transition: transform .4s; }

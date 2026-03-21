@@ -51,7 +51,7 @@ export default function GuidePage() {
       <article style={{ padding: '40px 48px 140px', maxWidth: '900px', margin: '0 auto' }}>
 
         <section style={{ marginBottom: '80px' }}>
-          <h2 className="r" style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: '2rem', fontWeight: 300, color: '#c9a96e', letterSpacing: '.05em', marginBottom: '24px', paddingBottom: '16px', borderBottom: '1px solid rgba(201,169,110,.2)' }}>
+          <h2 className="r" style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: '2rem', fontWeight: 300, color: '#b22222', letterSpacing: '.05em', marginBottom: '24px', paddingBottom: '16px', borderBottom: '1px solid rgba(178,34,34,.2)' }}>
             一、什么是美式复古工装（阿美咔叽/Americana）
           </h2>
           <p style={{ fontSize: '.9rem', lineHeight: 2.2, fontWeight: 200, color: 'rgba(232,228,223,.6)', marginBottom: '20px' }}>
@@ -66,7 +66,7 @@ export default function GuidePage() {
         </section>
 
         <section style={{ marginBottom: '80px' }}>
-          <h2 className="r" style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: '2rem', fontWeight: 300, color: '#c9a96e', letterSpacing: '.05em', marginBottom: '24px', paddingBottom: '16px', borderBottom: '1px solid rgba(201,169,110,.2)' }}>
+          <h2 className="r" style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: '2rem', fontWeight: 300, color: '#b22222', letterSpacing: '.05em', marginBottom: '24px', paddingBottom: '16px', borderBottom: '1px solid rgba(178,34,34,.2)' }}>
             二、工装的历史起源
           </h2>
 
@@ -103,7 +103,7 @@ export default function GuidePage() {
         </section>
 
         <section style={{ marginBottom: '80px' }}>
-          <h2 className="r" style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: '2rem', fontWeight: 300, color: '#c9a96e', letterSpacing: '.05em', marginBottom: '24px', paddingBottom: '16px', borderBottom: '1px solid rgba(201,169,110,.2)' }}>
+          <h2 className="r" style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: '2rem', fontWeight: 300, color: '#b22222', letterSpacing: '.05em', marginBottom: '24px', paddingBottom: '16px', borderBottom: '1px solid rgba(178,34,34,.2)' }}>
             三、核心单品指南
           </h2>
 
@@ -129,8 +129,8 @@ export default function GuidePage() {
               content: '工装靴起源于工厂和矿山，要求坚固、防护、耐磨。8孔马丁靴（Dr. Martens 1460）是其中最具代表性的款式。厚实橡胶大底、黄色缝线、气垫底，从工人装备变成了全球青年文化的符号。\n\n选购要点：真皮鞋面经久耐用，正版Dr. Martens有AirWair气垫标志。初次穿需要一段时间磨合，建议穿厚袜子开鞋。',
             },
           ].map(item => (
-            <div key={item.title} className="r" style={{ marginBottom: '48px', padding: '32px', background: '#0e0e0e', borderLeft: '2px solid rgba(201,169,110,.3)' }}>
-              <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: '1.6rem', fontWeight: 300, color: '#c9a96e', letterSpacing: '.05em', marginBottom: '16px' }}>
+            <div key={item.title} className="r" style={{ marginBottom: '48px', padding: '32px', background: '#0e0e0e', borderLeft: '2px solid rgba(178,34,34,.3)' }}>
+              <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: '1.6rem', fontWeight: 300, color: '#b22222', letterSpacing: '.05em', marginBottom: '16px' }}>
                 {item.title}
               </h3>
               {item.content.split('\n\n').map((para, i) => (
@@ -143,7 +143,7 @@ export default function GuidePage() {
         </section>
 
         <section style={{ marginBottom: '80px' }}>
-          <h2 className="r" style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: '2rem', fontWeight: 300, color: '#c9a96e', letterSpacing: '.05em', marginBottom: '24px', paddingBottom: '16px', borderBottom: '1px solid rgba(201,169,110,.2)' }}>
+          <h2 className="r" style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: '2rem', fontWeight: 300, color: '#b22222', letterSpacing: '.05em', marginBottom: '24px', paddingBottom: '16px', borderBottom: '1px solid rgba(178,34,34,.2)' }}>
             四、如何搭配工装风
           </h2>
           <p style={{ fontSize: '.9rem', lineHeight: 2.2, fontWeight: 200, color: 'rgba(232,228,223,.6)', marginBottom: '24px' }}>
@@ -170,13 +170,13 @@ export default function GuidePage() {
               },
             ].map(block => (
               <div key={block.title} className="r" style={{ padding: '24px', background: '#0e0e0e' }}>
-                <h4 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: '1.2rem', fontWeight: 300, color: '#c9a96e', marginBottom: '16px' }}>
+                <h4 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: '1.2rem', fontWeight: 300, color: '#b22222', marginBottom: '16px' }}>
                   {block.title}
                 </h4>
                 <ul>
                   {block.items.map((item, i) => (
                     <li key={i} style={{ fontSize: '.85rem', lineHeight: 1.8, fontWeight: 200, color: 'rgba(232,228,223,.5)', marginBottom: '8px', paddingLeft: '16px', position: 'relative' }}>
-                      <span style={{ position: 'absolute', left: 0, color: '#c9a96e' }}>·</span>
+                      <span style={{ position: 'absolute', left: 0, color: '#b22222' }}>·</span>
                       {item}
                     </li>
                   ))}
@@ -187,7 +187,7 @@ export default function GuidePage() {
         </section>
 
         <section style={{ marginBottom: '80px' }}>
-          <h2 className="r" style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: '2rem', fontWeight: 300, color: '#c9a96e', letterSpacing: '.05em', marginBottom: '24px', paddingBottom: '16px', borderBottom: '1px solid rgba(201,169,110,.2)' }}>
+          <h2 className="r" style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: '2rem', fontWeight: 300, color: '#b22222', letterSpacing: '.05em', marginBottom: '24px', paddingBottom: '16px', borderBottom: '1px solid rgba(178,34,34,.2)' }}>
             五、马登工装的品牌定位
           </h2>
           <p style={{ fontSize: '.9rem', lineHeight: 2.2, fontWeight: 200, color: 'rgba(232,228,223,.6)', marginBottom: '20px' }}>
@@ -203,7 +203,7 @@ export default function GuidePage() {
 
         {/* FAQ */}
         <section>
-          <h2 className="r" style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: '2rem', fontWeight: 300, color: '#c9a96e', letterSpacing: '.05em', marginBottom: '32px', paddingBottom: '16px', borderBottom: '1px solid rgba(201,169,110,.2)' }}>
+          <h2 className="r" style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: '2rem', fontWeight: 300, color: '#b22222', letterSpacing: '.05em', marginBottom: '32px', paddingBottom: '16px', borderBottom: '1px solid rgba(178,34,34,.2)' }}>
             常见问题 FAQ
           </h2>
           {faqItems.map((item, i) => (
@@ -219,7 +219,7 @@ export default function GuidePage() {
         </section>
 
         {/* CTA */}
-        <div className="r" style={{ marginTop: '80px', textAlign: 'center', padding: '60px 32px', background: '#0e0e0e', borderTop: '1px solid rgba(201,169,110,.2)' }}>
+        <div className="r" style={{ marginTop: '80px', textAlign: 'center', padding: '60px 32px', background: '#0e0e0e', borderTop: '1px solid rgba(178,34,34,.2)' }}>
           <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: '2rem', fontWeight: 300, marginBottom: '16px', letterSpacing: '.05em' }}>
             准备好开始你的工装之旅了吗？
           </h3>

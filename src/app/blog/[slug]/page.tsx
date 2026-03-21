@@ -46,7 +46,7 @@ const blogContent: Record<string, React.ReactNode> = {
       <p>马登工装的M65复刻版型忠实于越战时期原版，采用200g重磅棉斜纹面料，保留了藏帽设计和全套口袋配置。价格在¥299-¥399区间，是入门M65的高性价比选择。</p>
 
       <p style={{ textAlign: 'center', marginTop: '48px' }}>
-        <Link href="/products" style={{ display: 'inline-block', padding: '14px 48px', border: '1px solid rgba(201,169,110,.4)', fontSize: '.65rem', letterSpacing: '.4em', fontWeight: 300, color: '#e8e4df' }}>
+        <Link href="/products" style={{ display: 'inline-block', padding: '14px 48px', border: '1px solid rgba(178,34,34,.4)', fontSize: '.65rem', letterSpacing: '.4em', fontWeight: 300, color: '#e8e4df' }}>
           查看全系列工装夹克
         </Link>
       </p>
@@ -169,7 +169,7 @@ export default async function BlogPostPage({ params }: Props) {
         </div>
         <div style={{ position: 'relative', zIndex: 2, padding: '48px', maxWidth: '900px' }}>
           <div style={{ display: 'flex', gap: '16px', marginBottom: '16px' }}>
-            <span style={{ fontSize: '.55rem', letterSpacing: '.3em', color: '#c9a96e', fontWeight: 300 }}>{post.category}</span>
+            <span style={{ fontSize: '.55rem', letterSpacing: '.3em', color: '#b22222', fontWeight: 300 }}>{post.category}</span>
             <span style={{ fontSize: '.55rem', letterSpacing: '.15em', opacity: 0.3, fontWeight: 300 }}>{post.readTime} 阅读</span>
             <span style={{ fontSize: '.55rem', letterSpacing: '.15em', opacity: 0.3, fontWeight: 300 }}>{post.date}</span>
           </div>
@@ -194,7 +194,7 @@ export default async function BlogPostPage({ params }: Props) {
           <Link href="/blog" style={{ fontSize: '.65rem', letterSpacing: '.3em', opacity: 0.4, fontWeight: 300 }}>
             ← 返回博客
           </Link>
-          <Link href="/products" style={{ fontSize: '.65rem', letterSpacing: '.3em', color: '#c9a96e', fontWeight: 300 }}>
+          <Link href="/products" style={{ fontSize: '.65rem', letterSpacing: '.3em', color: '#b22222', fontWeight: 300 }}>
             探索产品系列 →
           </Link>
         </div>
@@ -205,21 +205,21 @@ export default async function BlogPostPage({ params }: Props) {
           font-family: 'Cormorant Garamond', serif;
           font-size: 1.6rem;
           font-weight: 300;
-          color: #c9a96e;
+          color: #b22222;
           letter-spacing: .05em;
           margin: 48px 0 20px;
           padding-bottom: 12px;
-          border-bottom: 1px solid rgba(201,169,110,.15);
+          border-bottom: 1px solid rgba(178,34,34,.15);
         }
         .blog-content h2 {
           font-family: 'Cormorant Garamond', serif;
           font-size: 1.6rem;
           font-weight: 300;
-          color: #c9a96e;
+          color: #b22222;
           letter-spacing: .05em;
           margin: 48px 0 20px;
           padding-bottom: 12px;
-          border-bottom: 1px solid rgba(201,169,110,.15);
+          border-bottom: 1px solid rgba(178,34,34,.15);
         }
         .blog-content h3 {
           font-family: 'Cormorant Garamond', serif;

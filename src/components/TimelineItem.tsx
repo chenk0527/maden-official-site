@@ -24,7 +24,7 @@ export default function TimelineItem({ year, text, isLast }: Props) {
             top: '10px',
             bottom: 0,
             width: '1px',
-            background: 'rgba(201,169,110,.12)',
+            background: 'rgba(178,34,34,.12)',
           }}
         />
       )}
@@ -33,7 +33,7 @@ export default function TimelineItem({ year, text, isLast }: Props) {
           fontFamily: "'Cormorant Garamond', serif",
           fontSize: '1.1rem',
           fontWeight: 300,
-          color: '#c9a96e',
+          color: '#b22222',
           letterSpacing: '.05em',
           position: 'relative',
         }}
@@ -47,7 +47,7 @@ export default function TimelineItem({ year, text, isLast }: Props) {
             width: '6px',
             height: '6px',
             borderRadius: '50%',
-            background: '#c9a96e',
+            background: '#b22222',
             display: 'block',
           }}
         />

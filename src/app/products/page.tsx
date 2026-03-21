@@ -39,7 +39,7 @@ export default function ProductsPage() {
                   <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: '1.4rem', fontWeight: 300, letterSpacing: '.05em' }}>
                     {product.name}
                   </h2>
-                  <span style={{ fontSize: '.7rem', color: '#c9a96e', fontWeight: 300 }}>{product.price}</span>
+                  <span style={{ fontSize: '.7rem', color: '#b22222', fontWeight: 300 }}>{product.price}</span>
                 </div>
                 <p style={{ fontSize: '.8rem', lineHeight: 1.7, fontWeight: 200, color: 'rgba(232,228,223,.4)', marginBottom: '20px' }}>
                   {product.description}
