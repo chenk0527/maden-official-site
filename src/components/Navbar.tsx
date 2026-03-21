@@ -10,6 +10,7 @@ const navLinks = [
   { href: '/guide', label: '工装指南' },
   { href: '/stores', label: '门店' },
   { href: '/#shop', label: '购买' },
+  { href: '/careers', label: '加入我们' },
 ]
 
 export default function Navbar() {

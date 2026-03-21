@@ -23,6 +23,7 @@ export default function Footer() {
               { href: '/guide', label: '工装指南' },
               { href: '/stores', label: '门店' },
               { href: '/blog', label: '博客' },
+              { href: '/careers', label: '加入我们' },
             ].map(l => (
               <Link key={l.href} href={l.href} style={{ display: 'block', fontSize: '.75rem', fontWeight: 200, opacity: 0.35, padding: '4px 0', transition: 'opacity .3s' }}
                 onMouseEnter={e => (e.currentTarget.style.opacity = '.8')}
