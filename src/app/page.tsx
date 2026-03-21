@@ -13,6 +13,42 @@ import { products, shopChannels } from '@/data/products'
 import { cityStores } from '@/data/stores'
 import { timeline } from '@/data/timeline'
 
+const brands = [
+  {
+    name: '马登',
+    en: 'MADEN',
+    desc: '创立于2010年，以极致性价比切入男鞋赛道。工装、复古、休闲三大风格，历经15年深耕，现为淘宝/天猫男鞋类目 TOP3。',
+    tag: '男鞋 · 2010',
+    badge: '淘宝/天猫 TOP3',
+  },
+  {
+    name: '马登工装',
+    en: 'MADEN WORKWEAR',
+    desc: '2017年正式上线，专注美式复古工装男装。淘宝男装 TOP1、京东男装 TOP1，累计店铺粉丝 300万+，Americana精神的核心表达。',
+    tag: '男装 · 2017',
+    badge: '淘宝男装 TOP1',
+  },
+  {
+    name: '马登女装',
+    en: 'MADEN WOMEN',
+    desc: '2022年4月上线，首日3000件库存售罄率90%，10天入选【必逛好店】。复古·工装·酷女孩风格，好评率99.97%。',
+    tag: '女装 · 2022',
+    badge: '好评率 99.97%',
+  },
+]
+
+const charities = [
+  { year: '2017', title: '白岩村小白鞋计划', desc: '为山区孩子捐赠白色运动鞋，让每个孩子都能穿上干净整洁的鞋子走进课堂。' },
+  { year: '2018', title: '吉安小学梦想家计划', desc: '走进吉安小学，为孩子们搭建梦想空间，捐赠学习物资，陪伴成长。' },
+  { year: '2019', title: '七分村小净水计划', desc: '为偏远山村小学捐赠净水设备，让孩子们喝上干净安全的饮用水。' },
+  { year: '2020', title: '洞塘小学防疫关爱', desc: '疫情期间深入基层，向洞塘小学捐赠防护物资，守护孩子们的健康安全。' },
+  { year: '2021', title: '海军希望小学伴学计划', desc: '走进希望小学，与孩子们结对伴学，用陪伴点亮山区孩子的求知热情。' },
+  { year: '2022', title: '山区崇兴小学伴学计划', desc: '深入崇兴小学开展伴学活动，捐赠书包文具，助力山区教育事业发展。' },
+  { year: '2023', title: '岩东乡小学伴学计划', desc: '前往岩东乡小学，持续推进伴学公益，让知识和关爱在山区生根发芽。' },
+  { year: '2024', title: '两岔村小学梦想家电影院', desc: '为两岔村小学建立公益电影院，让大山里的孩子用光影看见更广阔的世界。' },
+  { year: '2025', title: '洞塘小学伴学计划', desc: '再度走进洞塘小学，延续伴学承诺，与孩子们共同书写新的成长故事。' },
+]
+
 export const metadata: Metadata = {
   title: '马登工装 MADEN — 美式复古工装品牌 | 始于重庆 忠于工装 Since 2008',
   description: '马登工装 MADEN，中国领先的美式复古工装品牌。创立于2008年重庆，坚持Americana精神，提供工装夹克、复古裤装、牛仔、针织、鞋靴等全品类产品。全国7家实体门店，70+线上店铺。',
@@ -73,6 +109,25 @@ export default function HomePage() {
 
       {/* Hero */}
       <Hero />
+
+      {/* Numbers — 紧跟Hero，第一屏后立即可见 */}
+      <section style={{ padding: '0 48px', background: '#0a0a0a', borderBottom: '1px solid rgba(255,255,255,.05)' }}>
+        <div id="numbers-grid" style={{ maxWidth: '1200px', margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', textAlign: 'center', padding: '56px 0' }}>
+          {[
+            { count: 18, suffix: '', label: '年品牌历史' },
+            { count: 443, suffix: '+', label: '团队成员' },
+            { count: 9, suffix: '', label: '实体门店' },
+            { count: 1000, suffix: '万+', label: '全网粉丝' },
+          ].map((item, i) => (
+            <div key={item.label} className="r" style={{ borderRight: i < 3 ? '1px solid rgba(255,255,255,.06)' : 'none', padding: '0 24px' }}>
+              <div style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 'clamp(2.4rem, 5vw, 4rem)', fontWeight: 300, color: '#c9a96e', lineHeight: 1, letterSpacing: '.05em' }}>
+                <CountUp target={item.count} suffix={item.suffix} />
+              </div>
+              <div style={{ fontSize: '.82rem', letterSpacing: '.25em', opacity: 0.6, fontWeight: 400, marginTop: '10px' }}>{item.label}</div>
+            </div>
+          ))}
+        </div>
+      </section>
 
       {/* About */}
       <section id="about" style={{ padding: '140px 48px' }}>
@@ -179,6 +234,87 @@ export default function HomePage() {
           {timeline.map((item, i) => (
             <TimelineItem key={item.year} year={item.year} text={item.text} isLast={i === timeline.length - 1} />
           ))}
+        </div>
+      </section>
+
+      {/* 旗下品牌 */}
+      <section style={{ padding: '140px 48px', background: '#0e0e0e' }}>
+        <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
+          <p className="r" style={{ fontSize: '.6rem', letterSpacing: '.5em', opacity: 0.35, marginBottom: '20px', fontWeight: 300 }}>旗下品牌</p>
+          <h2 className="r" style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 'clamp(2.2rem, 5vw, 3.6rem)', fontWeight: 300, lineHeight: 1.15, letterSpacing: '.04em', marginBottom: '16px' }}>
+            三大品牌，全品类覆盖
+          </h2>
+          <p className="r" style={{ fontSize: '1rem', color: 'rgba(232,228,223,.45)', marginBottom: '64px', fontWeight: 400 }}>
+            男鞋 · 男装 · 女装，一个集团下的三种表达。
+          </p>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '2px' }}>
+            {brands.map((b, i) => (
+              <div key={b.name} className="r" style={{
+                background: '#111', padding: '48px 36px', position: 'relative',
+                borderTop: '1px solid rgba(201,169,110,.15)',
+                transition: 'background .3s',
+              }}>
+                <span style={{
+                  position: 'absolute', top: '20px', right: '24px',
+                  fontFamily: "'Cormorant Garamond', serif",
+                  fontSize: '3.5rem', fontWeight: 300, color: '#c9a96e', opacity: 0.08, lineHeight: 1,
+                }}>
+                  {String(i + 1).padStart(2, '0')}
+                </span>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '24px' }}>
+                  <p style={{ fontSize: '.6rem', letterSpacing: '.3em', color: '#c9a96e', opacity: 0.6 }}>{b.tag}</p>
+                  <span style={{ fontSize: '.55rem', letterSpacing: '.1em', color: '#c9a96e', border: '1px solid rgba(201,169,110,.25)', padding: '3px 8px' }}>{b.badge}</span>
+                </div>
+                <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: '1.7rem', fontWeight: 300, letterSpacing: '.06em', marginBottom: '4px' }}>{b.name}</h3>
+                <p style={{ fontSize: '.6rem', letterSpacing: '.25em', color: 'rgba(232,228,223,.2)', marginBottom: '20px' }}>{b.en}</p>
+                <p style={{ fontSize: '.95rem', lineHeight: 1.9, color: 'rgba(232,228,223,.58)', fontWeight: 400 }}>{b.desc}</p>
+              </div>
+            ))}
+          </div>
+          <div className="r" style={{ textAlign: 'center', marginTop: '48px' }}>
+            <Link href="/about" style={{ fontSize: '.6rem', letterSpacing: '.4em', opacity: 0.4, borderBottom: '1px solid rgba(201,169,110,.3)', paddingBottom: '4px' }}>
+              了解更多品牌故事 →
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* 公益足迹 */}
+      <section style={{ padding: '140px 48px' }}>
+        <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
+          <p className="r" style={{ fontSize: '.6rem', letterSpacing: '.5em', opacity: 0.35, marginBottom: '20px', fontWeight: 300, textAlign: 'center' }}>公益足迹</p>
+          <h2 className="r" style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 'clamp(2.2rem, 5vw, 3.6rem)', fontWeight: 300, lineHeight: 1.15, letterSpacing: '.04em', marginBottom: '16px', textAlign: 'center' }}>
+            马登公益足迹
+          </h2>
+          <p className="r" style={{ fontSize: '1rem', color: 'rgba(232,228,223,.4)', maxWidth: '540px', margin: '0 auto 80px', lineHeight: 1.8, textAlign: 'center', fontWeight: 400 }}>
+            从2017年起，马登持续深入贫困山区，用行动陪伴孩子成长。
+          </p>
+
+          {/* 时间轴：交错网格 */}
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '40px 32px' }}>
+            {charities.map((c, i) => (
+              <div key={c.year} className="r" style={{
+                borderLeft: '2px solid rgba(201,169,110,.18)',
+                paddingLeft: '20px',
+                position: 'relative',
+              }}>
+                <div style={{
+                  position: 'absolute', left: '-6px', top: '4px',
+                  width: '10px', height: '10px', borderRadius: '50%',
+                  background: '#c9a96e', opacity: 0.6,
+                }} />
+                <p style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: '1.1rem', color: '#c9a96e', opacity: 0.7, marginBottom: '8px', fontWeight: 300 }}>{c.year}</p>
+                <h4 style={{ fontSize: '.95rem', fontWeight: 400, letterSpacing: '.03em', marginBottom: '8px', color: 'rgba(232,228,223,.85)' }}>{c.title}</h4>
+                <p style={{ fontSize: '.85rem', lineHeight: 1.7, color: 'rgba(232,228,223,.42)', fontWeight: 400 }}>{c.desc}</p>
+              </div>
+            ))}
+          </div>
+
+          <div className="r" style={{ textAlign: 'center', marginTop: '64px' }}>
+            <p style={{ fontSize: '.7rem', letterSpacing: '.4em', opacity: 0.3, fontWeight: 300 }}>
+              9年 · 9所学校 · 持续同行
+            </p>
+          </div>
         </div>
       </section>
 
