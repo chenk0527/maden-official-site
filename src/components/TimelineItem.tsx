@@ -24,7 +24,7 @@ export default function TimelineItem({ year, text, isLast }: Props) {
             top: '10px',
             bottom: 0,
             width: '1px',
-            background: 'rgba(204,34,0,.12)',
+            background: 'rgba(232,57,26,.12)',
           }}
         />
       )}
@@ -33,7 +33,7 @@ export default function TimelineItem({ year, text, isLast }: Props) {
           fontFamily: "'Cormorant Garamond', serif",
           fontSize: '1.1rem',
           fontWeight: 300,
-          color: '#cc2200',
+          color: '#e8391a',
           letterSpacing: '.05em',
           position: 'relative',
         }}
@@ -47,12 +47,12 @@ export default function TimelineItem({ year, text, isLast }: Props) {
             width: '6px',
             height: '6px',
             borderRadius: '50%',
-            background: '#cc2200',
+            background: '#e8391a',
             display: 'block',
           }}
         />
       </div>
-      <div style={{ fontSize: '.85rem', lineHeight: 1.7, fontWeight: 200, color: 'rgba(240,235,232,.45)' }}>
+      <div style={{ fontSize: '.85rem', lineHeight: 1.7, fontWeight: 200, color: 'rgba(245,237,232,.45)' }}>
         {text}
       </div>
     </div>

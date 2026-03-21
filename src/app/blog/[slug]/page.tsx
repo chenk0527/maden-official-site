@@ -46,7 +46,7 @@ const blogContent: Record<string, React.ReactNode> = {
       <p>马登工装的M65复刻版型忠实于越战时期原版，采用200g重磅棉斜纹面料，保留了藏帽设计和全套口袋配置。价格在¥299-¥399区间，是入门M65的高性价比选择。</p>
 
       <p style={{ textAlign: 'center', marginTop: '48px' }}>
-        <Link href="/products" style={{ display: 'inline-block', padding: '14px 48px', border: '1px solid rgba(178,34,34,.4)', fontSize: '.65rem', letterSpacing: '.4em', fontWeight: 300, color: '#e8e4df' }}>
+        <Link href="/products" style={{ display: 'inline-block', padding: '14px 48px', border: '1px solid rgba(232,57,26,.4)', fontSize: '.65rem', letterSpacing: '.4em', fontWeight: 300, color: '#e8e4df' }}>
           查看全系列工装夹克
         </Link>
       </p>
@@ -169,7 +169,7 @@ export default async function BlogPostPage({ params }: Props) {
         </div>
         <div style={{ position: 'relative', zIndex: 2, padding: '48px', maxWidth: '900px' }}>
           <div style={{ display: 'flex', gap: '16px', marginBottom: '16px' }}>
-            <span style={{ fontSize: '.55rem', letterSpacing: '.3em', color: '#b22222', fontWeight: 300 }}>{post.category}</span>
+            <span style={{ fontSize: '.55rem', letterSpacing: '.3em', color: '#e8391a', fontWeight: 300 }}>{post.category}</span>
             <span style={{ fontSize: '.55rem', letterSpacing: '.15em', opacity: 0.3, fontWeight: 300 }}>{post.readTime} 阅读</span>
             <span style={{ fontSize: '.55rem', letterSpacing: '.15em', opacity: 0.3, fontWeight: 300 }}>{post.date}</span>
           </div>
@@ -181,20 +181,20 @@ export default async function BlogPostPage({ params }: Props) {
 
       {/* Content */}
       <div style={{ maxWidth: '780px', margin: '0 auto', padding: '80px 48px 140px' }}>
-        <p style={{ fontSize: '1rem', lineHeight: 2, fontWeight: 200, color: 'rgba(232,228,223,.5)', marginBottom: '48px', fontStyle: 'italic' }}>
+        <p style={{ fontSize: '1rem', lineHeight: 2, fontWeight: 200, color: 'rgba(245,237,232,.5)', marginBottom: '48px', fontStyle: 'italic' }}>
           {post.description}
         </p>
 
-        <div className="blog-content" style={{ fontSize: '.9rem', lineHeight: 2.2, fontWeight: 200, color: 'rgba(232,228,223,.65)' }}>
+        <div className="blog-content" style={{ fontSize: '.9rem', lineHeight: 2.2, fontWeight: 200, color: 'rgba(245,237,232,.65)' }}>
           {content}
         </div>
 
         {/* Nav */}
-        <div style={{ marginTop: '80px', paddingTop: '40px', borderTop: '1px solid rgba(255,255,255,.06)', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+        <div style={{ marginTop: '80px', paddingTop: '40px', borderTop: '1px solid rgba(232,57,26,.16)', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
           <Link href="/blog" style={{ fontSize: '.65rem', letterSpacing: '.3em', opacity: 0.4, fontWeight: 300 }}>
             ← 返回博客
           </Link>
-          <Link href="/products" style={{ fontSize: '.65rem', letterSpacing: '.3em', color: '#b22222', fontWeight: 300 }}>
+          <Link href="/products" style={{ fontSize: '.65rem', letterSpacing: '.3em', color: '#e8391a', fontWeight: 300 }}>
             探索产品系列 →
           </Link>
         </div>
@@ -209,7 +209,7 @@ export default async function BlogPostPage({ params }: Props) {
           letter-spacing: .05em;
           margin: 48px 0 20px;
           padding-bottom: 12px;
-          border-bottom: 1px solid rgba(178,34,34,.15);
+          border-bottom: 1px solid rgba(232,57,26,.15);
         }
         .blog-content h2 {
           font-family: 'Cormorant Garamond', serif;
@@ -219,7 +219,7 @@ export default async function BlogPostPage({ params }: Props) {
           letter-spacing: .05em;
           margin: 48px 0 20px;
           padding-bottom: 12px;
-          border-bottom: 1px solid rgba(178,34,34,.15);
+          border-bottom: 1px solid rgba(232,57,26,.15);
         }
         .blog-content h3 {
           font-family: 'Cormorant Garamond', serif;
@@ -234,7 +234,7 @@ export default async function BlogPostPage({ params }: Props) {
         .blog-content ul li { 
           list-style: disc; 
           margin-bottom: 8px; 
-          color: rgba(232,228,223,.5);
+          color: rgba(245,237,232,.5);
         }
         .blog-content strong { color: #e8e4df; font-weight: 400; }
         @media (max-width: 900px) {

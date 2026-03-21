@@ -16,25 +16,25 @@ export default function ShopChannel({ name, sub, href }: Props) {
       rel={isExternal ? 'noopener' : undefined}
       className="ch-item"
       style={{
-        background: '#0d0505',
+        background: '#1c0505',
         padding: '40px 24px',
         textAlign: 'center',
         transition: 'background .6s',
         display: 'block',
       }}
       onMouseEnter={e => {
-        e.currentTarget.style.background = '#140a0a'
+        e.currentTarget.style.background = '#1e0606'
         const btn = e.currentTarget.querySelector('.ch-btn') as HTMLElement
         if (btn) {
-          btn.style.borderColor = '#cc2200'
-          btn.style.color = '#cc2200'
+          btn.style.borderColor = '#e8391a'
+          btn.style.color = '#e8391a'
         }
       }}
       onMouseLeave={e => {
-        e.currentTarget.style.background = '#0d0505'
+        e.currentTarget.style.background = '#1c0505'
         const btn = e.currentTarget.querySelector('.ch-btn') as HTMLElement
         if (btn) {
-          btn.style.borderColor = 'rgba(204,34,0,.25)'
+          btn.style.borderColor = 'rgba(232,57,26,.25)'
           btn.style.color = '#e8e4df'
         }
       }}
@@ -46,7 +46,7 @@ export default function ShopChannel({ name, sub, href }: Props) {
         style={{
           display: 'inline-block',
           padding: '8px 24px',
-          border: '1px solid rgba(204,34,0,.25)',
+          border: '1px solid rgba(232,57,26,.25)',
           fontSize: '.6rem',
           letterSpacing: '.2em',
           fontWeight: 300,

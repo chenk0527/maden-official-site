@@ -16,7 +16,7 @@ const socialLinks = [
 
 export default function Footer() {
   return (
-    <footer style={{ padding: '80px 48px 40px', borderTop: '1px solid rgba(204,34,0,.2)' }}>
+    <footer style={{ padding: '80px 48px 40px', borderTop: '1px solid rgba(232,57,26,.2)' }}>
       <div style={{ maxWidth: '1400px', margin: '0 auto' }}>
         {/* Top row */}
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: '48px', marginBottom: '64px' }}>
@@ -39,9 +39,9 @@ export default function Footer() {
                   rel="noopener"
                   aria-label={label}
                   title={label}
-                  style={{ color: 'rgba(240,228,225,.4)', transition: 'color .3s' }}
-                  onMouseEnter={e => (e.currentTarget.style.color = '#cc2200')}
-                  onMouseLeave={e => (e.currentTarget.style.color = 'rgba(240,228,225,.4)')}
+                  style={{ color: 'rgba(245,237,232,.4)', transition: 'color .3s' }}
+                  onMouseEnter={e => (e.currentTarget.style.color = '#e8391a')}
+                  onMouseLeave={e => (e.currentTarget.style.color = 'rgba(245,237,232,.4)')}
                 >
                   <Icon size={22} color="currentColor" />
                 </a>
@@ -100,7 +100,7 @@ export default function Footer() {
               <h5 style={{ fontSize: '.72rem', letterSpacing: '.2em', opacity: 0.5, marginBottom: '20px', fontWeight: 500 }}>联系我们</h5>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '10px', opacity: 0.7 }}>
-                  <IconPin size={16} color="rgba(240,228,225,.9)" />
+                  <IconPin size={16} color="rgba(245,237,232,.9)" />
                   <span style={{ fontSize: '.9rem', fontWeight: 400 }}>重庆 · 中国</span>
                 </div>
                 <a
@@ -109,7 +109,7 @@ export default function Footer() {
                   onMouseEnter={e => (e.currentTarget.style.opacity = '1')}
                   onMouseLeave={e => (e.currentTarget.style.opacity = '.7')}
                 >
-                  <IconMail size={16} color="rgba(240,228,225,.9)" />
+                  <IconMail size={16} color="rgba(245,237,232,.9)" />
                   <span style={{ fontSize: '.9rem', fontWeight: 400 }}>service@madenfushi.com</span>
                 </a>
               </div>
@@ -118,7 +118,7 @@ export default function Footer() {
         </div>
 
         {/* Divider */}
-        <div style={{ borderTop: '1px solid rgba(204,34,0,.12)', paddingTop: '28px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '12px' }}>
+        <div style={{ borderTop: '1px solid rgba(232,57,26,.12)', paddingTop: '28px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '12px' }}>
           <p style={{ fontSize: '.75rem', letterSpacing: '.15em', opacity: 0.35, fontWeight: 300 }}>
             &copy; 2008–2026 马登工装 MADEN · All rights reserved
           </p>
