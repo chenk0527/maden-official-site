@@ -16,18 +16,18 @@ export const metadata: Metadata = {
 
 const brands = [
   {
-    name: '马登男鞋',
-    en: 'MADEN SHOES',
-    desc: '创立于2010年，以极致性价比切入男鞋赛道。工装、复古、休闲三大风格，历经14年深耕，现为淘宝/天猫男鞋类目 TOP3。',
+    name: '马登',
+    en: 'MADEN',
+    desc: '创立于2010年，以极致性价比切入男鞋赛道。工装、复古、休闲三大风格，历经15年深耕，现为淘宝/天猫男鞋类目 TOP3。',
     tag: '男鞋 · 2010',
-    badge: '淘宝 TOP3',
+    badge: '淘宝/天猫 TOP3',
   },
   {
     name: '马登工装',
     en: 'MADEN WORKWEAR',
     desc: '2017年正式上线，专注美式复古工装男装。淘宝男装 TOP1、京东男装 TOP1，累计店铺粉丝 300万+，Americana精神的核心表达。',
     tag: '男装 · 2017',
-    badge: '淘宝 TOP1',
+    badge: '淘宝男装 TOP1',
   },
   {
     name: '马登女装',
@@ -39,13 +39,15 @@ const brands = [
 ]
 
 const charities = [
-  { year: '2018', title: '蒲公英计划', desc: '捐助 1,000 套书包及学习用品，送往贫困山区孩子手中。' },
-  { year: '2019', title: '爱心捐助', desc: '捐助价值 1 万元物资，支持困难群体生活保障。' },
-  { year: '2020', title: '抗疫公益', desc: '疫情暴发之初，第一时间捐助价值 12 万元防护物资，驰援一线。' },
-  { year: '2021', title: '爱心捐款', desc: '向公益机构捐款 10 万元，持续推动社会公益事业。' },
-  { year: '2022', title: '重庆山火救援', desc: '重庆山火肆虐，捐助 5 万元救援物资，支持消防救援行动。' },
-  { year: '2023', title: '扶贫公益', desc: '深入贫困地区，捐助价值 1 万元生活物资，助力乡村振兴。' },
-  { year: '2024', title: '公益图书馆', desc: '发起公益图书馆项目，为偏远地区孩子建立阅读空间，点亮知识之光。' },
+  { year: '2017', title: '白岩村小白鞋计划', desc: '为山区孩子捐赠白色运动鞋，让每个孩子都能穿上干净整洁的鞋子走进课堂。', row: 'top' },
+  { year: '2018', title: '吉安小学梦想家计划', desc: '走进吉安小学，为孩子们搭建梦想空间，捐赠学习物资，陪伴成长。', row: 'bottom' },
+  { year: '2019', title: '七分村小净水计划', desc: '为偏远山村小学捐赠净水设备，让孩子们喝上干净安全的饮用水。', row: 'top' },
+  { year: '2020', title: '洞塘小学防疫关爱', desc: '疫情期间深入基层，向洞塘小学捐赠防护物资，守护孩子们的健康安全。', row: 'bottom' },
+  { year: '2021', title: '海军希望小学伴学计划', desc: '走进希望小学，与孩子们结对伴学，用陪伴点亮山区孩子的求知热情。', row: 'top' },
+  { year: '2022', title: '山区崇兴小学伴学计划', desc: '深入崇兴小学开展伴学活动，捐赠书包文具，助力山区教育事业发展。', row: 'bottom' },
+  { year: '2023', title: '岩东乡小学伴学计划', desc: '前往岩东乡小学，持续推进伴学公益，让知识和关爱在山区生根发芽。', row: 'top' },
+  { year: '2024', title: '两岔村小学梦想家电影院', desc: '为两岔村小学建立公益电影院，让大山里的孩子用光影看见更广阔的世界。', row: 'bottom' },
+  { year: '2025', title: '洞塘小学伴学计划', desc: '再度走进洞塘小学，延续伴学承诺，与孩子们共同书写新的成长故事。', row: 'top' },
 ]
 
 export default function AboutPage() {
@@ -150,34 +152,50 @@ export default function AboutPage() {
       </section>
 
       {/* 公益足迹 */}
-      <section style={{ padding: '120px 48px', background: '#0e0e0e' }}>
-        <div style={{ maxWidth: '900px', margin: '0 auto' }}>
-          <p className="r" style={{ fontSize: '.7rem', letterSpacing: '.5em', opacity: 0.4, marginBottom: '16px', fontWeight: 400 }}>公益足迹</p>
-          <h2 className="r" style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 'clamp(2.2rem, 5vw, 3.6rem)', fontWeight: 300, lineHeight: 1.15, letterSpacing: '.04em', marginBottom: '16px' }}>
-            马登·公益足迹
+      <section style={{ padding: '120px 48px', background: '#0e0e0e', overflow: 'hidden' }}>
+        <div style={{ maxWidth: '1300px', margin: '0 auto' }}>
+          <p className="r" style={{ fontSize: '.7rem', letterSpacing: '.5em', opacity: 0.4, marginBottom: '16px', fontWeight: 400, textAlign: 'center' }}>公益足迹</p>
+          <h2 className="r" style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 'clamp(2.2rem, 5vw, 3.6rem)', fontWeight: 300, lineHeight: 1.15, letterSpacing: '.04em', marginBottom: '8px', textAlign: 'center' }}>
+            马登公益足迹
           </h2>
-          <p className="r" style={{ fontSize: '1rem', fontWeight: 400, color: 'rgba(232,228,223,.5)', marginBottom: '64px', lineHeight: 1.8 }}>
-            我们相信，一个好品牌不只卖衣服。<br />从2018年起，马登持续参与公益，用行动回馈社会。
+          <p className="r" style={{ fontSize: '.7rem', letterSpacing: '.3em', color: '#c9a96e', opacity: 0.5, marginBottom: '16px', textAlign: 'center', fontWeight: 400 }}>MADEN CHARITY FUND</p>
+          <p className="r" style={{ fontSize: '1rem', fontWeight: 400, color: 'rgba(232,228,223,.45)', marginBottom: '80px', lineHeight: 1.8, textAlign: 'center', maxWidth: '600px', margin: '0 auto 80px' }}>
+            我们相信，一个好品牌不只卖衣服。从2017年起，马登持续深入贫困山区，用行动陪伴孩子成长。
           </p>
 
+          {/* 双排错列时间轴 */}
           <div style={{ position: 'relative' }}>
-            {/* 竖线 */}
-            <div style={{ position: 'absolute', left: '52px', top: 0, bottom: 0, width: '1px', background: 'rgba(201,169,110,.15)' }} />
+            {/* 中间横线 */}
+            <div style={{ position: 'absolute', top: '50%', left: 0, right: 0, height: '1px', background: 'rgba(201,169,110,.12)', transform: 'translateY(-50%)' }} />
 
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '0' }}>
-              {charities.map((c, i) => (
-                <div key={c.year} className="r charity-row" style={{ display: 'flex', gap: '40px', alignItems: 'flex-start', paddingBottom: i === charities.length - 1 ? 0 : '48px' }}>
-                  {/* 年份 + 圆点 */}
-                  <div style={{ flexShrink: 0, width: '104px', textAlign: 'right', paddingTop: '4px', position: 'relative' }}>
-                    <span style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: '1.1rem', fontWeight: 300, color: '#c9a96e', letterSpacing: '.05em' }}>{c.year}</span>
-                    {/* 圆点 */}
-                    <span style={{ position: 'absolute', right: '-28px', top: '8px', width: '8px', height: '8px', borderRadius: '50%', background: '#c9a96e', opacity: 0.6, display: 'block' }} />
-                  </div>
-                  {/* 内容 */}
-                  <div style={{ paddingLeft: '24px' }}>
-                    <h4 style={{ fontSize: '1.05rem', fontWeight: 500, color: 'rgba(232,228,223,.9)', marginBottom: '8px', letterSpacing: '.03em' }}>{c.title}</h4>
-                    <p style={{ fontSize: '.95rem', lineHeight: 1.8, fontWeight: 400, color: 'rgba(232,228,223,.55)' }}>{c.desc}</p>
-                  </div>
+            <div className="charity-grid">
+              {charities.map((c) => (
+                <div key={c.year} className={`r charity-item charity-${c.row}`}>
+                  {c.row === 'top' ? (
+                    /* 上排：内容在上，年份+圆点在下 */
+                    <>
+                      <div className="charity-content-top">
+                        <h4 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: '1.1rem', fontWeight: 400, color: 'rgba(232,228,223,.9)', marginBottom: '8px', letterSpacing: '.03em' }}>{c.title}</h4>
+                        <p style={{ fontSize: '.82rem', lineHeight: 1.7, fontWeight: 400, color: 'rgba(232,228,223,.45)' }}>{c.desc}</p>
+                      </div>
+                      <div className="charity-node-top">
+                        <span style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: '1rem', fontWeight: 300, color: '#c9a96e', display: 'block', marginBottom: '8px' }}>{c.year}</span>
+                        <div style={{ width: '10px', height: '10px', borderRadius: '50%', background: '#c9a96e', opacity: 0.7, border: '2px solid #0e0e0e', outline: '1px solid rgba(201,169,110,.4)', margin: '0 auto' }} />
+                      </div>
+                    </>
+                  ) : (
+                    /* 下排：圆点+年份在上，内容在下 */
+                    <>
+                      <div className="charity-node-bottom">
+                        <div style={{ width: '10px', height: '10px', borderRadius: '50%', background: '#c9a96e', opacity: 0.7, border: '2px solid #0e0e0e', outline: '1px solid rgba(201,169,110,.4)', margin: '0 auto 8px' }} />
+                        <span style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: '1rem', fontWeight: 300, color: '#c9a96e', display: 'block' }}>{c.year}</span>
+                      </div>
+                      <div className="charity-content-bottom">
+                        <h4 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: '1.1rem', fontWeight: 400, color: 'rgba(232,228,223,.9)', marginBottom: '8px', letterSpacing: '.03em' }}>{c.title}</h4>
+                        <p style={{ fontSize: '.82rem', lineHeight: 1.7, fontWeight: 400, color: 'rgba(232,228,223,.45)' }}>{c.desc}</p>
+                      </div>
+                    </>
+                  )}
                 </div>
               ))}
             </div>
@@ -203,12 +221,58 @@ export default function AboutPage() {
         .brands-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
         .brand-card:hover { border-color: rgba(201,169,110,.4) !important; }
         .phil-3col { display: grid; grid-template-columns: repeat(3, 1fr); gap: 48px; }
+
+        /* 公益时间轴 */
+        .charity-grid {
+          display: grid;
+          grid-template-columns: repeat(9, 1fr);
+          min-height: 420px;
+          position: relative;
+        }
+        .charity-item {
+          display: flex;
+          flex-direction: column;
+          padding: 0 12px;
+          position: relative;
+        }
+        .charity-top {
+          justify-content: flex-end;
+        }
+        .charity-bottom {
+          justify-content: flex-start;
+        }
+        .charity-content-top {
+          padding-bottom: 24px;
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
+        }
+        .charity-node-top {
+          text-align: center;
+          padding-top: 12px;
+        }
+        .charity-node-bottom {
+          text-align: center;
+          padding-bottom: 12px;
+        }
+        .charity-content-bottom {
+          padding-top: 24px;
+          flex: 1;
+        }
+
+        @media (max-width: 1100px) {
+          .charity-grid { grid-template-columns: repeat(3, 1fr) !important; min-height: auto !important; gap: 32px; }
+          .charity-item { flex-direction: column !important; }
+          .charity-content-top, .charity-content-bottom { padding: 16px 0 !important; }
+          .charity-node-top, .charity-node-bottom { display: none; }
+        }
         @media (max-width: 900px) {
           .about-split { grid-template-columns: 1fr !important; gap: 48px !important; }
           .brands-grid { grid-template-columns: 1fr !important; gap: 16px !important; }
           .phil-3col { grid-template-columns: 1fr !important; gap: 32px !important; }
+          .charity-grid { grid-template-columns: 1fr !important; }
           section { padding: 80px 24px !important; }
-          .charity-row { gap: 20px !important; }
         }
       `}</style>
     </>
