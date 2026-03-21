@@ -327,3 +327,8 @@ nav {
   .grid-3-products { grid-template-columns: 1fr !important; }
   .grid-4 { grid-template-columns: repeat(2, 1fr) !important; }
 }
+
+@media (max-width: 768px) {
+  .stores-detail { grid-template-columns: 1fr !important; }
+  .stores-detail > div:last-child { min-height: 300px !important; }
+}

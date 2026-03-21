@@ -340,16 +340,61 @@ export default function HomePage() {
       </div>
 
       {/* Stores */}
-      <section id="stores" className="sec-pad" style={{ padding: '140px 48px' }}>
-        <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
-          <p className="r" style={{ fontSize: '.6rem', letterSpacing: '.5em', opacity: 0.35, marginBottom: '20px', fontWeight: 300 }}>线下门店</p>
-          <h2 className="r" style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 'clamp(2.2rem, 5vw, 3.6rem)', fontWeight: 300, lineHeight: 1.15, letterSpacing: '.04em', marginBottom: '48px' }}>
-            实体门店
-          </h2>
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '64px' }}>
-            {cityStores.map((city, i) => (
-              <StoreCard key={city.city} cityData={city} direction={i % 2 === 0 ? 'left' : 'right'} />
-            ))}
+      <section id="stores" style={{ padding: '0', background: '#0a0a0a' }}>
+        {/* 大图 Banner */}
+        <div style={{ position: 'relative', height: 'clamp(360px, 50vw, 560px)', overflow: 'hidden' }}>
+          <img
+            src={assetPath('/images/stores/store-6.webp')}
+            alt="马登工装实体门店"
+            style={{ width: '100%', height: '100%', objectFit: 'cover', filter: 'brightness(.4)' }}
+          />
+          <div style={{
+            position: 'absolute', inset: 0,
+            background: 'linear-gradient(to right, rgba(0,0,0,.8) 0%, transparent 60%)',
+            display: 'flex', alignItems: 'center', padding: '0 8%',
+          }}>
+            <div>
+              <p className="r" style={{ fontSize: '.55rem', letterSpacing: '.5em', opacity: 0.4, marginBottom: '14px', fontWeight: 300 }}>PHYSICAL STORES</p>
+              <h2 className="r" style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 'clamp(2.4rem, 6vw, 5rem)', fontWeight: 300, lineHeight: 1.1, letterSpacing: '.04em', marginBottom: '18px' }}>
+                实体门店
+              </h2>
+              <p style={{ fontSize: '.95rem', opacity: 0.45, fontWeight: 300, maxWidth: '340px', lineHeight: 1.9 }}>
+                8家实体门店遍布重庆、成都<br />走进门店，触摸真正的工装质感
+              </p>
+            </div>
+          </div>
+        </div>
+        {/* 门店列表 + 店内图 */}
+        <div className="stores-detail" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr' }}>
+          <div style={{ padding: '64px', background: '#111' }}>
+            <div style={{ marginBottom: '48px' }}>
+              <div style={{ display: 'flex', alignItems: 'baseline', gap: '12px', marginBottom: '24px' }}>
+                <h3 className="r" style={{ fontSize: '1.3rem', fontWeight: 300, letterSpacing: '.08em' }}>重庆</h3>
+                <span style={{ fontSize: '.52rem', letterSpacing: '.18em', color: '#c9a96e', opacity: 0.7 }}>6 家直营</span>
+              </div>
+              {['十八梯店', '鹅岭二厂店', '时代天街C馆店', '观音桥阳光世纪店', '大石坝悦荟店', '南坪万达店'].map((name, i) => (
+                <div key={name} className="r" style={{ display: 'flex', alignItems: 'center', gap: '14px', padding: '13px 0', borderBottom: '1px solid rgba(255,255,255,.05)' }}>
+                  <span style={{ fontSize: '.48rem', color: '#c9a96e', opacity: 0.45, minWidth: '18px', letterSpacing: '.05em' }}>0{i+1}</span>
+                  <span style={{ fontSize: '.88rem', letterSpacing: '.04em', opacity: 0.6 }}>{name}</span>
+                </div>
+              ))}
+            </div>
+            <div>
+              <div style={{ display: 'flex', alignItems: 'baseline', gap: '12px', marginBottom: '24px' }}>
+                <h3 className="r" style={{ fontSize: '1.3rem', fontWeight: 300, letterSpacing: '.08em' }}>成都</h3>
+                <span style={{ fontSize: '.52rem', letterSpacing: '.18em', color: '#c9a96e', opacity: 0.7 }}>2 家联营</span>
+              </div>
+              {['春熙路北段店', '东郊记忆店'].map((name, i) => (
+                <div key={name} className="r" style={{ display: 'flex', alignItems: 'center', gap: '14px', padding: '13px 0', borderBottom: '1px solid rgba(255,255,255,.05)' }}>
+                  <span style={{ fontSize: '.48rem', color: '#c9a96e', opacity: 0.45, minWidth: '18px', letterSpacing: '.05em' }}>0{i+1}</span>
+                  <span style={{ fontSize: '.88rem', letterSpacing: '.04em', opacity: 0.6 }}>{name}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+          <div style={{ display: 'grid', gridTemplateRows: '1fr 1fr', gap: '2px', minHeight: '480px' }}>
+            <img src={assetPath('/images/stores/store-1.webp')} alt="马登门店入口" style={{ width: '100%', height: '100%', objectFit: 'cover', filter: 'brightness(.65)' }} />
+            <img src={assetPath('/images/stores/store-10.webp')} alt="马登门店陈列" style={{ width: '100%', height: '100%', objectFit: 'cover', filter: 'brightness(.65)' }} />
           </div>
         </div>
       </section>
