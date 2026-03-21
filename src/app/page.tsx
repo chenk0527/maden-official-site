@@ -187,9 +187,9 @@ export default function HomePage() {
         <div id="numbers-grid" style={{ maxWidth: '1200px', margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '48px', textAlign: 'center', borderTop: '1px solid rgba(255,255,255,.05)', borderBottom: '1px solid rgba(255,255,255,.05)', padding: '80px 0' }}>
           {[
             { count: 18, suffix: '', label: '年品牌历史' },
-            { count: 70, suffix: '+', label: '线上店铺' },
-            { count: 8, suffix: '', label: '实体门店' },
-            { count: 135, suffix: '万+', label: '抖音粉丝' },
+            { count: 443, suffix: '+', label: '团队成员' },
+            { count: 9, suffix: '', label: '实体门店' },
+            { count: 300, suffix: '万+', label: '店铺粉丝' },
           ].map(item => (
             <div key={item.label} className="r">
               <div style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 'clamp(3rem, 6vw, 5rem)', fontWeight: 300, color: '#c9a96e', lineHeight: 1, letterSpacing: '.05em', marginBottom: '12px' }}>

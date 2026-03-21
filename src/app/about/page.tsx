@@ -16,16 +16,25 @@ export const metadata: Metadata = {
 
 const brands = [
   {
-    name: '马登工装',
-    en: 'MADEN WORKWEAR',
-    desc: '品牌核心产品线，专注男装美式复古工装。工装夹克、军旅裤装、重磅针织，Americana精神的完整表达。',
-    tag: '男装 · 主线',
+    name: '马登男鞋',
+    en: 'MADEN SHOES',
+    desc: '创立于2010年，以极致性价比切入男鞋赛道。工装、复古、休闲三大风格，历经14年深耕，现为淘宝/天猫男鞋类目 TOP3。',
+    tag: '男鞋 · 2010',
+    badge: '淘宝 TOP3',
   },
   {
-    name: '马登 MADEN',
-    en: 'MADEN',
-    desc: '延伸副线，覆盖更宽泛的美式休闲风格。融入阿美咔叽元素，年轻化表达，天猫/抖音双渠道发力。',
-    tag: '男装 · 副线',
+    name: '马登工装',
+    en: 'MADEN WORKWEAR',
+    desc: '2017年正式上线，专注美式复古工装男装。淘宝男装 TOP1、京东男装 TOP1，累计店铺粉丝 300万+，Americana精神的核心表达。',
+    tag: '男装 · 2017',
+    badge: '淘宝 TOP1',
+  },
+  {
+    name: '马登女装',
+    en: 'MADEN WOMEN',
+    desc: '2022年4月上线，首日3000件库存售罄率90%，10天入选【必逛好店】。复古·工装·酷女孩风格，好评率99.97%。',
+    tag: '女装 · 2022',
+    badge: '好评率 99.97%',
   },
 ]
 
@@ -74,7 +83,7 @@ export default function AboutPage() {
               从一件哈灵顿夹克开始，马登逐渐建立起自己的产品体系。不追快时尚，不做爆款逻辑，只做经典的、有历史原型的、能穿十年的好衣服。
             </p>
             <p style={{ fontSize: '1rem', lineHeight: 2, fontWeight: 400, color: 'rgba(232,228,223,.7)' }}>
-              如今，马登已成为中国美式复古工装领域的代表品牌之一。全国9家实体门店，70+线上店铺，135万抖音粉丝。但无论规模怎么变，那股对Americana精神的执念从未改变。
+              如今，马登已成为中国美式复古工装领域的代表品牌之一。全国9家实体门店，70+线上店铺，300万+店铺粉丝，443人团队。但无论规模怎么变，那股对Americana精神的执念从未改变。
             </p>
           </div>
         </div>
@@ -105,9 +114,12 @@ export default function AboutPage() {
                 }}>
                   {String(i + 1).padStart(2, '0')}
                 </span>
-                <p style={{ fontSize: '.65rem', letterSpacing: '.3em', color: '#c9a96e', opacity: 0.6, marginBottom: '16px', fontWeight: 400 }}>{b.tag}</p>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '20px' }}>
+                  <p style={{ fontSize: '.65rem', letterSpacing: '.3em', color: '#c9a96e', opacity: 0.7, fontWeight: 400 }}>{b.tag}</p>
+                  <span style={{ fontSize: '.6rem', letterSpacing: '.1em', color: '#c9a96e', border: '1px solid rgba(201,169,110,.3)', padding: '3px 10px', fontWeight: 400 }}>{b.badge}</span>
+                </div>
                 <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: '1.8rem', fontWeight: 300, letterSpacing: '.08em', marginBottom: '6px', color: 'rgba(232,228,223,.95)' }}>{b.name}</h3>
-                <p style={{ fontSize: '.65rem', letterSpacing: '.25em', color: 'rgba(232,228,223,.25)', marginBottom: '24px', fontWeight: 400 }}>{b.en}</p>
+                <p style={{ fontSize: '.65rem', letterSpacing: '.25em', color: 'rgba(232,228,223,.25)', marginBottom: '20px', fontWeight: 400 }}>{b.en}</p>
                 <p style={{ fontSize: '.95rem', lineHeight: 1.9, fontWeight: 400, color: 'rgba(232,228,223,.6)' }}>{b.desc}</p>
               </div>
             ))}
@@ -188,7 +200,7 @@ export default function AboutPage() {
 
       <style>{`
         .about-split { max-width: 1400px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 100px; align-items: center; }
-        .brands-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; max-width: 900px; }
+        .brands-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
         .brand-card:hover { border-color: rgba(201,169,110,.4) !important; }
         .phil-3col { display: grid; grid-template-columns: repeat(3, 1fr); gap: 48px; }
         @media (max-width: 900px) {
