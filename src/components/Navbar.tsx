@@ -40,7 +40,7 @@ export default function Navbar() {
           display: 'flex',
           justifyContent: 'space-between',
           alignItems: 'center',
-          mixBlendMode: 'difference',
+          mixBlendMode: 'normal',
         }}
       >
         <Link

@@ -39,9 +39,9 @@ export default function Footer() {
                   rel="noopener"
                   aria-label={label}
                   title={label}
-                  style={{ color: 'rgba(232,228,223,.35)', transition: 'color .3s' }}
-                  onMouseEnter={e => (e.currentTarget.style.color = '#c9a96e')}
-                  onMouseLeave={e => (e.currentTarget.style.color = 'rgba(232,228,223,.35)')}
+                  style={{ color: 'rgba(30,25,20,.35)', transition: 'color .3s' }}
+                  onMouseEnter={e => (e.currentTarget.style.color = '#1a1a1a')}
+                  onMouseLeave={e => (e.currentTarget.style.color = 'rgba(30,25,20,.35)')}
                 >
                   <Icon size={22} color="currentColor" />
                 </a>
@@ -100,7 +100,7 @@ export default function Footer() {
               <h5 style={{ fontSize: '.6rem', letterSpacing: '.3em', opacity: 0.25, marginBottom: '20px', fontWeight: 400 }}>联系我们</h5>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '10px', opacity: 0.4 }}>
-                  <IconPin size={16} color="rgba(232,228,223,.8)" />
+                  <IconPin size={16} color="rgba(30,25,20,.8)" />
                   <span style={{ fontSize: '.78rem', fontWeight: 300 }}>重庆 · 中国</span>
                 </div>
                 <a
@@ -109,7 +109,7 @@ export default function Footer() {
                   onMouseEnter={e => (e.currentTarget.style.opacity = '.9')}
                   onMouseLeave={e => (e.currentTarget.style.opacity = '.4')}
                 >
-                  <IconMail size={16} color="rgba(232,228,223,.8)" />
+                  <IconMail size={16} color="rgba(30,25,20,.8)" />
                   <span style={{ fontSize: '.78rem', fontWeight: 300 }}>service@madenfushi.com</span>
                 </a>
               </div>
