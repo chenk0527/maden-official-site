@@ -93,13 +93,13 @@ export default function HomePage() {
             <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 'clamp(2.2rem, 5vw, 3.6rem)', fontWeight: 300, lineHeight: 1.15, letterSpacing: '.04em', marginBottom: '48px' }}>
               始于重庆，<br />忠于工装。
             </h2>
-            <p style={{ fontSize: '.9rem', lineHeight: 2, fontWeight: 200, color: 'rgba(232,228,223,.5)', marginBottom: '20px' }}>
+            <p style={{ fontSize: '1rem', lineHeight: 2, fontWeight: 400, color: 'rgba(232,228,223,.72)', marginBottom: '20px' }}>
               2008年，三位热爱美式复古文化的年轻人在重庆创立了马登。从一间小工作室到如今全渠道<strong style={{ color: '#c9a96e', fontWeight: 400 }}>70+店铺</strong>、<strong style={{ color: '#c9a96e', fontWeight: 400 }}>7家实体门店</strong>的品牌版图，马登始终只做一件事——<strong style={{ color: '#c9a96e', fontWeight: 400 }}>最纯正的美式复古工装</strong>。
             </p>
-            <p style={{ fontSize: '.9rem', lineHeight: 2, fontWeight: 200, color: 'rgba(232,228,223,.5)', marginBottom: '20px' }}>
+            <p style={{ fontSize: '1rem', lineHeight: 2, fontWeight: 400, color: 'rgba(232,228,223,.72)', marginBottom: '20px' }}>
               每一件马登工装都承载着 Americana 精神：坚韧、务实、不妥协。我们从底特律工厂、德州牛仔、越战军服中汲取灵感，用当代工艺还原经典的美式穿着哲学。
             </p>
-            <p style={{ fontSize: '.9rem', lineHeight: 2, fontWeight: 200, color: 'rgba(232,228,223,.5)', marginBottom: '20px' }}>
+            <p style={{ fontSize: '1rem', lineHeight: 2, fontWeight: 400, color: 'rgba(232,228,223,.72)', marginBottom: '20px' }}>
               不追逐潮流，因为<strong style={{ color: '#c9a96e', fontWeight: 400 }}>经典从不过时</strong>。
             </p>
             <div style={{ marginTop: '40px', fontSize: '.6rem', letterSpacing: '.4em', opacity: 0.3, display: 'flex', alignItems: 'center', gap: '20px' }}>
@@ -128,8 +128,8 @@ export default function HomePage() {
                 <div style={{ marginBottom: '20px', color: '#c9a96e', opacity: 0.7 }}>
                   <item.Icon size={44} color="currentColor" strokeWidth={1.1} />
                 </div>
-                <h4 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: '1.6rem', fontWeight: 300, letterSpacing: '.08em', marginBottom: '12px', color: '#c9a96e' }}>{item.title}</h4>
-                <p style={{ fontSize: '.8rem', lineHeight: 1.8, fontWeight: 300, color: 'rgba(232,228,223,.45)' }}>{item.text}</p>
+                <h4 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: '1.8rem', fontWeight: 400, letterSpacing: '.08em', marginBottom: '16px', color: '#c9a96e' }}>{item.title}</h4>
+                <p style={{ fontSize: '1rem', lineHeight: 1.9, fontWeight: 400, color: 'rgba(232,228,223,.7)' }}>{item.text}</p>
               </div>
             ))}
           </div>
@@ -240,7 +240,7 @@ export default function HomePage() {
           <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 'clamp(1.8rem, 4vw, 3.2rem)', fontWeight: 300, letterSpacing: '.12em', marginBottom: '12px' }}>
             加入马登
           </h2>
-          <p style={{ fontSize: '.8rem', fontWeight: 200, opacity: 0.4, marginBottom: '32px' }}>
+          <p style={{ fontSize: '1rem', fontWeight: 400, opacity: 0.65, marginBottom: '32px' }}>
             始于重庆，忠于工装。探索全系列美式复古工装。
           </p>
           <Link
