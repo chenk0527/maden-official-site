@@ -306,3 +306,24 @@ nav {
 
 .lk-img:hover img { filter: brightness(.9) !important; }
 .about-img:hover img { transform: scale(1.04) !important; }
+
+
+/* ===== 移动端响应式 ===== */
+
+/* 数字统计栏：4列→2列 */
+@media (max-width: 768px) {
+  .nums-grid { grid-template-columns: repeat(2, 1fr) !important; padding: 40px 20px !important; gap: 32px 0 !important; }
+  .sec-pad { padding: 80px 20px !important; }
+  .grid-3 { grid-template-columns: 1fr !important; gap: 24px !important; }
+  .grid-3-products { grid-template-columns: repeat(2, 1fr) !important; gap: 3px !important; }
+  .grid-4 { grid-template-columns: repeat(2, 1fr) !important; gap: 3px !important; }
+  .hero-stats { flex-wrap: wrap !important; }
+  .mobile-hide { display: none !important; }
+  .mobile-full { width: 100% !important; padding: 0 20px !important; }
+}
+
+@media (max-width: 480px) {
+  .nums-grid { grid-template-columns: repeat(2, 1fr) !important; }
+  .grid-3-products { grid-template-columns: 1fr !important; }
+  .grid-4 { grid-template-columns: repeat(2, 1fr) !important; }
+}

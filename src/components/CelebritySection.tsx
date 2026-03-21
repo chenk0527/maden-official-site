@@ -12,7 +12,7 @@ const celebrities = [
 
 export default function CelebritySection() {
   return (
-    <section id="celebrity" style={{ padding: '140px 0', background: '#111' }}>
+    <section id="celebrity" className="sec-pad" style={{ padding: '140px 0', background: '#111' }}>
       <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 48px' }}>
         <p className="r" style={{ fontSize: '.6rem', letterSpacing: '.5em', opacity: 0.35, marginBottom: '20px', fontWeight: 300 }}>CELEBRITY PICKS</p>
         <h2 className="r" style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 'clamp(2.2rem, 5vw, 3.6rem)', fontWeight: 300, lineHeight: 1.15, letterSpacing: '.04em', marginBottom: '16px' }}>
@@ -24,7 +24,7 @@ export default function CelebritySection() {
       </div>
 
       {/* 满宽图片网格 */}
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '3px' }}>
+      <div className="grid-4" style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '3px' }}>
         {celebrities.map((cel) => (
           <div key={cel.name} style={{ position: 'relative', overflow: 'hidden', aspectRatio: '3/4' }}>
             <img

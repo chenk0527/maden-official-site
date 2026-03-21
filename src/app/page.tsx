@@ -113,7 +113,7 @@ export default function HomePage() {
 
       {/* Numbers — 紧跟Hero，第一屏后立即可见 */}
       <section style={{ padding: '0 48px', background: '#0a0a0a', borderBottom: '1px solid rgba(255,255,255,.05)' }}>
-        <div id="numbers-grid" style={{ maxWidth: '1200px', margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', textAlign: 'center', padding: '56px 0' }}>
+        <div id="numbers-grid" className="nums-grid" style={{ maxWidth: '1200px', margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', textAlign: 'center', padding: '56px 0' }}>
           {[
             { count: 15, suffix: '年', label: '品牌历史' },
             { count: 443, suffix: '+', label: '团队成员' },
@@ -131,7 +131,7 @@ export default function HomePage() {
       </section>
 
       {/* About */}
-      <section id="about" style={{ padding: '140px 48px' }}>
+      <section id="about" className="sec-pad" style={{ padding: '140px 48px' }}>
         <div style={{ maxWidth: '1400px', margin: '0 auto', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '100px', alignItems: 'center' }}>
           <div className="r-left" style={{ position: 'relative', overflow: 'hidden', aspectRatio: '3/4' }}>
             <img
@@ -167,14 +167,14 @@ export default function HomePage() {
       </section>
 
       {/* Philosophy */}
-      <section id="philosophy" style={{ padding: '140px 48px', background: '#0e0e0e' }}>
+      <section id="philosophy" className="sec-pad" style={{ padding: '140px 48px', background: '#0e0e0e' }}>
         <div style={{ maxWidth: '1000px', margin: '0 auto', textAlign: 'center' }}>
           <p className="r" style={{ fontSize: '.6rem', letterSpacing: '.5em', opacity: 0.35, marginBottom: '20px', fontWeight: 300 }}>品牌理念</p>
           <h2 className="r" style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 'clamp(2.2rem, 5vw, 3.6rem)', fontWeight: 300, lineHeight: 1.15, letterSpacing: '.04em', marginBottom: '48px' }}>
             三个关键词，定义马登
           </h2>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '48px', marginTop: '56px' }}>
+          <div className="grid-3" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '48px', marginTop: '56px' }}>
             {[
               { title: '坚韧', text: 'Americana精神的核心。每一件工装都经得起时间考验——重磅面料、加固缝线、耐用五金。不是穿一季的快时尚，而是陪你走过十年的老伙计。', Icon: IconHammer },
               { title: '复古', text: '从1940年代的M-43野战服到1970年代的OG-107工装裤，马登从美国工业黄金年代汲取灵感。每一个版型、每一处细节，都有历史原型。', Icon: IconCompass },
@@ -193,13 +193,13 @@ export default function HomePage() {
       </section>
 
       {/* Collection */}
-      <section id="collection" style={{ padding: '140px 48px' }}>
+      <section id="collection" className="sec-pad" style={{ padding: '140px 48px' }}>
         <div style={{ maxWidth: '1400px', margin: '0 auto' }}>
           <p className="r" style={{ fontSize: '.6rem', letterSpacing: '.5em', opacity: 0.35, marginBottom: '20px', fontWeight: 300 }}>产品系列</p>
           <h2 className="r" style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 'clamp(2.2rem, 5vw, 3.6rem)', fontWeight: 300, lineHeight: 1.15, letterSpacing: '.04em', marginBottom: '48px' }}>
             全品类工装
           </h2>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '4px' }}>
+          <div className="grid-3-products" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '4px' }}>
             {products.map(product => (
               <ProductCard key={product.id} product={product} />
             ))}
@@ -231,7 +231,7 @@ export default function HomePage() {
       </section>
 
       {/* Timeline */}
-      <section id="history" style={{ padding: '140px 48px', background: '#0e0e0e' }}>
+      <section id="history" className="sec-pad" style={{ padding: '140px 48px', background: '#0e0e0e' }}>
         <div style={{ maxWidth: '700px', margin: '0 auto' }}>
           <p className="r" style={{ fontSize: '.6rem', letterSpacing: '.5em', opacity: 0.35, marginBottom: '20px', fontWeight: 300 }}>品牌历程</p>
           <h2 className="r" style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 'clamp(2.2rem, 5vw, 3.6rem)', fontWeight: 300, lineHeight: 1.15, letterSpacing: '.04em', marginBottom: '48px' }}>
@@ -253,7 +253,7 @@ export default function HomePage() {
           <p className="r" style={{ fontSize: '1rem', color: 'rgba(232,228,223,.45)', marginBottom: '64px', fontWeight: 400 }}>
             男鞋 · 男装 · 女装，一个集团下的三种表达。
           </p>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '2px' }}>
+          <div className="grid-3-products" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '2px' }}>
             {brands.map((b, i) => (
               <div key={b.name} className="r" style={{
                 background: '#111', padding: '48px 36px', position: 'relative',
@@ -297,7 +297,7 @@ export default function HomePage() {
           </p>
 
           {/* 时间轴：交错网格 */}
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '40px 32px' }}>
+          <div className="grid-3" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '40px 32px' }}>
             {charities.map((c, i) => (
               <div key={c.year} className="r" style={{
                 borderLeft: '2px solid rgba(201,169,110,.18)',
@@ -340,7 +340,7 @@ export default function HomePage() {
       </div>
 
       {/* Stores */}
-      <section id="stores" style={{ padding: '140px 48px' }}>
+      <section id="stores" className="sec-pad" style={{ padding: '140px 48px' }}>
         <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
           <p className="r" style={{ fontSize: '.6rem', letterSpacing: '.5em', opacity: 0.35, marginBottom: '20px', fontWeight: 300 }}>线下门店</p>
           <h2 className="r" style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 'clamp(2.2rem, 5vw, 3.6rem)', fontWeight: 300, lineHeight: 1.15, letterSpacing: '.04em', marginBottom: '48px' }}>
@@ -355,14 +355,14 @@ export default function HomePage() {
       </section>
 
       {/* Shop Channels */}
-      <section id="shop" style={{ padding: '140px 48px' }}>
+      <section id="shop" className="sec-pad" style={{ padding: '140px 48px' }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
           <p className="r" style={{ fontSize: '.6rem', letterSpacing: '.5em', opacity: 0.35, marginBottom: '20px', fontWeight: 300 }}>立即购买</p>
           <h2 className="r" style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 'clamp(2.2rem, 5vw, 3.6rem)', fontWeight: 300, lineHeight: 1.15, letterSpacing: '.04em', marginBottom: '48px' }}>
             全渠道官方旗舰店
           </h2>
         </div>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '1px', background: 'rgba(255,255,255,.04)' }}>
+        <div className="grid-4" style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '1px', background: 'rgba(255,255,255,.04)' }}>
           {shopChannels.map(ch => (
             <ShopChannel key={ch.name} name={ch.name} sub={ch.sub} href={ch.href} />
           ))}

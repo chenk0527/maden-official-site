@@ -5,7 +5,7 @@ import { timeline } from '@/data/timeline'
 
 export const metadata: Metadata = {
   title: '关于我们 | 马登工装品牌故事',
-  description: '马登工装MADEN品牌故事——三位重庆年轻人的Americana梦想。从2008年到今天，15年专注美式复古工装，始于重庆，忠于工装。',
+  description: '马登工装MADEN品牌故事——三位重庆年轻人的Americana梦想。从2011年到今天，15年专注美式复古工装，始于重庆，忠于工装。',
   alternates: { canonical: 'https://madenfushi.com/about' },
   openGraph: {
     title: '关于马登工装 MADEN — 始于重庆，忠于工装',
