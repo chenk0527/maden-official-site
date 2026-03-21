@@ -181,16 +181,16 @@ export default async function BlogPostPage({ params }: Props) {
 
       {/* Content */}
       <div style={{ maxWidth: '780px', margin: '0 auto', padding: '80px 48px 140px' }}>
-        <p style={{ fontSize: '1rem', lineHeight: 2, fontWeight: 200, color: 'rgba(30,25,20,.5)', marginBottom: '48px', fontStyle: 'italic' }}>
+        <p style={{ fontSize: '1rem', lineHeight: 2, fontWeight: 200, color: 'rgba(26,26,26,.5)', marginBottom: '48px', fontStyle: 'italic' }}>
           {post.description}
         </p>
 
-        <div className="blog-content" style={{ fontSize: '.9rem', lineHeight: 2.2, fontWeight: 200, color: 'rgba(30,25,20,.65)' }}>
+        <div className="blog-content" style={{ fontSize: '.9rem', lineHeight: 2.2, fontWeight: 200, color: 'rgba(26,26,26,.65)' }}>
           {content}
         </div>
 
         {/* Nav */}
-        <div style={{ marginTop: '80px', paddingTop: '40px', borderTop: '1px solid rgba(255,255,255,.06)', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+        <div style={{ marginTop: '80px', paddingTop: '40px', borderTop: '1px solid rgba(0,0,0,.08)', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
           <Link href="/blog" style={{ fontSize: '.65rem', letterSpacing: '.3em', opacity: 0.4, fontWeight: 300 }}>
             ← 返回博客
           </Link>
@@ -234,7 +234,7 @@ export default async function BlogPostPage({ params }: Props) {
         .blog-content ul li { 
           list-style: disc; 
           margin-bottom: 8px; 
-          color: rgba(30,25,20,.5);
+          color: rgba(26,26,26,.5);
         }
         .blog-content strong { color: #1a1a1a; font-weight: 400; }
         @media (max-width: 900px) {

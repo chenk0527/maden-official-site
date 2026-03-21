@@ -111,7 +111,7 @@ export default function HomePage() {
       <Hero />
 
       {/* Numbers — 紧跟Hero，第一屏后立即可见 */}
-      <section style={{ padding: '0 48px', background: '#f5f3ef', borderBottom: '1px solid rgba(255,255,255,.05)' }}>
+      <section style={{ padding: '0 48px', background: '#f5f3ef', borderBottom: '1px solid rgba(0,0,0,.07)' }}>
         <div id="numbers-grid" style={{ maxWidth: '1200px', margin: '0 auto', display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', textAlign: 'center', padding: '56px 0' }}>
           {[
             { count: 18, suffix: '', label: '年品牌历史' },
@@ -119,7 +119,7 @@ export default function HomePage() {
             { count: 8, suffix: "家", label: "实体门店" },
             { count: 1000, suffix: '万+', label: '全网粉丝' },
           ].map((item, i) => (
-            <div key={item.label} className="r" style={{ borderRight: i < 3 ? '1px solid rgba(255,255,255,.06)' : 'none', padding: '0 24px' }}>
+            <div key={item.label} className="r" style={{ borderRight: i < 3 ? '1px solid rgba(0,0,0,.08)' : 'none', padding: '0 24px' }}>
               <div style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 'clamp(2.4rem, 5vw, 4rem)', fontWeight: 300, color: '#1a1a1a', lineHeight: 1, letterSpacing: '.05em' }}>
                 <CountUp target={item.count} suffix={item.suffix} />
               </div>
@@ -148,13 +148,13 @@ export default function HomePage() {
             <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 'clamp(2.2rem, 5vw, 3.6rem)', fontWeight: 300, lineHeight: 1.15, letterSpacing: '.04em', marginBottom: '48px' }}>
               始于重庆，<br />忠于工装。
             </h2>
-            <p style={{ fontSize: '1rem', lineHeight: 2, fontWeight: 400, color: 'rgba(30,25,20,.72)', marginBottom: '20px' }}>
+            <p style={{ fontSize: '1rem', lineHeight: 2, fontWeight: 400, color: 'rgba(26,26,26,.72)', marginBottom: '20px' }}>
               2008年，三位热爱美式复古文化的年轻人在重庆创立了马登。从一间小工作室到如今全渠道<strong style={{ color: '#1a1a1a', fontWeight: 400 }}>70+店铺</strong>、<strong style={{ color: '#1a1a1a', fontWeight: 400 }}>7家实体门店</strong>的品牌版图，马登始终只做一件事——<strong style={{ color: '#1a1a1a', fontWeight: 400 }}>最纯正的美式复古工装</strong>。
             </p>
-            <p style={{ fontSize: '1rem', lineHeight: 2, fontWeight: 400, color: 'rgba(30,25,20,.72)', marginBottom: '20px' }}>
+            <p style={{ fontSize: '1rem', lineHeight: 2, fontWeight: 400, color: 'rgba(26,26,26,.72)', marginBottom: '20px' }}>
               每一件马登工装都承载着 Americana 精神：坚韧、务实、不妥协。我们从底特律工厂、德州牛仔、越战军服中汲取灵感，用当代工艺还原经典的美式穿着哲学。
             </p>
-            <p style={{ fontSize: '1rem', lineHeight: 2, fontWeight: 400, color: 'rgba(30,25,20,.72)', marginBottom: '20px' }}>
+            <p style={{ fontSize: '1rem', lineHeight: 2, fontWeight: 400, color: 'rgba(26,26,26,.72)', marginBottom: '20px' }}>
               不追逐潮流，因为<strong style={{ color: '#1a1a1a', fontWeight: 400 }}>经典从不过时</strong>。
             </p>
             <div style={{ marginTop: '40px', fontSize: '.6rem', letterSpacing: '.4em', opacity: 0.3, display: 'flex', alignItems: 'center', gap: '20px' }}>
@@ -184,7 +184,7 @@ export default function HomePage() {
                   <item.Icon size={44} color="currentColor" strokeWidth={1.1} />
                 </div>
                 <h4 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: '1.8rem', fontWeight: 400, letterSpacing: '.08em', marginBottom: '16px', color: '#1a1a1a' }}>{item.title}</h4>
-                <p style={{ fontSize: '1rem', lineHeight: 1.9, fontWeight: 400, color: 'rgba(30,25,20,.7)' }}>{item.text}</p>
+                <p style={{ fontSize: '1rem', lineHeight: 1.9, fontWeight: 400, color: 'rgba(26,26,26,.7)' }}>{item.text}</p>
               </div>
             ))}
           </div>
@@ -219,7 +219,7 @@ export default function HomePage() {
 
       {/* Statement */}
       <section style={{ minHeight: '60vh', display: 'flex', alignItems: 'center', justifyContent: 'center', textAlign: 'center', padding: '80px 48px' }}>
-        <div className="r" style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 'clamp(1.8rem, 4.5vw, 4rem)', fontWeight: 300, lineHeight: 1.4, letterSpacing: '.03em', maxWidth: '800px', color: 'rgba(30,25,20,.6)' }}>
+        <div className="r" style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 'clamp(1.8rem, 4.5vw, 4rem)', fontWeight: 300, lineHeight: 1.4, letterSpacing: '.03em', maxWidth: '800px', color: 'rgba(26,26,26,.6)' }}>
           &ldquo;不追逐潮流，<br />因为<em style={{ fontStyle: 'italic', color: '#1a1a1a' }}>经典</em>从不过时。&rdquo;
         </div>
       </section>
@@ -244,7 +244,7 @@ export default function HomePage() {
           <h2 className="r" style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 'clamp(2.2rem, 5vw, 3.6rem)', fontWeight: 300, lineHeight: 1.15, letterSpacing: '.04em', marginBottom: '16px' }}>
             三大品牌，全品类覆盖
           </h2>
-          <p className="r" style={{ fontSize: '1rem', color: 'rgba(30,25,20,.45)', marginBottom: '64px', fontWeight: 400 }}>
+          <p className="r" style={{ fontSize: '1rem', color: 'rgba(26,26,26,.45)', marginBottom: '64px', fontWeight: 400 }}>
             男鞋 · 男装 · 女装，一个集团下的三种表达。
           </p>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '2px' }}>
@@ -266,8 +266,8 @@ export default function HomePage() {
                   <span style={{ fontSize: '.55rem', letterSpacing: '.1em', color: '#1a1a1a', border: '1px solid rgba(26,26,26,.25)', padding: '3px 8px' }}>{b.badge}</span>
                 </div>
                 <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: '1.7rem', fontWeight: 300, letterSpacing: '.06em', marginBottom: '4px' }}>{b.name}</h3>
-                <p style={{ fontSize: '.6rem', letterSpacing: '.25em', color: 'rgba(30,25,20,.2)', marginBottom: '20px' }}>{b.en}</p>
-                <p style={{ fontSize: '.95rem', lineHeight: 1.9, color: 'rgba(30,25,20,.58)', fontWeight: 400 }}>{b.desc}</p>
+                <p style={{ fontSize: '.6rem', letterSpacing: '.25em', color: 'rgba(26,26,26,.2)', marginBottom: '20px' }}>{b.en}</p>
+                <p style={{ fontSize: '.95rem', lineHeight: 1.9, color: 'rgba(26,26,26,.58)', fontWeight: 400 }}>{b.desc}</p>
               </div>
             ))}
           </div>
@@ -286,7 +286,7 @@ export default function HomePage() {
           <h2 className="r" style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 'clamp(2.2rem, 5vw, 3.6rem)', fontWeight: 300, lineHeight: 1.15, letterSpacing: '.04em', marginBottom: '16px', textAlign: 'center' }}>
             马登公益足迹
           </h2>
-          <p className="r" style={{ fontSize: '1rem', color: 'rgba(30,25,20,.4)', maxWidth: '540px', margin: '0 auto 80px', lineHeight: 1.8, textAlign: 'center', fontWeight: 400 }}>
+          <p className="r" style={{ fontSize: '1rem', color: 'rgba(26,26,26,.4)', maxWidth: '540px', margin: '0 auto 80px', lineHeight: 1.8, textAlign: 'center', fontWeight: 400 }}>
             从2017年起，马登持续深入贫困山区，用行动陪伴孩子成长。
           </p>
 
@@ -304,8 +304,8 @@ export default function HomePage() {
                   background: '#1a1a1a', opacity: 0.6,
                 }} />
                 <p style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: '1.1rem', color: '#1a1a1a', opacity: 0.7, marginBottom: '8px', fontWeight: 300 }}>{c.year}</p>
-                <h4 style={{ fontSize: '.95rem', fontWeight: 400, letterSpacing: '.03em', marginBottom: '8px', color: 'rgba(30,25,20,.85)' }}>{c.title}</h4>
-                <p style={{ fontSize: '.85rem', lineHeight: 1.7, color: 'rgba(30,25,20,.42)', fontWeight: 400 }}>{c.desc}</p>
+                <h4 style={{ fontSize: '.95rem', fontWeight: 400, letterSpacing: '.03em', marginBottom: '8px', color: 'rgba(26,26,26,.85)' }}>{c.title}</h4>
+                <p style={{ fontSize: '.85rem', lineHeight: 1.7, color: 'rgba(26,26,26,.42)', fontWeight: 400 }}>{c.desc}</p>
               </div>
             ))}
           </div>
@@ -356,7 +356,7 @@ export default function HomePage() {
             全渠道官方旗舰店
           </h2>
         </div>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '1px', background: 'rgba(255,255,255,.04)' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '1px', background: 'rgba(0,0,0,.06)' }}>
           {shopChannels.map(ch => (
             <ShopChannel key={ch.name} name={ch.name} sub={ch.sub} href={ch.href} />
           ))}

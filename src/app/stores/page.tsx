@@ -33,7 +33,7 @@ export default function StoresPage() {
         <h1 className="r" style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 'clamp(3rem, 8vw, 7rem)', fontWeight: 300, letterSpacing: '.1em', lineHeight: 0.9, marginBottom: '32px' }}>
           实体门店
         </h1>
-        <p className="r" style={{ fontSize: '.85rem', fontWeight: 200, color: 'rgba(30,25,20,.4)', maxWidth: '500px', margin: '0 auto', lineHeight: 1.8 }}>
+        <p className="r" style={{ fontSize: '.85rem', fontWeight: 200, color: 'rgba(26,26,26,.4)', maxWidth: '500px', margin: '0 auto', lineHeight: 1.8 }}>
           重庆6家直营 · 成都2家联营 · 全国8家实体门店<br />欢迎到店体验，感受真实的美式工装质感
         </p>
       </section>
@@ -52,7 +52,7 @@ export default function StoresPage() {
             <p style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: '1.4rem', fontWeight: 300, color: '#1a1a1a', marginBottom: '12px', letterSpacing: '.05em' }}>
               地图导航
             </p>
-            <p style={{ fontSize: '.85rem', fontWeight: 200, color: 'rgba(30,25,20,.3)', lineHeight: 1.8 }}>
+            <p style={{ fontSize: '.85rem', fontWeight: 200, color: 'rgba(26,26,26,.3)', lineHeight: 1.8 }}>
               在高德地图 / 百度地图搜索「马登工装」即可找到最近门店<br />
               或拨打门店电话提前预约
             </p>
@@ -69,7 +69,7 @@ export default function StoresPage() {
           ].map(item => (
             <div key={item.title} className="r" style={{ padding: '32px', background: '#ebe8e3' }}>
               <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: '1.2rem', fontWeight: 300, color: '#1a1a1a', marginBottom: '16px' }}>{item.title}</h3>
-              <p style={{ fontSize: '.85rem', lineHeight: 1.9, fontWeight: 200, color: 'rgba(30,25,20,.4)', whiteSpace: 'pre-line' }}>{item.text}</p>
+              <p style={{ fontSize: '.85rem', lineHeight: 1.9, fontWeight: 200, color: 'rgba(26,26,26,.4)', whiteSpace: 'pre-line' }}>{item.text}</p>
             </div>
           ))}
         </div>

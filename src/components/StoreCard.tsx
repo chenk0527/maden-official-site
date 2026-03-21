@@ -29,7 +29,7 @@ export default function StoreCard({ cityData, direction = 'left' }: Props) {
             key={store.name}
             style={{
               padding: '12px 0',
-              borderBottom: '1px solid rgba(255,255,255,.04)',
+              borderBottom: '1px solid rgba(0,0,0,.06)',
               fontSize: '.85rem',
               fontWeight: 200,
               opacity: 0.5,

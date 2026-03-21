@@ -22,7 +22,7 @@ export default function BlogPage() {
         <h1 className="r" style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 'clamp(3rem, 8vw, 7rem)', fontWeight: 300, letterSpacing: '.1em', lineHeight: 0.9, marginBottom: '32px' }}>
           JOURNAL
         </h1>
-        <p className="r" style={{ fontSize: '.85rem', fontWeight: 200, color: 'rgba(30,25,20,.4)', maxWidth: '500px', margin: '0 auto', lineHeight: 1.8 }}>
+        <p className="r" style={{ fontSize: '.85rem', fontWeight: 200, color: 'rgba(26,26,26,.4)', maxWidth: '500px', margin: '0 auto', lineHeight: 1.8 }}>
           工装知识、穿搭灵感、品牌故事
         </p>
       </section>
@@ -42,7 +42,7 @@ export default function BlogPage() {
                 <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: '1.2rem', fontWeight: 300, letterSpacing: '.03em', marginBottom: '12px', lineHeight: 1.4 }}>
                   {post.title}
                 </h2>
-                <p style={{ fontSize: '.8rem', lineHeight: 1.7, fontWeight: 200, color: 'rgba(30,25,20,.4)', marginBottom: '16px' }}>
+                <p style={{ fontSize: '.8rem', lineHeight: 1.7, fontWeight: 200, color: 'rgba(26,26,26,.4)', marginBottom: '16px' }}>
                   {post.description}
                 </p>
                 <div style={{ fontSize: '.55rem', letterSpacing: '.2em', opacity: 0.25, fontWeight: 300 }}>{post.date}</div>

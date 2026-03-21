@@ -26,7 +26,7 @@ export default function Hero() {
             width: '100%',
             height: '100%',
             objectFit: 'cover',
-            filter: 'brightness(.3) contrast(1.1)',
+            filter: 'brightness(.55) contrast(1.05) saturate(.9)',
             transform: 'scale(1.05)',
             animation: 'hz 20s ease-in-out infinite alternate',
           }}

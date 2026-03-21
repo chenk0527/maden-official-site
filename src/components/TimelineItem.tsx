@@ -52,7 +52,7 @@ export default function TimelineItem({ year, text, isLast }: Props) {
           }}
         />
       </div>
-      <div style={{ fontSize: '.85rem', lineHeight: 1.7, fontWeight: 200, color: 'rgba(30,25,20,.45)' }}>
+      <div style={{ fontSize: '.85rem', lineHeight: 1.7, fontWeight: 200, color: 'rgba(26,26,26,.45)' }}>
         {text}
       </div>
     </div>

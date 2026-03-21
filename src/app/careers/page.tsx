@@ -37,7 +37,7 @@ export default function CareersPage() {
         <h1 className="r" style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 'clamp(3rem, 8vw, 7rem)', fontWeight: 300, letterSpacing: '.1em', lineHeight: 0.9, marginBottom: '32px' }}>
           加入我们
         </h1>
-        <p className="r" style={{ fontSize: '.85rem', fontWeight: 200, color: 'rgba(30,25,20,.4)', maxWidth: '500px', margin: '0 auto', lineHeight: 1.8 }}>
+        <p className="r" style={{ fontSize: '.85rem', fontWeight: 200, color: 'rgba(26,26,26,.4)', maxWidth: '500px', margin: '0 auto', lineHeight: 1.8 }}>
           我们在寻找热爱美式工装文化、愿意一起把品牌做好的人
         </p>
       </section>
@@ -48,7 +48,7 @@ export default function CareersPage() {
           <h2 className="r" style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: '1.8rem', fontWeight: 300, color: '#1a1a1a', letterSpacing: '.08em', marginBottom: '12px' }}>
             校园招聘
           </h2>
-          <p className="r" style={{ fontSize: '.75rem', fontWeight: 200, color: 'rgba(30,25,20,.3)', marginBottom: '32px', letterSpacing: '.05em' }}>
+          <p className="r" style={{ fontSize: '.75rem', fontWeight: 200, color: 'rgba(26,26,26,.3)', marginBottom: '32px', letterSpacing: '.05em' }}>
             Campus Recruitment
           </p>
 
@@ -61,8 +61,8 @@ export default function CareersPage() {
                       <pos.Icon size={28} color="currentColor" strokeWidth={1.2} />
                     </div>
                     <div>
-                      <h3 style={{ fontSize: '.95rem', fontWeight: 400, marginBottom: '6px', color: 'rgba(30,25,20,.85)' }}>{pos.title}</h3>
-                      <p style={{ fontSize: '.72rem', fontWeight: 300, color: 'rgba(30,25,20,.35)' }}>
+                      <h3 style={{ fontSize: '.95rem', fontWeight: 400, marginBottom: '6px', color: 'rgba(26,26,26,.85)' }}>{pos.title}</h3>
+                      <p style={{ fontSize: '.72rem', fontWeight: 300, color: 'rgba(26,26,26,.35)' }}>
                         {pos.dept} · {pos.location}
                       </p>
                     </div>
@@ -86,7 +86,7 @@ export default function CareersPage() {
           <h2 className="r" style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: '1.8rem', fontWeight: 300, color: '#1a1a1a', letterSpacing: '.08em', marginBottom: '12px' }}>
             社会招聘
           </h2>
-          <p className="r" style={{ fontSize: '.75rem', fontWeight: 200, color: 'rgba(30,25,20,.3)', marginBottom: '32px', letterSpacing: '.05em' }}>
+          <p className="r" style={{ fontSize: '.75rem', fontWeight: 200, color: 'rgba(26,26,26,.3)', marginBottom: '32px', letterSpacing: '.05em' }}>
             Social Recruitment
           </p>
 
@@ -99,8 +99,8 @@ export default function CareersPage() {
                       <pos.Icon size={28} color="currentColor" strokeWidth={1.2} />
                     </div>
                     <div>
-                      <h3 style={{ fontSize: '.95rem', fontWeight: 400, marginBottom: '6px', color: 'rgba(30,25,20,.85)' }}>{pos.title}</h3>
-                      <p style={{ fontSize: '.72rem', fontWeight: 300, color: 'rgba(30,25,20,.35)' }}>
+                      <h3 style={{ fontSize: '.95rem', fontWeight: 400, marginBottom: '6px', color: 'rgba(26,26,26,.85)' }}>{pos.title}</h3>
+                      <p style={{ fontSize: '.72rem', fontWeight: 300, color: 'rgba(26,26,26,.35)' }}>
                         {pos.dept} · {pos.location} · {pos.exp}
                       </p>
                     </div>
@@ -125,7 +125,7 @@ export default function CareersPage() {
             <p style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: '1.4rem', fontWeight: 300, color: '#1a1a1a', marginBottom: '12px', letterSpacing: '.05em' }}>
               简历投递
             </p>
-            <p style={{ fontSize: '.85rem', fontWeight: 200, color: 'rgba(30,25,20,.3)', lineHeight: 1.8 }}>
+            <p style={{ fontSize: '.85rem', fontWeight: 200, color: 'rgba(26,26,26,.3)', lineHeight: 1.8 }}>
               简历投递后3个工作日内回复 · service@madenfushi.com
             </p>
           </div>

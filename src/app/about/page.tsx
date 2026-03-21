@@ -59,7 +59,7 @@ export default function AboutPage() {
         <h1 className="r" style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 'clamp(3rem, 8vw, 7rem)', fontWeight: 300, letterSpacing: '.1em', lineHeight: 0.9, marginBottom: '32px' }}>
           始于重庆<br />忠于工装
         </h1>
-        <p className="r" style={{ fontSize: '1rem', fontWeight: 400, color: 'rgba(30,25,20,.55)', maxWidth: '500px', margin: '0 auto', lineHeight: 1.8 }}>
+        <p className="r" style={{ fontSize: '1rem', fontWeight: 400, color: 'rgba(26,26,26,.55)', maxWidth: '500px', margin: '0 auto', lineHeight: 1.8 }}>
           Since 2008 · Americana Spirit · Made in China
         </p>
       </section>
@@ -78,13 +78,13 @@ export default function AboutPage() {
             <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 'clamp(2rem, 4vw, 3rem)', fontWeight: 300, letterSpacing: '.04em', marginBottom: '32px' }}>
               三个人，一间工作室，<br />一个关于工装的梦
             </h2>
-            <p style={{ fontSize: '1rem', lineHeight: 2, fontWeight: 400, color: 'rgba(30,25,20,.7)', marginBottom: '20px' }}>
+            <p style={{ fontSize: '1rem', lineHeight: 2, fontWeight: 400, color: 'rgba(26,26,26,.7)', marginBottom: '20px' }}>
               2008年，重庆，三位二十出头的年轻人，因为共同热爱美式复古文化走到了一起。那个年代，中国市场几乎找不到一件像样的美式工装。于是他们决定自己做。
             </p>
-            <p style={{ fontSize: '1rem', lineHeight: 2, fontWeight: 400, color: 'rgba(30,25,20,.7)', marginBottom: '20px' }}>
+            <p style={{ fontSize: '1rem', lineHeight: 2, fontWeight: 400, color: 'rgba(26,26,26,.7)', marginBottom: '20px' }}>
               从一件哈灵顿夹克开始，马登逐渐建立起自己的产品体系。不追快时尚，不做爆款逻辑，只做经典的、有历史原型的、能穿十年的好衣服。
             </p>
-            <p style={{ fontSize: '1rem', lineHeight: 2, fontWeight: 400, color: 'rgba(30,25,20,.7)' }}>
+            <p style={{ fontSize: '1rem', lineHeight: 2, fontWeight: 400, color: 'rgba(26,26,26,.7)' }}>
               如今，马登已成为中国美式复古工装领域的代表品牌之一。全国8家实体门店，70+线上店铺，全网粉丝突破1000万，443人团队。但无论规模怎么变，那股对Americana精神的执念从未改变。
             </p>
           </div>
@@ -92,7 +92,7 @@ export default function AboutPage() {
       </section>
 
       {/* 旗下品牌 */}
-      <section style={{ padding: '120px 48px', background: '#0e0e0e' }}>
+      <section style={{ padding: '120px 48px', background: '#f5f3ef' }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
           <p className="r" style={{ fontSize: '.7rem', letterSpacing: '.5em', opacity: 0.4, marginBottom: '16px', fontWeight: 400 }}>旗下品牌</p>
           <h2 className="r" style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 'clamp(2.2rem, 5vw, 3.6rem)', fontWeight: 300, lineHeight: 1.15, letterSpacing: '.04em', marginBottom: '64px' }}>
@@ -120,9 +120,9 @@ export default function AboutPage() {
                   <p style={{ fontSize: '.65rem', letterSpacing: '.3em', color: '#1a1a1a', opacity: 0.7, fontWeight: 400 }}>{b.tag}</p>
                   <span style={{ fontSize: '.6rem', letterSpacing: '.1em', color: '#1a1a1a', border: '1px solid rgba(26,26,26,.3)', padding: '3px 10px', fontWeight: 400 }}>{b.badge}</span>
                 </div>
-                <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: '1.8rem', fontWeight: 300, letterSpacing: '.08em', marginBottom: '6px', color: 'rgba(30,25,20,.95)' }}>{b.name}</h3>
-                <p style={{ fontSize: '.65rem', letterSpacing: '.25em', color: 'rgba(30,25,20,.25)', marginBottom: '20px', fontWeight: 400 }}>{b.en}</p>
-                <p style={{ fontSize: '.95rem', lineHeight: 1.9, fontWeight: 400, color: 'rgba(30,25,20,.6)' }}>{b.desc}</p>
+                <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: '1.8rem', fontWeight: 300, letterSpacing: '.08em', marginBottom: '6px', color: 'rgba(26,26,26,.95)' }}>{b.name}</h3>
+                <p style={{ fontSize: '.65rem', letterSpacing: '.25em', color: 'rgba(26,26,26,.25)', marginBottom: '20px', fontWeight: 400 }}>{b.en}</p>
+                <p style={{ fontSize: '.95rem', lineHeight: 1.9, fontWeight: 400, color: 'rgba(26,26,26,.6)' }}>{b.desc}</p>
               </div>
             ))}
           </div>
@@ -144,7 +144,7 @@ export default function AboutPage() {
             ].map(item => (
               <div key={item.title} className="r">
                 <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: '1.5rem', fontWeight: 400, letterSpacing: '.05em', marginBottom: '16px', color: '#1a1a1a' }}>{item.title}</h3>
-                <p style={{ fontSize: '1rem', lineHeight: 1.9, fontWeight: 400, color: 'rgba(30,25,20,.65)' }}>{item.text}</p>
+                <p style={{ fontSize: '1rem', lineHeight: 1.9, fontWeight: 400, color: 'rgba(26,26,26,.65)' }}>{item.text}</p>
               </div>
             ))}
           </div>
@@ -152,14 +152,14 @@ export default function AboutPage() {
       </section>
 
       {/* 公益足迹 */}
-      <section style={{ padding: '120px 48px', background: '#0e0e0e', overflow: 'hidden' }}>
+      <section style={{ padding: '120px 48px', background: '#f5f3ef', overflow: 'hidden' }}>
         <div style={{ maxWidth: '1300px', margin: '0 auto' }}>
           <p className="r" style={{ fontSize: '.7rem', letterSpacing: '.5em', opacity: 0.4, marginBottom: '16px', fontWeight: 400, textAlign: 'center' }}>公益足迹</p>
           <h2 className="r" style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 'clamp(2.2rem, 5vw, 3.6rem)', fontWeight: 300, lineHeight: 1.15, letterSpacing: '.04em', marginBottom: '8px', textAlign: 'center' }}>
             马登公益足迹
           </h2>
           <p className="r" style={{ fontSize: '.7rem', letterSpacing: '.3em', color: '#1a1a1a', opacity: 0.5, marginBottom: '16px', textAlign: 'center', fontWeight: 400 }}>MADEN CHARITY FUND</p>
-          <p className="r" style={{ fontSize: '1rem', fontWeight: 400, color: 'rgba(30,25,20,.45)', marginBottom: '80px', lineHeight: 1.8, textAlign: 'center', maxWidth: '600px', margin: '0 auto 80px' }}>
+          <p className="r" style={{ fontSize: '1rem', fontWeight: 400, color: 'rgba(26,26,26,.45)', marginBottom: '80px', lineHeight: 1.8, textAlign: 'center', maxWidth: '600px', margin: '0 auto 80px' }}>
             我们相信，一个好品牌不只卖衣服。从2017年起，马登持续深入贫困山区，用行动陪伴孩子成长。
           </p>
 
@@ -175,8 +175,8 @@ export default function AboutPage() {
                     /* 上排：内容在上，年份+圆点在下 */
                     <>
                       <div className="charity-content-top">
-                        <h4 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: '1.1rem', fontWeight: 400, color: 'rgba(30,25,20,.9)', marginBottom: '8px', letterSpacing: '.03em' }}>{c.title}</h4>
-                        <p style={{ fontSize: '.82rem', lineHeight: 1.7, fontWeight: 400, color: 'rgba(30,25,20,.45)' }}>{c.desc}</p>
+                        <h4 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: '1.1rem', fontWeight: 400, color: 'rgba(26,26,26,.9)', marginBottom: '8px', letterSpacing: '.03em' }}>{c.title}</h4>
+                        <p style={{ fontSize: '.82rem', lineHeight: 1.7, fontWeight: 400, color: 'rgba(26,26,26,.45)' }}>{c.desc}</p>
                       </div>
                       <div className="charity-node-top">
                         <span style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: '1rem', fontWeight: 300, color: '#1a1a1a', display: 'block', marginBottom: '8px' }}>{c.year}</span>
@@ -191,8 +191,8 @@ export default function AboutPage() {
                         <span style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: '1rem', fontWeight: 300, color: '#1a1a1a', display: 'block' }}>{c.year}</span>
                       </div>
                       <div className="charity-content-bottom">
-                        <h4 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: '1.1rem', fontWeight: 400, color: 'rgba(30,25,20,.9)', marginBottom: '8px', letterSpacing: '.03em' }}>{c.title}</h4>
-                        <p style={{ fontSize: '.82rem', lineHeight: 1.7, fontWeight: 400, color: 'rgba(30,25,20,.45)' }}>{c.desc}</p>
+                        <h4 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: '1.1rem', fontWeight: 400, color: 'rgba(26,26,26,.9)', marginBottom: '8px', letterSpacing: '.03em' }}>{c.title}</h4>
+                        <p style={{ fontSize: '.82rem', lineHeight: 1.7, fontWeight: 400, color: 'rgba(26,26,26,.45)' }}>{c.desc}</p>
                       </div>
                     </>
                   )}

@@ -14,12 +14,11 @@ html {
 }
 
 body {
-  font-family: 'Inter', sans-serif;
-  background: #f5f3ef;
+  background: #ffffff;
   color: #1a1a1a;
-  overflow-x: hidden;
-  cursor: none;
+  font-family: 'Inter', system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
 }
 
 a {
@@ -242,18 +241,21 @@ nav {
 .btn-gold {
   display: inline-block;
   padding: 16px 52px;
-  border: 1px solid rgba(26,26,26,.6);
-  font-size: .85rem;
-  letter-spacing: .3em;
-  font-weight: 400;
-  transition: all .6s;
+  background: transparent;
   color: #1a1a1a;
+  border: 1.5px solid #1a1a1a;
+  font-size: .68rem;
+  letter-spacing: .4em;
+  font-weight: 400;
+  transition: all .5s cubic-bezier(.4,0,.2,1);
+  text-transform: uppercase;
   cursor: pointer;
 }
 .btn-gold:hover {
   background: #1a1a1a;
-  color: #0a0a0a;
+  color: #ffffff;
   border-color: #1a1a1a;
+  letter-spacing: .45em;
 }
 
 .btn-gold-sm {
