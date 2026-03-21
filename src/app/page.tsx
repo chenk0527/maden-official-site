@@ -116,7 +116,7 @@ export default function HomePage() {
           {[
             { count: 18, suffix: '', label: '年品牌历史' },
             { count: 443, suffix: '+', label: '团队成员' },
-            { count: 9, suffix: '', label: '实体门店' },
+            { count: 8, suffix: "家", label: "实体门店" },
             { count: 1000, suffix: '万+', label: '全网粉丝' },
           ].map((item, i) => (
             <div key={item.label} className="r" style={{ borderRight: i < 3 ? '1px solid rgba(255,255,255,.06)' : 'none', padding: '0 24px' }}>

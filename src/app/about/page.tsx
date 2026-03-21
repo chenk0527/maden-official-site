@@ -85,14 +85,14 @@ export default function AboutPage() {
               从一件哈灵顿夹克开始，马登逐渐建立起自己的产品体系。不追快时尚，不做爆款逻辑，只做经典的、有历史原型的、能穿十年的好衣服。
             </p>
             <p style={{ fontSize: '1rem', lineHeight: 2, fontWeight: 400, color: 'rgba(30,25,20,.7)' }}>
-              如今，马登已成为中国美式复古工装领域的代表品牌之一。全国9家实体门店，70+线上店铺，全网粉丝突破1000万，443人团队。但无论规模怎么变，那股对Americana精神的执念从未改变。
+              如今，马登已成为中国美式复古工装领域的代表品牌之一。全国8家实体门店，70+线上店铺，全网粉丝突破1000万，443人团队。但无论规模怎么变，那股对Americana精神的执念从未改变。
             </p>
           </div>
         </div>
       </section>
 
       {/* 旗下品牌 */}
-      <section style={{ padding: '120px 48px', background: '#ebe8e3' }}>
+      <section style={{ padding: '120px 48px', background: '#0e0e0e' }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
           <p className="r" style={{ fontSize: '.7rem', letterSpacing: '.5em', opacity: 0.4, marginBottom: '16px', fontWeight: 400 }}>旗下品牌</p>
           <h2 className="r" style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 'clamp(2.2rem, 5vw, 3.6rem)', fontWeight: 300, lineHeight: 1.15, letterSpacing: '.04em', marginBottom: '64px' }}>
@@ -152,7 +152,7 @@ export default function AboutPage() {
       </section>
 
       {/* 公益足迹 */}
-      <section style={{ padding: '120px 48px', background: '#ebe8e3', overflow: 'hidden' }}>
+      <section style={{ padding: '120px 48px', background: '#0e0e0e', overflow: 'hidden' }}>
         <div style={{ maxWidth: '1300px', margin: '0 auto' }}>
           <p className="r" style={{ fontSize: '.7rem', letterSpacing: '.5em', opacity: 0.4, marginBottom: '16px', fontWeight: 400, textAlign: 'center' }}>公益足迹</p>
           <h2 className="r" style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 'clamp(2.2rem, 5vw, 3.6rem)', fontWeight: 300, lineHeight: 1.15, letterSpacing: '.04em', marginBottom: '8px', textAlign: 'center' }}>
