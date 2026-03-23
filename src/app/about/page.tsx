@@ -117,11 +117,11 @@ export default function AboutPage() {
                   {String(i + 1).padStart(2, '0')}
                 </span>
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '20px' }}>
-                  <p style={{ fontSize: '.65rem', letterSpacing: '.3em', color: '#1a1a1a', opacity: 0.7, fontWeight: 400 }}>{b.tag}</p>
-                  <span style={{ fontSize: '.6rem', letterSpacing: '.1em', color: '#1a1a1a', border: '1px solid rgba(26,26,26,.3)', padding: '3px 10px', fontWeight: 400 }}>{b.badge}</span>
+                  <p style={{ fontSize: '.78rem', letterSpacing: '.3em', color: '#1a1a1a', opacity: 0.7, fontWeight: 400 }}>{b.tag}</p>
+                  <span style={{ fontSize: '.75rem', letterSpacing: '.1em', color: '#1a1a1a', border: '1px solid rgba(26,26,26,.3)', padding: '3px 10px', fontWeight: 400 }}>{b.badge}</span>
                 </div>
                 <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: '1.8rem', fontWeight: 300, letterSpacing: '.08em', marginBottom: '6px', color: 'rgba(26,26,26,.95)' }}>{b.name}</h3>
-                <p style={{ fontSize: '.65rem', letterSpacing: '.25em', color: 'rgba(26,26,26,.25)', marginBottom: '20px', fontWeight: 400 }}>{b.en}</p>
+                <p style={{ fontSize: '.78rem', letterSpacing: '.25em', color: 'rgba(26,26,26,.25)', marginBottom: '20px', fontWeight: 400 }}>{b.en}</p>
                 <p style={{ fontSize: '.95rem', lineHeight: 1.9, fontWeight: 400, color: 'rgba(26,26,26,.6)' }}>{b.desc}</p>
               </div>
             ))}

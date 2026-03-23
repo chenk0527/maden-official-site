@@ -20,7 +20,7 @@ export default function StoreCard({ cityData, direction = 'left' }: Props) {
       >
         {cityData.city}
       </h3>
-      <div style={{ fontSize: '.6rem', letterSpacing: '.4em', opacity: 0.3, marginBottom: '24px' }}>
+      <div style={{ fontSize: '.75rem', letterSpacing: '.4em', opacity: 0.3, marginBottom: '24px' }}>
         {cityData.count} 家{cityData.type}
       </div>
       <ul>

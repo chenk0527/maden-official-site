@@ -40,14 +40,14 @@ export default function ShopChannel({ name, sub, href }: Props) {
       }}
     >
       <h4 style={{ fontSize: '1rem', fontWeight: 400, letterSpacing: '.05em', marginBottom: '4px' }}>{name}</h4>
-      <span style={{ fontSize: '.55rem', letterSpacing: '.3em', opacity: 0.3, display: 'block', marginBottom: '12px' }}>{sub}</span>
+      <span style={{ fontSize: '.72rem', letterSpacing: '.3em', opacity: 0.3, display: 'block', marginBottom: '12px' }}>{sub}</span>
       <div
         className="ch-btn"
         style={{
           display: 'inline-block',
           padding: '8px 24px',
           border: '1px solid rgba(26,26,26,.25)',
-          fontSize: '.6rem',
+          fontSize: '.75rem',
           letterSpacing: '.2em',
           fontWeight: 300,
           transition: 'all .4s',

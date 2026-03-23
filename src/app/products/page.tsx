@@ -18,7 +18,7 @@ export default function ProductsPage() {
   return (
     <>
       <section style={{ padding: '180px 48px 80px', textAlign: 'center' }}>
-        <p className="r" style={{ fontSize: '.6rem', letterSpacing: '.5em', opacity: 0.35, marginBottom: '20px', fontWeight: 300 }}>产品系列</p>
+        <p className="r" style={{ fontSize: '.75rem', letterSpacing: '.5em', opacity: 0.35, marginBottom: '20px', fontWeight: 300 }}>产品系列</p>
         <h1 className="r" style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 'clamp(3rem, 8vw, 7rem)', fontWeight: 300, letterSpacing: '.1em', lineHeight: 0.9, marginBottom: '32px' }}>
           全品类工装
         </h1>

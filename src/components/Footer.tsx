@@ -25,8 +25,8 @@ export default function Footer() {
             <div style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: '2rem', fontWeight: 300, letterSpacing: '.25em', marginBottom: '10px' }}>
               MADEN
             </div>
-            <small style={{ display: 'block', fontSize: '.6rem', letterSpacing: '.35em', opacity: 0.3, fontWeight: 300 }}>
-              马登工装 · 美式复古 · 始于2008
+            <small style={{ display: 'block', fontSize: '.75rem', letterSpacing: '.35em', opacity: 0.3, fontWeight: 300 }}>
+              马登工装 · 美式复古 · 始于2011
             </small>
 
             {/* Social icons */}
@@ -120,7 +120,7 @@ export default function Footer() {
         {/* Divider */}
         <div style={{ borderTop: '1px solid rgba(0,0,0,.06)', paddingTop: '28px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '12px' }}>
           <p style={{ fontSize: '.75rem', letterSpacing: '.15em', opacity: 0.35, fontWeight: 300 }}>
-            &copy; 2008–2026 马登工装 MADEN · All rights reserved
+            &copy; 2011–2026 马登工装 MADEN · All rights reserved
           </p>
           <p style={{ fontSize: '.75rem', letterSpacing: '.12em', opacity: 0.28, fontWeight: 300 }}>
             美式复古工装品牌 · Americana Workwear

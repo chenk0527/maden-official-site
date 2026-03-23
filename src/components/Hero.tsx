@@ -84,7 +84,7 @@ export default function Hero() {
           gap: '12px',
         }}
       >
-        <span style={{ fontSize: '.65rem', letterSpacing: '.4em', opacity: 0.5, fontWeight: 400 }}>向下探索</span>
+        <span style={{ fontSize: '.78rem', letterSpacing: '.35em', opacity: 0.55, fontWeight: 400 }}>向下探索</span>
         <div className="scroll-bar" />
       </div>
     </section>

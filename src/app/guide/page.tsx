@@ -38,7 +38,7 @@ export default function GuidePage() {
 
       {/* Hero */}
       <section style={{ paddingTop: '180px', padding: '180px 48px 80px', textAlign: 'center' }}>
-        <p className="r" style={{ fontSize: '.6rem', letterSpacing: '.5em', opacity: 0.35, marginBottom: '20px', fontWeight: 300 }}>品类指南</p>
+        <p className="r" style={{ fontSize: '.75rem', letterSpacing: '.5em', opacity: 0.35, marginBottom: '20px', fontWeight: 300 }}>品类指南</p>
         <h1 className="r" style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 'clamp(2.5rem, 6vw, 5rem)', fontWeight: 300, letterSpacing: '.08em', lineHeight: 1.1, marginBottom: '24px' }}>
           美式复古工装<br />完全指南
         </h1>

@@ -38,7 +38,7 @@ ul {
 
 ::selection {
   background: #1a1a1a;
-  color: #0a0a0a;
+  color: #ffffff;
 }
 
 /* Custom Cursor */
@@ -244,8 +244,8 @@ nav {
   background: transparent;
   color: #1a1a1a;
   border: 1.5px solid #1a1a1a;
-  font-size: .68rem;
-  letter-spacing: .4em;
+  font-size: .8rem;
+  letter-spacing: .35em;
   font-weight: 400;
   transition: all .5s cubic-bezier(.4,0,.2,1);
   text-transform: uppercase;
@@ -253,17 +253,17 @@ nav {
 }
 .btn-gold:hover {
   background: #1a1a1a;
-  color: #ffffff;
+  color: #f5f3ef;
   border-color: #1a1a1a;
   letter-spacing: .45em;
 }
 
 .btn-gold-sm {
   display: inline-block;
-  padding: 10px 32px;
+  padding: 12px 36px;
   border: 1px solid rgba(26,26,26,.5);
-  font-size: .78rem;
-  letter-spacing: .25em;
+  font-size: .85rem;
+  letter-spacing: .2em;
   font-weight: 400;
   transition: all .4s;
   color: #1a1a1a;
@@ -271,7 +271,7 @@ nav {
 }
 .btn-gold-sm:hover {
   background: #1a1a1a;
-  color: #0a0a0a;
+  color: #f5f3ef;
   border-color: #1a1a1a;
 }
 
