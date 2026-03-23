@@ -29,11 +29,11 @@ export default function StoresPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
 
       <section style={{ padding: '180px 48px 80px', textAlign: 'center' }}>
-        <p className="r" style={{ fontSize: '.6rem', letterSpacing: '.5em', opacity: 0.35, marginBottom: '20px', fontWeight: 300 }}>线下门店</p>
+        <p className="r" style={{ fontSize: '.75rem', letterSpacing: '.5em', opacity: 0.35, marginBottom: '20px', fontWeight: 300 }}>线下门店</p>
         <h1 className="r" style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 'clamp(3rem, 8vw, 7rem)', fontWeight: 300, letterSpacing: '.1em', lineHeight: 0.9, marginBottom: '32px' }}>
           实体门店
         </h1>
-        <p className="r" style={{ fontSize: '.85rem', fontWeight: 200, color: 'rgba(232,228,223,.4)', maxWidth: '500px', margin: '0 auto', lineHeight: 1.8 }}>
+        <p className="r" style={{ fontSize: '.85rem', fontWeight: 200, color: 'rgba(26,26,26,.4)', maxWidth: '500px', margin: '0 auto', lineHeight: 1.8 }}>
           重庆6家直营 · 成都2家联营 · 全国8家实体门店<br />欢迎到店体验，感受真实的美式工装质感
         </p>
       </section>
@@ -48,11 +48,11 @@ export default function StoresPage() {
 
       <section style={{ padding: '0 48px 80px' }}>
         <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
-          <div className="r" style={{ background: '#0e0e0e', padding: '60px', textAlign: 'center', borderTop: '1px solid rgba(201,169,110,.15)', borderBottom: '1px solid rgba(201,169,110,.15)' }}>
-            <p style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: '1.4rem', fontWeight: 300, color: '#c9a96e', marginBottom: '12px', letterSpacing: '.05em' }}>
+          <div className="r" style={{ background: '#ebe8e3', padding: '60px', textAlign: 'center', borderTop: '1px solid rgba(26,26,26,.15)', borderBottom: '1px solid rgba(26,26,26,.15)' }}>
+            <p style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: '1.4rem', fontWeight: 300, color: '#1a1a1a', marginBottom: '12px', letterSpacing: '.05em' }}>
               地图导航
             </p>
-            <p style={{ fontSize: '.85rem', fontWeight: 200, color: 'rgba(232,228,223,.3)', lineHeight: 1.8 }}>
+            <p style={{ fontSize: '.85rem', fontWeight: 200, color: 'rgba(26,26,26,.3)', lineHeight: 1.8 }}>
               在高德地图 / 百度地图搜索「马登工装」即可找到最近门店<br />
               或拨打门店电话提前预约
             </p>
@@ -67,9 +67,9 @@ export default function StoresPage() {
             { title: '到店须知', text: '可直接到店选购，无需预约\n支持试穿，专业店员提供搭配建议' },
             { title: '联系方式', text: '全国客服：service@madenfushi.com\n微信公众号：马登工装' },
           ].map(item => (
-            <div key={item.title} className="r" style={{ padding: '32px', background: '#0e0e0e' }}>
-              <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: '1.2rem', fontWeight: 300, color: '#c9a96e', marginBottom: '16px' }}>{item.title}</h3>
-              <p style={{ fontSize: '.85rem', lineHeight: 1.9, fontWeight: 200, color: 'rgba(232,228,223,.4)', whiteSpace: 'pre-line' }}>{item.text}</p>
+            <div key={item.title} className="r" style={{ padding: '32px', background: '#ebe8e3' }}>
+              <h3 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: '1.2rem', fontWeight: 300, color: '#1a1a1a', marginBottom: '16px' }}>{item.title}</h3>
+              <p style={{ fontSize: '.85rem', lineHeight: 1.9, fontWeight: 200, color: 'rgba(26,26,26,.4)', whiteSpace: 'pre-line' }}>{item.text}</p>
             </div>
           ))}
         </div>

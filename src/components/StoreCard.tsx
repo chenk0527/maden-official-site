@@ -15,12 +15,12 @@ export default function StoreCard({ cityData, direction = 'left' }: Props) {
           fontWeight: 300,
           letterSpacing: '.1em',
           marginBottom: '8px',
-          color: '#c9a96e',
+          color: '#1a1a1a',
         }}
       >
         {cityData.city}
       </h3>
-      <div style={{ fontSize: '.6rem', letterSpacing: '.4em', opacity: 0.3, marginBottom: '24px' }}>
+      <div style={{ fontSize: '.75rem', letterSpacing: '.4em', opacity: 0.3, marginBottom: '24px' }}>
         {cityData.count} 家{cityData.type}
       </div>
       <ul>
@@ -29,7 +29,7 @@ export default function StoreCard({ cityData, direction = 'left' }: Props) {
             key={store.name}
             style={{
               padding: '12px 0',
-              borderBottom: '1px solid rgba(255,255,255,.04)',
+              borderBottom: '1px solid rgba(0,0,0,.06)',
               fontSize: '.85rem',
               fontWeight: 200,
               opacity: 0.5,

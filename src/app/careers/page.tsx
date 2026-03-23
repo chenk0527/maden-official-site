@@ -37,7 +37,7 @@ export default function CareersPage() {
         <h1 className="r" style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 'clamp(3rem, 8vw, 7rem)', fontWeight: 300, letterSpacing: '.1em', lineHeight: 0.9, marginBottom: '32px' }}>
           加入我们
         </h1>
-        <p className="r" style={{ fontSize: '.85rem', fontWeight: 200, color: 'rgba(232,228,223,.4)', maxWidth: '500px', margin: '0 auto', lineHeight: 1.8 }}>
+        <p className="r" style={{ fontSize: '.85rem', fontWeight: 200, color: 'rgba(26,26,26,.4)', maxWidth: '500px', margin: '0 auto', lineHeight: 1.8 }}>
           我们在寻找热爱美式工装文化、愿意一起把品牌做好的人
         </p>
       </section>
@@ -45,24 +45,24 @@ export default function CareersPage() {
       {/* 校园招聘 */}
       <section style={{ padding: '40px 48px 80px' }}>
         <div style={{ maxWidth: '800px', margin: '0 auto' }}>
-          <h2 className="r" style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: '1.8rem', fontWeight: 300, color: '#c9a96e', letterSpacing: '.08em', marginBottom: '12px' }}>
+          <h2 className="r" style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: '1.8rem', fontWeight: 300, color: '#1a1a1a', letterSpacing: '.08em', marginBottom: '12px' }}>
             校园招聘
           </h2>
-          <p className="r" style={{ fontSize: '.75rem', fontWeight: 200, color: 'rgba(232,228,223,.3)', marginBottom: '32px', letterSpacing: '.05em' }}>
+          <p className="r" style={{ fontSize: '.75rem', fontWeight: 200, color: 'rgba(26,26,26,.3)', marginBottom: '32px', letterSpacing: '.05em' }}>
             Campus Recruitment
           </p>
 
           <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
             {campusPositions.map(pos => (
-              <div key={pos.title} className="job-card" style={{ border: '1px solid rgba(201,169,110,.15)', background: '#0e0e0e', padding: '24px 28px', transition: 'border-color .3s' }}>
+              <div key={pos.title} className="job-card" style={{ border: '1px solid rgba(26,26,26,.15)', background: '#ebe8e3', padding: '24px 28px', transition: 'border-color .3s' }}>
                 <div className="job-card-inner" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '20px' }}>
                   <div style={{ display: 'flex', alignItems: 'center', gap: '20px' }}>
-                    <div style={{ color: '#c9a96e', opacity: 0.6, flexShrink: 0 }}>
+                    <div style={{ color: '#1a1a1a', opacity: 0.6, flexShrink: 0 }}>
                       <pos.Icon size={28} color="currentColor" strokeWidth={1.2} />
                     </div>
                     <div>
-                      <h3 style={{ fontSize: '.95rem', fontWeight: 400, marginBottom: '6px', color: 'rgba(232,228,223,.85)' }}>{pos.title}</h3>
-                      <p style={{ fontSize: '.72rem', fontWeight: 300, color: 'rgba(232,228,223,.35)' }}>
+                      <h3 style={{ fontSize: '.95rem', fontWeight: 400, marginBottom: '6px', color: 'rgba(26,26,26,.85)' }}>{pos.title}</h3>
+                      <p style={{ fontSize: '.72rem', fontWeight: 300, color: 'rgba(26,26,26,.35)' }}>
                         {pos.dept} · {pos.location}
                       </p>
                     </div>
@@ -73,7 +73,7 @@ export default function CareersPage() {
           </div>
 
           <div style={{ marginTop: '32px', textAlign: 'center' }}>
-            <a href={CAMPUS_FORM_URL} className="apply-btn" style={{ display: 'inline-block', padding: '14px 48px', border: '1px solid #c9a96e', color: '#c9a96e', fontSize: '.8rem', letterSpacing: '.15em', fontWeight: 300, textDecoration: 'none', transition: 'all .3s' }}>
+            <a href={CAMPUS_FORM_URL} className="apply-btn" style={{ display: 'inline-block', padding: '14px 48px', border: '1px solid #1a1a1a', color: '#1a1a1a', fontSize: '.8rem', letterSpacing: '.15em', fontWeight: 300, textDecoration: 'none', transition: 'all .3s' }}>
               立即投递
             </a>
           </div>
@@ -83,24 +83,24 @@ export default function CareersPage() {
       {/* 社会招聘 */}
       <section style={{ padding: '40px 48px 80px' }}>
         <div style={{ maxWidth: '800px', margin: '0 auto' }}>
-          <h2 className="r" style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: '1.8rem', fontWeight: 300, color: '#c9a96e', letterSpacing: '.08em', marginBottom: '12px' }}>
+          <h2 className="r" style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: '1.8rem', fontWeight: 300, color: '#1a1a1a', letterSpacing: '.08em', marginBottom: '12px' }}>
             社会招聘
           </h2>
-          <p className="r" style={{ fontSize: '.75rem', fontWeight: 200, color: 'rgba(232,228,223,.3)', marginBottom: '32px', letterSpacing: '.05em' }}>
+          <p className="r" style={{ fontSize: '.75rem', fontWeight: 200, color: 'rgba(26,26,26,.3)', marginBottom: '32px', letterSpacing: '.05em' }}>
             Social Recruitment
           </p>
 
           <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
             {socialPositions.map(pos => (
-              <div key={pos.title} className="job-card" style={{ border: '1px solid rgba(201,169,110,.15)', background: '#0e0e0e', padding: '24px 28px', transition: 'border-color .3s' }}>
+              <div key={pos.title} className="job-card" style={{ border: '1px solid rgba(26,26,26,.15)', background: '#ebe8e3', padding: '24px 28px', transition: 'border-color .3s' }}>
                 <div className="job-card-inner" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '20px' }}>
                   <div style={{ display: 'flex', alignItems: 'center', gap: '20px' }}>
-                    <div style={{ color: '#c9a96e', opacity: 0.6, flexShrink: 0 }}>
+                    <div style={{ color: '#1a1a1a', opacity: 0.6, flexShrink: 0 }}>
                       <pos.Icon size={28} color="currentColor" strokeWidth={1.2} />
                     </div>
                     <div>
-                      <h3 style={{ fontSize: '.95rem', fontWeight: 400, marginBottom: '6px', color: 'rgba(232,228,223,.85)' }}>{pos.title}</h3>
-                      <p style={{ fontSize: '.72rem', fontWeight: 300, color: 'rgba(232,228,223,.35)' }}>
+                      <h3 style={{ fontSize: '.95rem', fontWeight: 400, marginBottom: '6px', color: 'rgba(26,26,26,.85)' }}>{pos.title}</h3>
+                      <p style={{ fontSize: '.72rem', fontWeight: 300, color: 'rgba(26,26,26,.35)' }}>
                         {pos.dept} · {pos.location} · {pos.exp}
                       </p>
                     </div>
@@ -111,7 +111,7 @@ export default function CareersPage() {
           </div>
 
           <div style={{ marginTop: '32px', textAlign: 'center' }}>
-            <a href={SOCIAL_FORM_URL} className="apply-btn" style={{ display: 'inline-block', padding: '14px 48px', border: '1px solid #c9a96e', color: '#c9a96e', fontSize: '.8rem', letterSpacing: '.15em', fontWeight: 300, textDecoration: 'none', transition: 'all .3s' }}>
+            <a href={SOCIAL_FORM_URL} className="apply-btn" style={{ display: 'inline-block', padding: '14px 48px', border: '1px solid #1a1a1a', color: '#1a1a1a', fontSize: '.8rem', letterSpacing: '.15em', fontWeight: 300, textDecoration: 'none', transition: 'all .3s' }}>
               立即投递
             </a>
           </div>
@@ -121,11 +121,11 @@ export default function CareersPage() {
       {/* 页脚信息 */}
       <section style={{ padding: '0 48px 140px' }}>
         <div style={{ maxWidth: '800px', margin: '0 auto' }}>
-          <div className="r" style={{ background: '#0e0e0e', padding: '60px', textAlign: 'center', borderTop: '1px solid rgba(201,169,110,.15)', borderBottom: '1px solid rgba(201,169,110,.15)' }}>
-            <p style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: '1.4rem', fontWeight: 300, color: '#c9a96e', marginBottom: '12px', letterSpacing: '.05em' }}>
+          <div className="r" style={{ background: '#ebe8e3', padding: '60px', textAlign: 'center', borderTop: '1px solid rgba(26,26,26,.15)', borderBottom: '1px solid rgba(26,26,26,.15)' }}>
+            <p style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: '1.4rem', fontWeight: 300, color: '#1a1a1a', marginBottom: '12px', letterSpacing: '.05em' }}>
               简历投递
             </p>
-            <p style={{ fontSize: '.85rem', fontWeight: 200, color: 'rgba(232,228,223,.3)', lineHeight: 1.8 }}>
+            <p style={{ fontSize: '.85rem', fontWeight: 200, color: 'rgba(26,26,26,.3)', lineHeight: 1.8 }}>
               简历投递后3个工作日内回复 · service@madenfushi.com
             </p>
           </div>
@@ -133,9 +133,9 @@ export default function CareersPage() {
       </section>
 
       <style>{`
-        .job-card:hover { border-color: rgba(201,169,110,.4) !important; }
+        .job-card:hover { border-color: rgba(26,26,26,.4) !important; }
         .job-card-inner { display: flex; justify-content: space-between; align-items: center; }
-        .apply-btn:hover { background: #c9a96e !important; color: #0a0a0a !important; }
+        .apply-btn:hover { background: #1a1a1a !important; color: #0a0a0a !important; }
         @media (max-width: 900px) {
           section { padding-left: 24px !important; padding-right: 24px !important; }
           .r { text-align: center; }

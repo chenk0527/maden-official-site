@@ -40,7 +40,7 @@ export default function Navbar() {
           display: 'flex',
           justifyContent: 'space-between',
           alignItems: 'center',
-          mixBlendMode: 'difference',
+          mixBlendMode: 'normal',
         }}
       >
         <Link
@@ -110,7 +110,7 @@ export default function Navbar() {
           position: 'fixed',
           inset: 0,
           zIndex: 999,
-          background: 'rgba(10,10,10,.97)',
+          background: 'rgba(255,255,255,.97)',
           flexDirection: 'column',
           alignItems: 'center',
           justifyContent: 'center',

@@ -103,14 +103,14 @@ export const products: Product[] = [
 ]
 
 export const lookbookItems = [
-  { image: '/images/ali-harrington.webp', alt: '马登工装 哈灵顿夹克穿搭', label: '造型 01 · 哈灵顿夹克' },
-  { image: '/images/ali-wax-jacket.webp', alt: '马登工装 油蜡猎装穿搭', label: '造型 02 · 油蜡猎装' },
-  { image: '/images/ali-jeans.webp', alt: '马登工装 赤耳牛仔穿搭', label: '造型 03 · 赤耳牛仔' },
-  { image: '/images/ali-sweater.webp', alt: '马登工装 提花毛衣穿搭', label: '造型 04 · 提花毛衣' },
-  { image: '/images/ali-gorpcore.webp', alt: '马登工装 冲锋衣穿搭', label: '造型 05 · 山系机能' },
-  { image: '/images/ali-coat.webp', alt: '马登工装 牛角扣大衣穿搭', label: '造型 06 · 毛呢大衣' },
-  { image: '/images/ali-ma1.webp', alt: '马登工装 MA-1飞行夹克穿搭', label: '造型 07 · MA-1飞行' },
-  { image: '/images/ali-halfzip.webp', alt: '马登工装 灯芯绒半拉链穿搭', label: '造型 08 · 灯芯绒' },
+  { image: '/images/ali-gorpcore.webp', alt: '马登工装 冲锋衣穿搭', label: '造型 01 · 山系机能' },
+  { image: '/images/ali-coat.webp', alt: '马登工装 牛角扣大衣穿搭', label: '造型 02 · 毛呢大衣' },
+  { image: '/images/ali-ma1.webp', alt: '马登工装 MA-1飞行夹克穿搭', label: '造型 03 · MA-1飞行' },
+  { image: '/images/ali-halfzip.webp', alt: '马登工装 灯芯绒半拉链穿搭', label: '造型 04 · 灯芯绒' },
+  { image: '/images/ali-fleece.webp', alt: '马登工装 抓绒卫衣穿搭', label: '造型 05 · 抓绒卫衣' },
+  { image: '/images/ali-down-vest.webp', alt: '马登工装 羽绒马甲穿搭', label: '造型 06 · 羽绒马甲' },
+  { image: '/images/ali-cuban-shirt.webp', alt: '马登工装 古巴领衬衫穿搭', label: '造型 07 · 古巴领衬衫' },
+  { image: '/images/ali-hoodie-deck.webp', alt: '马登工装 甲板卫衣穿搭', label: '造型 08 · 甲板卫衣' },
 ]
 
 export const shopChannels = [
@@ -121,5 +121,5 @@ export const shopChannels = [
   { name: '拼多多', sub: '马登旗舰店', href: 'https://mobile.yangkeduo.com/mall_page.html?mall_id=13333156' },
   { name: '得物', sub: '马登官方', href: 'https://www.dewu.com/brand/brand-detail?brandId=1001429' },
   { name: '小红书', sub: '马登工装旗舰店', href: 'https://www.xiaohongshu.com/user/profile/5d39eb4b0000000011012e58' },
-  { name: '实体门店', sub: '重庆5店 · 成都2店', href: '/stores' },
+  { name: '实体门店', sub: '重庆6店 · 成都2店', href: '/stores' },
 ]

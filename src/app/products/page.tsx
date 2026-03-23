@@ -18,11 +18,11 @@ export default function ProductsPage() {
   return (
     <>
       <section style={{ padding: '180px 48px 80px', textAlign: 'center' }}>
-        <p className="r" style={{ fontSize: '.6rem', letterSpacing: '.5em', opacity: 0.35, marginBottom: '20px', fontWeight: 300 }}>产品系列</p>
+        <p className="r" style={{ fontSize: '.75rem', letterSpacing: '.5em', opacity: 0.35, marginBottom: '20px', fontWeight: 300 }}>产品系列</p>
         <h1 className="r" style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: 'clamp(3rem, 8vw, 7rem)', fontWeight: 300, letterSpacing: '.1em', lineHeight: 0.9, marginBottom: '32px' }}>
           全品类工装
         </h1>
-        <p className="r" style={{ fontSize: '.85rem', fontWeight: 200, color: 'rgba(232,228,223,.4)', maxWidth: '500px', margin: '0 auto', lineHeight: 1.8 }}>
+        <p className="r" style={{ fontSize: '.85rem', fontWeight: 200, color: 'rgba(26,26,26,.4)', maxWidth: '500px', margin: '0 auto', lineHeight: 1.8 }}>
           9大品类，每件单品都有真实的历史原型。从M65野战夹克到赤耳牛仔，从德训鞋到羽绒马甲。
         </p>
       </section>
@@ -39,9 +39,9 @@ export default function ProductsPage() {
                   <h2 style={{ fontFamily: "'Cormorant Garamond', serif", fontSize: '1.4rem', fontWeight: 300, letterSpacing: '.05em' }}>
                     {product.name}
                   </h2>
-                  <span style={{ fontSize: '.7rem', color: '#c9a96e', fontWeight: 300 }}>{product.price}</span>
+                  <span style={{ fontSize: '.7rem', color: '#1a1a1a', fontWeight: 300 }}>{product.price}</span>
                 </div>
-                <p style={{ fontSize: '.8rem', lineHeight: 1.7, fontWeight: 200, color: 'rgba(232,228,223,.4)', marginBottom: '20px' }}>
+                <p style={{ fontSize: '.8rem', lineHeight: 1.7, fontWeight: 200, color: 'rgba(26,26,26,.4)', marginBottom: '20px' }}>
                   {product.description}
                 </p>
                 <Link href="/#shop" className="btn-gold-sm">立即购买</Link>

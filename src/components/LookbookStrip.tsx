@@ -1,75 +1,64 @@
-'use client'
-
-import { useEffect, useRef } from 'react'
 import { lookbookItems } from '@/data/products'
 import { assetPath } from '@/utils/path'
 
 export default function LookbookStrip() {
-  const stripRef = useRef<HTMLDivElement>(null)
-
-  useEffect(() => {
-    const strip = stripRef.current
-    if (!strip) return
-
-    const onWheel = (e: WheelEvent) => {
-      if (Math.abs(e.deltaY) > Math.abs(e.deltaX)) {
-        e.preventDefault()
-        strip.scrollLeft += e.deltaY
-      }
-    }
-
-    strip.addEventListener('wheel', onWheel, { passive: false })
-    return () => strip.removeEventListener('wheel', onWheel)
-  }, [])
-
   return (
-    <div
-      ref={stripRef}
-      className="lookbook-strip"
-    >
+    <div className="lookbook-grid">
       {lookbookItems.map((item, i) => (
         <div
           key={i}
           className="lk-img"
           style={{
-            flex: '0 0 35vw',
-            height: '70vh',
             position: 'relative',
             overflow: 'hidden',
+            aspectRatio: '4/5',
           }}
         >
           <img
             src={assetPath(item.image)}
             alt={item.alt}
+            loading="lazy"
             style={{
               position: 'absolute',
               inset: 0,
               width: '100%',
               height: '100%',
               objectFit: 'cover',
-              filter: 'brightness(.75)',
-              transition: 'filter .8s',
+              filter: 'brightness(.78)',
+              transition: 'filter .8s, transform .8s',
             }}
           />
           <div
             style={{
               position: 'absolute',
-              bottom: '32px',
-              left: '32px',
-              fontSize: '.55rem',
-              letterSpacing: '.4em',
-              opacity: 0.4,
+              bottom: '20px',
+              left: '20px',
+              fontSize: '.75rem',
+              letterSpacing: '.3em',
+              color: 'rgba(255,255,255,.75)',
               fontWeight: 300,
               zIndex: 2,
             }}
           >
             {item.label}
           </div>
-          <style>{`
-            .lk-img:hover img { filter: brightness(.9) !important; }
-          `}</style>
         </div>
       ))}
+      <style>{`
+        .lookbook-grid {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          gap: 4px;
+          padding: 0 48px;
+        }
+        .lk-img:hover img { filter: brightness(.92) !important; transform: scale(1.04); }
+        @media (max-width: 900px) {
+          .lookbook-grid { grid-template-columns: repeat(2, 1fr) !important; padding: 0 24px !important; }
+        }
+        @media (max-width: 480px) {
+          .lookbook-grid { grid-template-columns: repeat(2, 1fr) !important; }
+        }
+      `}</style>
     </div>
   )
 }
